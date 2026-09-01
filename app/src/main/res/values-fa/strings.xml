@@ -944,7 +944,7 @@
     <string name="invalid_value_rule_2">فقط از حروف (a-z)، اعداد و کاراکتر خاص (.) استفاده کنید</string>
     <string name="invalid_value_rule_3">فقط از حروف (a-z)، اعداد و کاراکتر خاص (_) استفاده کنید</string>
     <string name="invalid_value_rule_4">فقط از حروف کوچک (a-z)، اعداد و کاراکتر خاص (_) استفاده کنید</string>
-    <string name="invalid_value_rule_5">کاراکترهای خاص (&amp;، &lt;، &gt;، «، ') مجاز نیستند</string>
+    <string name="invalid_value_rule_5">"کاراکترهای خاص (&amp;، &lt;، &gt;، «، ') مجاز نیستند"</string>
     <string name="invalid_value_rule_6">فاصله مجاز نیست</string>
     <string name="logic_block_favorites_delete_message">مطمئنید می‌خواهید بلوک ذخیره‌شده را از مجموعه من حذف کنید؟ این عمل قابل بازگشت نیست.</string>
     <string name="logic_block_favorites_delete_title">حذف از مجموعه من</string>
@@ -1193,7 +1193,7 @@
     <string name="property_inject">ویژگی‌های سفارشی</string>
     <string name="property_convert">تبدیل</string>
     <string name="property_description_component_intent_usage">"این مثال‌ها را رعایت کنید! وگرنه ممکن است خطای زمان اجرا بگیرید!\n\nACTION_CALL، ACTION_DIAL\n tel:number (tel:12345678)\n\nACTION_VIEW\n نوع url (http://sketchware.io)"</string>
-    <string name="property_description_edittext_ime_options">وقتی single_line برابر 'false' و input_type برابر 'text' است کار نمی‌کند</string>
+    <string name="property_description_edittext_ime_options">"وقتی single_line برابر 'false' و input_type برابر 'text' است کار نمی‌کند"</string>
     <string name="property_divider_height">ارتفاع جداکننده</string>
     <string name="property_enabled">فعال</string>
     <string name="property_first_day_of_week">firstDayOfWeek</string>
