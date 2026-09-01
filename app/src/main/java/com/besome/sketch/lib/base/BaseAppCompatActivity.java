@@ -4,10 +4,12 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface.OnCancelListener;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.AsyncTask.Status;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.LocaleList;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,6 +25,7 @@ import com.besome.sketch.lib.ui.LoadingDialog;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 import a.a.a.MA;
 import a.a.a.lC;
@@ -32,6 +35,29 @@ import pro.sketchware.dialogs.ProgressDialog;
 public abstract class BaseAppCompatActivity extends AppCompatActivity {
 
     public FirebaseAnalytics mAnalytics;
+
+    /**
+     * Forces Persian (fa) locale app-wide, independent of device system language.
+     * Wraps the base context with a fa configuration so resource inflation always
+     * resolves values-fa on every Android version. Touches resource lookup only —
+     * no app logic is affected.
+     */
+    @Override
+    protected void attachBaseContext(Context base) {
+        Configuration config = new Configuration(base.getResources().getConfiguration());
+        Locale fa = new Locale("fa");
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            config.setLocale(fa);
+            config.setLocales(new LocaleList(fa));
+            super.attachBaseContext(base.createConfigurationContext(config));
+        } else {
+            config.locale = fa;
+            Locale.setDefault(fa);
+            super.attachBaseContext(base);
+            // noinspection deprecation
+            base.getResources().updateConfiguration(config, base.getResources().getDisplayMetrics());
+        }
+    }
 
     @Deprecated
     public Context e;

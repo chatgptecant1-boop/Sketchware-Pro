@@ -22,6 +22,15 @@ public class SketchApplication extends Application {
     }
 
     @Override
+    protected void attachBaseContext(Context base) {
+        // Force Persian for application-level resources too (services, receivers, etc.)
+        android.content.res.Configuration config = new android.content.res.Configuration(base.getResources().getConfiguration());
+        config.setLocale(new java.util.Locale("fa"));
+        config.setLocales(new android.os.LocaleList(new java.util.Locale("fa")));
+        super.attachBaseContext(base.createConfigurationContext(config));
+    }
+
+    @Override
     public void onCreate() {
         mApplicationContext = getApplicationContext();
         // Force Persian UI app-wide, regardless of system language
