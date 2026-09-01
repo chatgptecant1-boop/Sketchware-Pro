@@ -1,0 +1,200 @@
+myprojects_sign_apk_new_certificate_hint_confirm_password	Confirm the password
+myprojects_sign_apk_new_certificate_hint_country_code	Country Code (XX)
+myprojects_sign_apk_new_certificate_hint_first_and_last_name	First and Last Name
+myprojects_sign_apk_new_certificate_hint_organization	Organization
+myprojects_sign_apk_new_certificate_hint_organizational_unit	Organizational Unit
+myprojects_sign_apk_new_certificate_hint_state	State or Province
+myprojects_sign_apk_new_certificate_title_certificate	Certificate
+myprojects_sign_apk_new_certificate_title_new_certificate	Create new certificate
+myprojects_sign_apk_new_certificate_title_certificate_creds	Certificate credentials
+myprojects_sign_apk_new_certificate_title_validity	Validity(Years)
+picker_color_already_exist	This color already exists
+picker_color_custom_color_not_found	No custom color found
+picker_color_hint_enter_hex_color_code	Enter hex color code
+picker_color_xml_is_empty	colors.xml is empty
+picker_color_message_delete_all_custom_color	Are you sure you want to continue? This action can not be undone.
+picker_color_message_delete_custom_color	Are you sure you want to continue? This action can not be undone.
+picker_color_title_delete_all_custom_color	Delete All Custom Colors
+picker_color_title_delete_custom_color	Delete Custom Color
+picker_color_title_delete_custom_attr	Delete Custom Attribute
+preset_setting_edit_warning	If you apply a Preset, exiting View data will be deleted. Continue?
+preset_setting_title	Preset Settings
+program_information_actionbar_title	Program Information
+program_information_button_check_update	Check for Updates
+program_information_button_reset_system	Reset settings
+program_information_reset_system_complete_initialize	All of the data was initialized
+program_information_reset_system_confirm_description	"All projects will be reset.\nDo you want to continue?"
+program_information_reset_system_title	Reset
+program_information_reset_system_title_all_settings	Reset all settings
+program_information_reset_system_title_all_settings_data	Reset all settings and data
+program_information_title_docs	Docs
+program_information_title_open_source_license	Open Source Licenses
+program_information_title_service_terms	Service terms
+program_information_title_share_with_friends	Share with Friends
+program_information_title_suggest_ideas	Suggest Ideas
+program_information_title_system_information	System Information
+property_ad_size	Ad size
+property_alpha	Alpha
+property_background_color	Background color
+property_background_resource	Background resource
+property_checked	Checked
+property_choice_mode	Choice mode
+property_clickable	Clickable
+property_custom_view_listview	Custom view
+property_inject	Custom attributes
+property_convert	Convert
+property_description_component_intent_usage	"Follow these examples! It may result in a runtime error if you don't!\n\nACTION_CALL, ACTION_DIAL\n tel:number (tel:12345678)\n\nACTION_VIEW\n url type (http://sketchware.io)"
+property_description_edittext_ime_options	"It does not work when single_line is 'false' and input_type is 'text'"
+property_divider_height	Divider height
+property_enabled	Enabled
+property_gravity	Gravity
+property_group_basic	Basic
+property_group_event	Event
+property_group_recent	Recent
+property_header_image	Image Properties
+property_header_layout	Layout Properties
+property_header_seekbar	SeekBar Properties
+property_header_text	Text Properties
+property_header_view	View Properties
+property_hint	Hint
+property_hint_color	Hint color
+property_hint_enter_value	Enter value
+property_id	ID
+property_image	Image
+property_ime_option	Ime option
+property_indeterminate	Indeterminate
+property_input_type	Input type
+property_layout_gravity	Layout gravity
+property_layout_height	Height
+property_layout_width	Width
+property_lines	Lines
+property_margin	Margin
+property_max	Max
+property_orientation	Orientation
+property_padding	Padding
+property_parent_attr	Parent attributes
+property_progress	Progress
+property_progressbar_style	Progress bar style
+property_resource	Resource
+property_rotate	Rotate
+property_scale_type	Scale type
+property_single_line	Single line
+property_spinner_mode	Spinner mode
+property_text	Text
+property_text_color	Text color
+property_text_font	Text font
+property_text_size	Text size
+property_text_style	Text style
+property_weight	Weight
+property_weight_sum	Weight sum
+property_visibility	Visibility
+property_animate_layout_changes	Animate layout changes
+publish_account_setting_connecting_account_step_name	Do you have a Google Play Developer Account?
+publish_account_setting_select_json_step_name	Check Service Account Credentials
+publish_account_setting_title	Publish Account Settings
+publish_check_upload_apk_message_dialog_upload_apk_agreement	After the app is published, the APK file will be uploaded to Sketchware server for backup purposes. Do you want to continue?
+publish_check_upload_apk_step_desc	Determine the type of this publishing
+publish_check_upload_apk_step_name	Publish Type
+publish_check_upload_apk_title_dialog_upload_apk_agreement	Upload APK File Agreement
+publish_check_upload_apk_title_radio_not_upload	I want to update the store description
+publish_check_upload_apk_title_radio_upload	I want to publish an update including the APK file
+publish_complete_back_up_button_name	Back Up
+publish_complete_desc	The project was successfully published.
+publish_complete_title	Publish Complete
+publish_complete_title_published_data	Published Date
+publish_complete_title_published_fraction	Published Fraction
+publish_complete_title_published_status	Published Status
+publish_complete_title_published_track	Published Track
+publish_complete_title_published_version_code	Published Version Code
+publish_connecting_account_have_account	I have a Google Play Developer account
+publish_connecting_account_no_have_account	I do not have a Google Play Developer account
+publish_desc_choose_project	Select a project to publish or update
+publish_exception_title_code	Code
+publish_exception_title_message	Message
+publish_exception_title_read_in_detail	More Detail
+publish_exception_title_reason	Reason
+publish_images_message_dialog_delete_screenshot	Do you want to delete this image?
+publish_images_message_dialog_invalid_delete_screenshot	There should be at least two screenshots
+publish_images_message_dialog_invalid_icon_size	Icon size is invalid. (512 X 512)
+publish_images_message_dialog_invalid_screenshot_size	Screenshot size is invalid. (Min length for any side: 320px. Max length for any side: 3840px)
+publish_images_step_desc	Attach images for your app
+publish_images_step_name	Graphic Assets
+publish_images_title_dialog_delete_screenshot	Delete Screenshot
+publish_images_title_dialog_invalid_delete_screenshot	Delete Screenshot Error
+publish_images_title_dialog_invalid_icon_size	Icon Size Error
+publish_images_title_dialog_invalid_screenshot_size	Screenshot Size Error
+publish_images_title_icon	Icon
+publish_images_title_screenshots	Screenshots
+publish_mail_complete_desc	We sent your apk and a publishing guide to your email. Please follow the guide on the email and publish your first apk.
+publish_mail_complete_title	We sent you an email!
+publish_manage_no_publish_apps	Publish your first app by clicking on the FAB
+publish_manage_title	Publishing Manager
+publish_message_dialog_authorization_error	"This json file's access token expired. Please select a valid json file"
+publish_message_dialog_cannot_start_publish	Please try again after save as new
+publish_message_dialog_change_version_code	"This app's version code has changed. Do you want to sign the APK file again?"
+publish_message_dialog_compile_apk_failed	The compilation of the APK file is failed. Please check this project
+publish_message_dialog_conflict_version_code	This version code cannot be used. If you wish to update the version code, please click on the OK button.
+publish_message_dialog_default_package_name	Please use a different package name. Projects starting with \"%s\" package name can not be published
+publish_message_dialog_invalid_json	The json file is invalid. Please double check the file
+root_spec_common_define	Define
+root_spec_common_when	When
+root_spec_initialize_head	On activity create
+root_spec_on_back_pressed_head	On back button press
+root_spec_on_clicked_head	clicked
+root_spec_on_destroy_head	On activity destroyed
+root_spec_on_pause_head	On activity pause
+root_spec_on_post_created_head	On activity start-up complete
+root_spec_on_resume_head	On activity resume
+root_spec_on_start_head	On activity becoming visible
+root_spec_on_stop_head	On activity no longer visible
+s1	Save image
+s2	Allow Ad to store image in Picture gallery?
+s3	Accept
+s4	Decline
+s5	Create calendar event
+s6	Allow Ad to create a calendar event?
+s7	Test Ad
+search_recent_button_delete_all_recent_keyword	Delete All
+search_recent_message_delete_keyword_dialog_delete_all	Do you want to delete all keywords?
+search_recent_message_delete_keyword_dialog_delete_one	Do you want to delete this keyword?
+search_recent_message_no_data	No recent keyword to show
+search_recent_message_no_keyword_to_delete	No recent keyword to delete
+search_recent_recent_keyword	Recent Keyword
+search_recent_title	Contents Search
+search_recent_title_delete_keyword_dialog	Delete Keyword
+search_result_message_no_data	No search result to show. :(
+search_result_title	Search Result of %s
+share_block_information_step_desc	Input description and screenshot about this block
+share_block_information_step_name	Block Information
+share_block_information_title_block_name	Block Name
+share_block_message_uploading_block_data	Uploading Block Data
+share_block_message_uploading_more_block_data	Uploading More Block Data
+share_block_review_information_step_desc	Please review the information below. If they are all correct, click on \"Share\"..
+share_block_review_information_step_name	Review Information
+share_block_select_favorite_block_message_favorite_block	"Please select a block you'd like to share"
+share_block_select_favorite_block_step_desc	"Select block you'd like to share"
+share_block_select_favorite_block_step_name	Select Block
+share_block_select_favorite_more_block_step_desc	"Select more block you'd like to share"
+share_block_select_favorite_more_block_step_name	Select More Block
+share_block_select_required_fonts_step_desc	Select font needed for this block
+share_block_select_required_fonts_step_name	Select Font
+share_block_select_required_images_step_desc	Select image needed for this block
+share_block_select_required_images_step_name	Select Image
+share_block_select_required_sounds_step_desc	Select sound needed for this block
+share_block_select_required_sounds_step_name	Select Sound
+share_collection_inform_message_input_tag	Text tag about this collection to add
+share_collection_inform_message_limit_tag_count	Exceeded the number of tags that can be added
+share_collection_inform_message_no_input_tag	No tag to add
+share_collection_inform_message_tag_added_already	Already added tag
+share_collection_inform_message_tag_middle_sharp	"\# can't be in the middle of tag"
+share_collection_inform_title_related_tag	Related Tag
+share_collection_inform_title_tag	Tag
+share_collection_information_message_desc_length	The text length is invalid. Please double check the length of your collection information.
+share_collection_information_message_hint_long_desc	Text about this collection in detail
+share_collection_information_message_hint_short_desc	Text about this collection in short
+share_collection_information_message_screenshots	At least one screenshot is needed
+share_collection_information_message_short_desc	Please explain this collection in short description
+share_collection_information_title_long_desc	Long Description
+share_collection_information_title_screenshots	Screenshot
+share_collection_information_title_short_desc	Short Description
+share_collection_message_dialog_delete_upload_data	The data for uploading is all removed. Do you want to continue?

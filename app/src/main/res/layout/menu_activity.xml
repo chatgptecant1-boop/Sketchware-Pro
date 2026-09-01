@@ -41,7 +41,7 @@
                 android:paddingTop="4dp"
                 android:paddingEnd="8dp"
                 android:paddingBottom="6dp"
-                android:text="Title"
+                android:text="عنوان"
                 android:textColor="@color/tool_bar_text_color"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -145,7 +145,7 @@
                     android:paddingLeft="8dp"
                     android:paddingTop="8dp"
                     android:paddingRight="8dp"
-                    android:text="New menu: "
+                    android:text="منوی جدید: "
                     android:textColor="#ff616161"
                     android:textSize="16sp" />
 
@@ -209,7 +209,7 @@
                             android:background="#ff008dcd"
                             android:gravity="center"
                             android:padding="8dp"
-                            android:text="cancel"
+                            android:text="انصراف"
                             android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
                             android:textColor="#ffffffff"
                             android:textSize="11sp" />
@@ -223,7 +223,7 @@
                             android:background="#ff008dcd"
                             android:gravity="center"
                             android:padding="8dp"
-                            android:text="save"
+                            android:text="ذخیره"
                             android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
                             android:textColor="#ffffffff"
                             android:textSize="11sp" />

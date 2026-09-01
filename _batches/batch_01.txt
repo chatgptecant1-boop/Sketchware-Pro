@@ -1,0 +1,200 @@
+block_mapview_set_map_type_body_1	set Map type
+block_mapview_set_marker_color_body_1	marker id
+block_mapview_set_marker_color_body_2	set color
+block_mapview_set_marker_color_body_3	alpha
+block_mapview_set_marker_icon_body_1	marker id
+block_mapview_set_marker_icon_body_2	set icon
+block_mapview_set_marker_info_body_1	marker id
+block_mapview_set_marker_info_body_2	set title
+block_mapview_set_marker_info_body_3	snippet
+block_mapview_set_marker_position_body_1	marker id
+block_mapview_set_marker_position_body_2	set position lat
+block_mapview_set_marker_position_body_3	lng
+block_mapview_set_marker_visible_body_1	marker id
+block_mapview_set_marker_visible_body_2	set visible
+block_mapview_zoom_in_tail	zoom in
+block_mapview_zoom_out_tail	zoom out
+block_mapview_zoom_to_body_1	zoom to
+block_math_abs_head	absolute value of
+block_math_acos_head	arccos
+block_math_asin_head	arcsin
+block_math_atan_head	arctan
+block_math_ceil_head	ceil
+block_math_cos_head	cos
+block_math_e_head	E(e)
+block_math_exp_head	exp
+block_math_floor_head	floor
+block_math_log10_head	log
+block_math_log_head	ln
+block_math_max_body_1	and
+block_math_max_head	maximum of
+block_math_min_body_1	and
+block_math_min_head	minimum of
+block_math_pi_head	PI(π)
+block_math_pow_body_1	to the
+block_math_pow_tail	power
+block_math_round_head	round
+block_math_sin_head	sin
+block_math_sqrt_head	square root of
+block_math_tan_head	tan
+block_math_to_degree_head	Radian
+block_math_to_degree_tail	to Degree
+block_math_to_radian_head	Degree
+block_math_to_radian_tail	to Radian
+block_mediaplayer_create_body_1	create
+block_mediaplayer_get_current_tail	get current duration
+block_mediaplayer_get_duration_tail	get song duration
+block_mediaplayer_is_looping_tail	is looping
+block_mediaplayer_is_playing_tail	is playing
+block_mediaplayer_pause_tail	pause
+block_mediaplayer_release_tail	release
+block_mediaplayer_reset_tail	reset
+block_mediaplayer_seek_body_1	seek to
+block_mediaplayer_set_looping_body_1	set looping
+block_mediaplayer_start_tail	start
+block_minus_body_1	-
+block_not_head	not
+block_objectanimator_cancel_tail	cancel
+block_objectanimator_is_running_tail	is running
+block_objectanimator_set_duration_body_1	set duration
+block_objectanimator_set_from_to_body_1	set values from
+block_objectanimator_set_from_to_body_2	to
+block_objectanimator_set_interpolator_body_1	set interpolator
+block_objectanimator_set_property_body_1	set property
+block_objectanimator_set_repeat_count_body_1	set repeat count
+block_objectanimator_set_repeat_mode_body_1	set repeat mode
+block_objectanimator_set_target_body_1	set target
+block_objectanimator_set_value_body_1	set value
+block_objectanimator_start_tail	start
+block_or_body_1	or
+block_plus_body_1	+
+block_random_body_1	to
+block_random_head	pick random
+block_repeat_head	repeat
+block_request_focus_tail	request focus
+block_requestnetwork_set_headers_body_1	set headers
+block_requestnetwork_set_params_body_1	set params
+block_requestnetwork_set_params_body_2	to request type
+block_requestnetwork_start_request_network_body_1	start network request to method
+block_requestnetwork_start_request_network_body_2	to url
+block_requestnetwork_start_request_network_body_3	with tag
+block_resize_bitmap_circle_body_1	to path
+block_resize_bitmap_circle_head	resize image to circle from path
+block_resize_bitmap_ratio_body_1	to path
+block_resize_bitmap_ratio_body_2	max size
+block_resize_bitmap_ratio_head	resize image retain ratio from path
+block_resize_bitmap_rounded_body_1	to path
+block_resize_bitmap_rounded_body_2	round pixels
+block_resize_bitmap_rounded_head	resize image rounded from path
+block_resize_bitmap_square_body_1	to path
+block_resize_bitmap_square_body_2	max size
+block_resize_bitmap_square_head	resize image to square from path
+block_rest_body_1	%
+block_rotate_bitmap_body_1	to path
+block_rotate_bitmap_body_2	angle
+block_rotate_bitmap_head	rotate image from path
+block_scale_bitmap_body_1	to path
+block_scale_bitmap_body_2	x
+block_scale_bitmap_body_3	y
+block_scale_bitmap_head	scale image from path
+block_set_at_list_map_body_1	value
+block_set_at_list_map_body_2	at
+block_set_at_list_map_body_3	to
+block_set_at_list_map_head	set key
+block_set_bitmap_brightness_body_1	to path
+block_set_bitmap_brightness_body_2	value
+block_set_bitmap_brightness_head	set image brightness from path
+block_set_bitmap_color_filter_body_1	to path
+block_set_bitmap_color_filter_body_2	color
+block_set_bitmap_color_filter_head	set image color filter from path
+block_set_bitmap_contrast_body_1	to path
+block_set_bitmap_contrast_body_2	value
+block_set_bitmap_contrast_head	set image contrast from path
+block_set_hint_body_1	set hint text to
+block_set_hint_text_color_body_1	set hint color to
+block_set_image_file_path_body_1	set image from file path
+block_set_image_url_body_1	set image from url
+block_set_title_head	Activity set title
+block_set_typeface_body_2	with style
+block_set_var_bool_body_1	to
+block_set_var_bool_head	set
+block_set_var_int_body_1	to
+block_set_var_int_head	set
+block_set_var_str_body_1	to
+block_set_var_str_head	set
+block_skew_bitmap_body_1	to path
+block_skew_bitmap_body_2	x
+block_skew_bitmap_body_3	y
+block_skew_bitmap_head	skew image from path
+block_smaller_body_1	&lt;
+block_soundpool_create_body_1	create max stream count
+block_soundpool_load_body_1	load
+block_soundpool_load_head	SoundID :
+block_soundpool_stream_play_body_1	play Sound ID
+block_soundpool_stream_play_body_2	1 +
+block_soundpool_stream_play_head	StreamID :
+block_soundpool_stream_play_tail	times
+block_soundpool_stream_stop_body_1	stop stream ID
+block_speechtotext_shutdown_tail	shutdown
+block_speechtotext_start_listening_tail	start listening
+block_speechtotext_stop_listening_tail	stop listening
+block_str_to_list_map_body_1	to
+block_str_to_list_map_head	JSON
+block_str_to_map_body_1	to
+block_str_to_map_head	JSON
+block_string_contains_body_1	contains
+block_string_equals_body_1	equals
+block_string_index_body_1	of
+block_string_index_head	index
+block_string_join_body_1	and
+block_string_join_head	join
+block_string_last_index_body_1	of
+block_string_last_index_head	last index
+block_string_length_head	length of
+block_string_replace_all_body_1	replace all RegEx
+block_string_replace_all_body_2	with
+block_string_replace_body_1	replace all
+block_string_replace_body_2	with
+block_string_replace_first_body_1	replace first RegEx
+block_string_replace_first_body_2	with
+block_string_sub_body_1	substring
+block_string_sub_body_2	to
+block_texttospeech_is_speaking_tail	is speaking
+block_texttospeech_set_pitch_body_1	set pitch
+block_texttospeech_set_speech_rate_body_1	set speech rate
+block_texttospeech_shutdown_tail	shutdown
+block_texttospeech_speak_body_1	set speak
+block_texttospeech_stop_tail	stop
+block_timer_after_body_1	after
+block_timer_after_tail	ms
+block_timer_cancel_tail	cancel
+block_timer_every_body_1	after
+block_timer_every_body_2	ms for every
+block_timer_every_tail	ms
+block_times_body_1	*
+block_to_string_tail	without decimal
+block_to_string_with_decimal_tail	with decimal
+block_trim_head	trim
+block_true_head	true
+block_vibrator_action_body_1	vibrate for
+block_vibrator_action_tail	ms
+block_view_on_click_head	When
+block_view_on_click_tail	clicked
+collection_duplicated_name	Duplicate file name in my collection
+collection_failed_to_copy	Failed to save to my collection
+collection_no_exist_file	File does not exist
+color_editor_delete_color	Delete color
+common_error_activity_not_found	Activity not found
+common_error_an_error_occurred	An error occurred!
+common_error_failed_to_connect_server	Failed to connect to the server
+common_error_failed_to_save	Failed to save
+common_error_unknown	Unknown error! Please contact the administrator
+common_google_play_services_unknown_issue	%1$s is having trouble with Google Play services. Please try again.
+common_message_no_item_delete	There are no items to delete
+common_message_check_network	Please check your internet connection
+common_message_complete_delete	Delete complete
+common_message_complete_reset	Reset complete
+common_message_complete_save	Save complete
+common_message_confirm	Are you sure?
+common_message_insufficient_storage_space	"There is not enough space available in the storage.\nPlease make room and try again"
+common_message_insufficient_storage_space_title	Insufficient storage space

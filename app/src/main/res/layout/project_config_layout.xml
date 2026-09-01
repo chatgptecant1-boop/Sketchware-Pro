@@ -16,7 +16,7 @@
         android:layout_marginHorizontal="24dp"
         android:layout_marginBottom="16dp"
         android:gravity="center"
-        android:text="Build Settings" />
+        android:text="تنظیمات بیلد" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_android_jar"
@@ -68,7 +68,7 @@
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:text="Java version"
+        android:text="نسخه Java"
         android:textAppearance="?attr/textAppearanceBodyLargeEmphasized" />
 
     <RadioGroup
@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:text="Hide warnings in error log"
+            android:text="مخفی‌کردن هشدارها در لاگ خطا"
             android:textAppearance="?attr/textAppearanceBodyMedium" />
 
         <CheckBox
@@ -127,7 +127,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:text="Don't include http-legacy-28.dex"
+            android:text="شامل نکردن http-legacy-28.dex"
             android:textAppearance="?attr/textAppearanceBodyMedium" />
 
         <CheckBox
@@ -158,7 +158,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:text="Enable debug logcat logs viewable in Logcat Reader. Not enabled in exported AABs/APKs."
+            android:text="لاگ دیباگ قابل‌مشاهده در Logcat Reader فعال می‌شود. در AAB/APK خروجی فعال نیست."
             android:textAppearance="?attr/textAppearanceBodyMedium" />
 
         <CheckBox

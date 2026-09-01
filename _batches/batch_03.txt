@@ -1,0 +1,200 @@
+design_library_admob_setting_step2_desc	First, you need to create Ad Units inside the AdMob console. Add the created ad units manually or by linking your AdMob account.
+design_library_admob_setting_step2_title	Add Ad Units
+design_library_admob_setting_step3_desc	Assign Ad Unit IDs to the Banner and Interstitial ads.
+design_library_admob_setting_step3_title	Assign Ad Unit IDs
+design_library_admob_setting_step4_desc	If you test AdMob without adding your device ID, your AdMob account may be banned. Please add your device ID.
+design_library_admob_setting_step4_title	Configure Test Devices
+design_library_admob_setting_step5_desc	Please review the information below. If they are all correct, click on \"Save\".
+design_library_admob_setting_step5_title	Review Information
+design_library_admob_title_ad_name	Ad Name
+design_library_admob_title_ad_unit_id	Ad Unit ID
+design_library_admob_title_admob_manager	AdMob Manager
+design_library_admob_title_app_id	App ID
+design_library_admob_title_banner	Banner AD
+design_library_admob_title_interstitial	Interstitial AD
+design_library_admob_widget_setup_first	In order to use this widget, you have to setup the settings in the Library Manager first.
+design_library_appcompat_description	Activating App Compat library will let you add Drawer Layout and Floating Action Button to the Activities.
+design_library_material_3_description	Enabling Material 3 will enable the latest Material You design principles in your app, providing a more modern and visually appealing interface with customizable components and advanced theming options.
+design_library_material_3_enable_warning	Please note that enabling this library may have an impact on the overall design and appearance of the app, particularly if it’s an older project. It’s recommended to verify the changes and ensure compatibility with your current setup before activation.
+design_library_material_3_theme_mode_description	\nChoosing a theme mode lets you personalize the app\'s appearance, notes:\n\n1. Selecting a `DayNight` theme for an adaptive experience that automatically switches between `Light` and `Dark` based on system settings\n\n2. This setting also affects the EditorView, eg: with DayNight enabled, the editor colors will follow the system\'s theme and switch between light and dark accordingly.\n
+design_library_dynamic_colors_description	Enabling Dynamic Colors allows your app to adapt its color scheme based on the user\'s system preferences, creating a seamless and personalized experience that reflects the user\'s chosen theme and appearance.
+design_library_title_material3	"Material3 Manager"
+design_library_appcompat_need_firebase_disable	You can not disable the AppCompat Library when Firebase is in use.
+design_library_appcompat_need_m3_disable	You can not disable the AppCompat Library when Material3 and Dynamic Colors is in use.
+design_library_button_import_from_other_project	Import from the other project
+design_library_description_admob	Use Google AdMob
+design_library_description_appcompat_and_design	Drawer Layout, Floating Action Button
+design_library_description_firebase	Use Firebase Database and Authentication
+design_library_description_google_map	Use Google Map
+design_library_firebase_button_goto_firebase_authentication	Go To Firebase Authentication
+design_library_firebase_button_goto_firebase_console	Go To Firebase Console
+design_library_firebase_button_goto_firebase_database	Go To Firebase Database
+design_library_firebase_button_goto_firebase_storage	Go To Firebase Storage
+design_library_firebase_description	If enabled, you will be able to use Firebase DB, Auth, and Storage Components.
+design_library_firebase_description_about_firebase	"Firebase Realtime Database is Google's cloud-based NoSQL database, where you can save and sync data realtime."
+design_library_firebase_description_settings	Project ID, App ID, and API Key must match the values inside the Firebase Console.
+design_library_firebase_description_storage	Storage Bucket URL must match the value in Firebase Storage for it to work properly.
+design_library_firebase_dialog_description_confirm_uncheck_firebase	If you uncheck the option for Firebase DB, existing Firebase components will be deleted. Are you sure you want to continue?
+design_library_firebase_guide_path_example	"Path starting from the root.\nex)\"users/username\""
+design_library_firebase_guide_setup_first	In order to use this component, you have to setup the API Key in the Firebase Settings first.
+design_library_firebase_hint_enter_data_location	Enter the data location
+design_library_firebase_hint_enter_firebase_api_key	Enter Firebase API Key
+design_library_firebase_hint_enter_firebase_app_id	Enter Firebase APP ID
+design_library_firebase_hint_enter_firebase_project_id	Enter Full Firebase Database URL
+design_library_firebase_hint_enter_firebase_storage_bucket_url	Enter Firebase Storage Bucket URL
+design_library_firebase_message_id_fill_out	Full Database URL, App ID, and API Key must be filled out.
+design_library_firebase_message_need_compat	AppCompat Library will be enabled since Firebase requires AppCompat as a dependency.
+design_library_firebase_message_not_input_text	Please provide all necessary information
+design_library_firebase_setting_step1_desc	Enter Full Database URL, Web API Key, and App ID
+design_library_firebase_setting_step1_title	Project Settings
+design_library_firebase_setting_step2_desc	Enter the Firebase Storage URL
+design_library_firebase_setting_step2_title	Storage URL Settings
+design_library_firebase_setting_step3_desc	Please review the information below. If they are all correct, click on \"Save\"..
+design_library_firebase_setting_step3_title	Settings Review
+design_library_firebase_title_api_key	API Key
+design_library_firebase_title_app_id	App ID
+design_library_firebase_title_data_location	Data location
+design_library_firebase_title_firebase	Firebase
+design_library_firebase_title_firebase_manager	Firebase Manager
+design_library_firebase_title_firebase_settings	Firebase Settings
+design_library_firebase_title_firebase_setup_tutorial	Firebase Setup Tutorial
+design_library_firebase_title_project_id	Full Database URL (e.g. sk-pro-default-rtdb.firebaseio.com)
+design_library_firebase_title_storage_bucket_url	Storage Bucket URL
+design_library_google_map_button_open_doc	Open Documentation
+design_library_google_map_title_api_key	API KEY
+design_library_google_maps_description_operate_normally	"Google Map View can be operated.\nYou must enter the API key to operate the map normally."
+design_library_guide_setup_first	In order to use this component, you have to setup the settings in the Library Manager first.
+design_library_message_confirm_uncheck_appcompat_and_design	The existing Drawer Layout and FAB will be deleted. Would you like to continue?
+design_library_message_confirm_uncheck_google_map	The existing MapView will be deleted. Would you like to continue?
+design_library_message_slow_down_compilation_time	Including the library may slow down the compilation time on certain devices.
+design_library_settings_guide_tutorial	"Please refer to the tutorial if it's your first time setting up."
+design_library_settings_title_enabled	Enabled
+design_library_title_appcompat_and_design	AppCompat and Design
+design_library_title_select_project	Select Project
+design_manager_block_detail_actionbar_title	Block Details
+design_manager_block_hint_enter_block_name	Enter block name
+design_manager_change_name_button	CHANGE NAME
+design_manager_font_description_example_sentence	\n    An example sentence for preview\n    预览 的例句\n    عرض مثالي للتوضيح\n    プレビューの例文\n    Пример предложения для предварительного просмотра\n    
+design_manager_font_description_guide_add_font	Add font files with .ttf extension
+design_manager_font_description_look_like_this	My new font would look like this!
+design_manager_font_hint_enter_font_name	Enter font name
+design_manager_font_message_not_support_font	If your device does not support the font above, the text in the parentheses may fail to display
+design_manager_font_title_add_font	Add Font
+design_manager_font_title_apply_same_naming	Apply same naming style to other available fonts
+design_manager_font_title_edit_font	Edit Font
+design_manager_font_title_edit_font_name	Edit Font Name
+design_manager_icon_actionbar_title	Import Icon
+design_manager_icon_hint_enter_icon_name	Enter icon name
+design_manager_image_description_guide_add_image	"If you add an image here\n You can use it as an Icon or ImageView"
+design_manager_image_hint_enter_image_name	Enter image name
+design_manager_image_import_icon_button_black	BLACK
+design_manager_image_import_icon_button_grey	GREY
+design_manager_image_import_icon_button_white	WHITE
+design_manager_image_title_add_image	Add Image
+design_manager_image_title_apply_same_naming	Apply same naming style to other available images
+design_manager_image_title_edit_image	Edit Image
+design_manager_image_title_edit_image_name	Edit Image Name
+design_manager_message_add_complete	Add complete
+design_manager_message_collection_name_conflict	There seems to be a naming conflict. Please make sure there are no duplicate names.
+design_manager_message_collection_name_no_conflict	There were no naming conflicts
+design_manager_message_edit_complete	Edit complete
+design_manager_message_invalid_font	Selected font is invalid
+design_manager_message_no_font_selected	You have to select a new font
+design_manager_message_import_complete	Import complete
+design_manager_sound_description_guide_add_sound	"Add background music\n or sound effects here"
+design_manager_sound_hint_enter_sound_name	Enter sound name
+design_manager_sound_title_add_sound	Add Sound
+design_manager_sound_title_apply_same_naming	Apply same naming style to other available sounds
+design_manager_sound_title_edit_sound	Edit Sound
+design_manager_sound_title_edit_sound_name	Edit sound name
+design_manager_tab_title_my_collection	My collection
+design_manager_tab_title_this_project	This project
+design_manager_title_add_to_collection	Add to My Collection
+design_manager_view_description_guide_create_activity	To create a new Activity, add it here
+design_manager_view_description_guide_create_custom_view	Create a new Custom View here
+design_manager_view_description_guide_use_custom_view	Custom View can be used to change the way items are displayed inside the ListView or the Spinner
+design_manager_view_hint_enter_view_name	Enter view name
+design_manager_view_message_no_view	No views to display
+design_manager_view_message_slow_down	Including the drawer or the FAB may slow down the compilation time on certain devices.
+design_manager_view_title_activity_name	Activity name:
+design_manager_view_title_activity_preset	Activity preset
+design_manager_view_title_add_custom_view	New custom view
+design_manager_view_title_add_activity	New activity
+design_manager_view_title_add_view	New view
+design_manager_view_title_edit_activity	Edit activity
+design_manager_view_title_edit_view	Edit view
+design_manager_view_title_empty_activity	Empty activity
+design_manager_view_title_keyboad_settings	Keyboard settings
+design_manager_view_title_screen_orientation	Screen orientation
+design_manager_view_title_view_name	View name:
+design_manager_widget_hint_enter_widget_name	Enter widget name
+design_manager_widget_title_actionbar_title	Widget details
+design_option_menu_title_save_project	Save project
+design_property_recent_message_nodata	Recently used properties will be displayed
+design_quit_button_save_and_exit	Save &amp; exit
+design_quit_message_confirm_save	Do you want to save your changes before quitting?
+design_quit_title_exit_projet	Exit project
+design_restore_data_message_confirm	Something went wrong and previous data was not saved. Would you like to recover it?
+design_restore_data_title	Restore project data
+design_run_message_invalid_forever_block	Stop block does not exist in forever block
+design_run_message_usage_break_block	Break block can only be used inside the repeat or forever blocks
+design_run_title_ready_to_build	Getting ready to build
+design_cancel_build_title	Cancel build?
+design_cancel_build_desc	Are you sure you want to cancel building? This may take some time.
+design_cancel_build_btn_stop	Stop building
+design_cancel_build_btn_continue	Continue building
+design_tab_title_component	Component
+design_tab_title_event	Event
+design_tab_title_view	View
+developer_tools_component_add_var	Additional Variables
+developer_tools_component_build_class	Build Class
+developer_tools_component_define_add_var	Define Additional Variables
+developer_tools_component_description	Description
+developer_tools_component_description_guide_add_component	"If you add a component here\n You can use it in Logic Editor"
+developer_tools_component_url	Document URL
+developer_tools_component_id	Component ID
+developer_tools_component_icon	Component Icon
+developer_tools_component_imports	Imports
+developer_tools_component_manager	Component manager
+developer_tools_component_message_export	Are you sure you want to export %s?
+developer_tools_component_name	Component Name
+developer_tools_component_success_message_export	Successfully exported component to:\n%s
+developer_tools_component_type_class	Type Class
+developer_tools_component_type_name	Type Name
+developer_tools_component_var_type_name	Variable Type Name
+event_context_menu_title	Event Menu
+event_context_menu_title_delete_event	Delete Event
+event_context_menu_title_delete_more_block	Delete moreBlock
+event_context_menu_title_initialize_logic	Initialize logic
+event_dialog_confirm_delete_component	Are you sure you want to delete the selected component?
+event_dialog_confirm_delete_logic	"All logic data of the selected event will be lost\nDo you want to continue?"
+event_dialog_confirm_delete_moreblock	Are you sure you want to delete this moreBlock?
+event_dialog_confirm_reset_logic	Are you sure you want to reset this logic?
+event_initialize	On activity create
+event_message_new_event	New event added
+event_message_new_events	New events added
+event_message_no_avail_events	No available events to add
+event_message_no_events	No events to display
+event_onbackpressed	On back button press
+event_ondestroy	On activity destroyed
+event_onpause	On activity pause
+event_onpostcreated	On activity start-up complete
+event_onresume	On activity resume
+event_onstart	On activity becoming visible
+event_onstop	On activity no longer visible
+event_title_add_new_component	Add new component
+event_title_add_new_event	Add new event
+event_title_edit_component	Edit component
+ga_trackingId	UA-80718117-1
+invalid_component	Invalid component
+invalid_icon_id	Invalid icon ID
+invalid_required_fields	Some required fields are empty
+invalid_value_format	Invalid format
+invalid_value_max_lenth	You can use maximum %d letters
+invalid_value_min_lenth	Use at least %d letter(s)
+invalid_value_rule_1	Only use letters(a-z), numbers and Special characters(.),(@)
+invalid_value_rule_2	Only use letters(a-z), numbers and Special characters(.)
+invalid_value_rule_3	Only use letters(a-z), numbers and Special characters(_)
+invalid_value_rule_4	Only use small letters(a-z), numbers and special character(_)
+invalid_value_rule_5	"Special letters(&amp;, &lt;, >, \", ') are not allowed"
+invalid_value_rule_6	Spaces aren\'t allowed

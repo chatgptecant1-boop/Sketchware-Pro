@@ -212,7 +212,7 @@
                             android:layout_marginTop="1dp"
                             android:layout_marginBottom="2dp"
                             android:layout_toEndOf="@+id/tipIcon"
-                            android:text="Important note"
+                            android:text="نکته مهم"
                             android:textColor="?attr/colorPrimary"
                             android:textSize="14sp"
                             android:textStyle="bold" />
@@ -240,7 +240,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
-                        android:text="Type"
+                        android:text="نوع"
                         android:textColor="?colorPrimary" />
 
                     <HorizontalScrollView
@@ -301,7 +301,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
-                        android:text="Screen orientation"
+                        android:text="جهت صفحه"
                         android:textColor="?colorPrimary" />
 
                     <com.google.android.material.button.MaterialButtonToggleGroup
@@ -353,7 +353,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
-                        android:text="Keyboard settings"
+                        android:text="تنظیمات کیبورد"
                         android:textColor="?colorPrimary" />
 
                     <com.google.android.material.button.MaterialButtonToggleGroup
@@ -412,7 +412,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_weight="1"
-            android:text="Cancel" />
+            android:text="انصراف" />
 
         <Button
             android:id="@+id/btn_save"
@@ -420,7 +420,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Save" />
+            android:text="ذخیره" />
 
     </LinearLayout>
 </RelativeLayout>

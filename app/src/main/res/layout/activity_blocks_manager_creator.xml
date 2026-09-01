@@ -49,7 +49,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:text="Properties"
+                        android:text="ویژگی‌ها"
                         android:textAppearance="?attr/textAppearanceBodyLarge"
                         android:textStyle="bold" />
 
@@ -130,7 +130,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:text="Design"
+                        android:text="طراحی"
                         android:textAppearance="?attr/textAppearanceBodyLarge"
                         android:textStyle="bold" />
 
@@ -180,7 +180,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="16dp"
-                        android:text="Parameters"
+                        android:text="پارامترها"
                         android:textAppearance="?attr/textAppearanceBodyLarge"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -239,7 +239,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="16dp"
-                        android:text="Block Preview"
+                        android:text="پیش‌نمایش بلوک"
                         android:textAppearance="?attr/textAppearanceBodyLarge"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -274,7 +274,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:text="Block import (e.g., android.view.View)"
+                        android:text="import بلوک (مثلاً android.view.View)"
                         android:textAppearance="?attr/textAppearanceBodyLarge"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -300,7 +300,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="Block embedded code"
+                        android:text="کد تعبیه‌شده بلوک"
                         android:textAppearance="?attr/textAppearanceBodyLarge"
                         android:textSize="16sp"
                         android:textStyle="bold" />

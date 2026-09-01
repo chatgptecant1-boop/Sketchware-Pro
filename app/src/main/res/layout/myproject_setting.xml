@@ -285,7 +285,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:gravity="center"
-                            android:text="Version code"
+                            android:text="کد نسخه"
                             android:textSize="12sp" />
                     </LinearLayout>
 
@@ -326,7 +326,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:gravity="center"
-                            android:text="Version name"
+                            android:text="نام نسخه"
                             android:textSize="12sp" />
                     </LinearLayout>
                 </LinearLayout>

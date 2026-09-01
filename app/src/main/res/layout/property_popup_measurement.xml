@@ -31,7 +31,7 @@
             android:id="@+id/rb_directinput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Custom value"
+            android:text="مقدار سفارشی"
             android:textSize="15sp" />
     </RadioGroup>
 
