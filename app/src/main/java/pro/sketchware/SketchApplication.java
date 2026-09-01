@@ -7,6 +7,8 @@ import android.os.Process;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.core.os.LocaleListCompat;
 
 import com.besome.sketch.tools.CollectErrorActivity;
 
@@ -22,6 +24,8 @@ public class SketchApplication extends Application {
     @Override
     public void onCreate() {
         mApplicationContext = getApplicationContext();
+        // Force Persian UI app-wide, regardless of system language
+        AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("fa"));
         Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
             @Override
             public void uncaughtException(@NonNull Thread thread, @NonNull Throwable throwable) {

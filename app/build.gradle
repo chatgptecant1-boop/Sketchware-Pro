@@ -1,10 +1,12 @@
 def secrets = System.getenv("GOOGLE_SERVICES_JSON")
-def analyticsEnabled = secrets != null
 
 apply plugin: "com.android.application"
 apply plugin: "kotlin-android"
 
-if (analyticsEnabled) {
+def hasRealSecrets = secrets != null
+def hasLocalConfig = file("google-services.json").exists()
+
+if (hasRealSecrets || hasLocalConfig) {
     apply plugin: "com.google.gms.google-services"
     apply plugin: "com.google.firebase.crashlytics"
 }
@@ -151,7 +153,7 @@ dependencies {
     }
 
     // Analytics and Crashlytics
-    if (analyticsEnabled) {
+    if (hasRealSecrets) {
         new File("$projectDir/google-services.json").text = secrets
     }
     implementation platform("com.google.firebase:firebase-bom:34.3.0")
