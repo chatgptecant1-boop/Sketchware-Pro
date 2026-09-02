@@ -56,10 +56,10 @@ public class ExtraBlocks {
         arrayList.add(addBlock("fileGetPath", "s", "", "%s.getPath()", "#a1887f", "گرفتن مسیر %m.File"));
         arrayList.add(addBlock("fileIsHidden", "b", "", "%s.isHidden()", "#a1887f", "مخفی است؟ %m.File"));
         // Basically Command Block
-        arrayList.add(addBlock("addPermission", " ", ", ", "#493F5A", "بلوک دستوری مجوز: افزودن %m.Permission"));
-        arrayList.add(addBlock("removePermission", " ", ", ", "#493F5A", "بلوک دستوری مجوز: حذف %m.Permission"));
-        arrayList.add(addBlock("addCustomVariable", " ", ", ", "#493F5A", "بلوک متغیر سفارشی: افزودن متغیر %s"));
-        arrayList.add(addBlock("addInitializer", " ", ", ", "#493F5A", "بلوک مقدارده اولیه: افزودن %s"));
+        arrayList.add(addBlock("addPermission", " ", "", "", "#493F5A", "بلوک دستوری مجوز: افزودن %m.Permission"));
+        arrayList.add(addBlock("removePermission", " ", "", "", "#493F5A", "بلوک دستوری مجوز: حذف %m.Permission"));
+        arrayList.add(addBlock("addCustomVariable", " ", "", "", "#493F5A", "بلوک متغیر سفارشی: افزودن متغیر %s"));
+        arrayList.add(addBlock("addInitializer", " ", "", "", "#493F5A", "بلوک مقدارده اولیه: افزودن %s"));
         //OtpView Blocks
         arrayList.add(addBlock("otpViewSetFieldCount", " ", "", "%1$s.setFieldCount(%2$s);", "#4a6cd4", "تنظیم تعداد خانه‌های %m.otpview به %d"));
         arrayList.add(addBlock("otpViewSetOTPText", " ", "", "%1$s.setOTPText(%2$s);", "#4a6cd4", "تنظیم متن %m.otpview به %s"));
