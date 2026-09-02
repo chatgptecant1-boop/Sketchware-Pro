@@ -58,7 +58,7 @@
     <string name="block_category_file">فایل</string>
     <string name="block_category_list">لیست</string>
     <string name="block_category_math">ریاضی</string>
-    <string name="block_category_moreblock">More Block</string>
+    <string name="block_category_moreblock">موربلاک</string>
     <string name="block_category_operator">عملگر</string>
     <string name="block_category_var">متغیر</string>
     <string name="block_category_view_func">نما</string>
@@ -858,7 +858,7 @@
     <string name="event_context_menu_title_delete_event">حذف رویداد</string>
     <string name="event_context_menu_title_delete_more_block">حذف moreBlock</string>
     <string name="event_context_menu_title_initialize_logic">مقداردهی اولیه منطق</string>
-    <string name="event_definefunc">MoreBlock</string>
+    <string name="event_definefunc">موربلاک</string>
     <string name="event_dialog_confirm_delete_component">مطمئنید می‌خواهید کامپوننت انتخاب‌شده را حذف کنید؟</string>
     <string name="event_dialog_confirm_delete_logic">همه داده‌های منطق این رویداد از بین می‌رود\nادامه می‌دهید؟</string>
     <string name="event_dialog_confirm_delete_moreblock">مطمئنید می‌خواهید این moreBlock را حذف کنید؟</string>
