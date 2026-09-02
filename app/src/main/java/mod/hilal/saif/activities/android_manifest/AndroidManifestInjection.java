@@ -101,7 +101,7 @@ public class AndroidManifestInjection extends BaseAppCompatActivity {
         basicCategoryView.setTitle(null);
         options.add(basicCategoryView);
 
-        basicCategoryView.addLibraryItem(createOption("Application", "Default properties for the app", R.drawable.ic_mtrl_settings_applications, v -> {
+        basicCategoryView.addLibraryItem(createOption("برنامه", "ویژگی‌های پیش‌فرض برنامه", R.drawable.ic_mtrl_settings_applications, v -> {
             Intent intent = new Intent();
             intent.setClass(getApplicationContext(), AndroidManifestInjectionDetails.class);
             intent.putExtra("sc_id", sc_id);
@@ -109,7 +109,7 @@ public class AndroidManifestInjection extends BaseAppCompatActivity {
             intent.putExtra("type", "application");
             startActivity(intent);
         }), true);
-        basicCategoryView.addLibraryItem(createOption("Permissions", "Add custom Permissions to the app", R.drawable.ic_mtrl_shield_check, v -> {
+        basicCategoryView.addLibraryItem(createOption("مجوزها", "افزودن مجوزهای سفارشی به برنامه", R.drawable.ic_mtrl_shield_check, v -> {
             Intent intent = new Intent();
             intent.setClass(getApplicationContext(), AndroidManifestInjectionDetails.class);
             intent.putExtra("sc_id", sc_id);
@@ -117,8 +117,8 @@ public class AndroidManifestInjection extends BaseAppCompatActivity {
             intent.putExtra("type", "permission");
             startActivity(intent);
         }), true);
-        basicCategoryView.addLibraryItem(createOption("Launcher Activity", "Change the default Launcher Activity", R.drawable.ic_mtrl_login, v -> showLauncherActDialog(AndroidManifestInjector.getLauncherActivity(sc_id))), true);
-        basicCategoryView.addLibraryItem(createOption("All Activities", "Add attributes for all Activities", R.drawable.ic_mtrl_frame_source, v -> {
+        basicCategoryView.addLibraryItem(createOption("Launcher Activity", "تغییر اکتیویتی لانچر پیش‌فرض", R.drawable.ic_mtrl_login, v -> showLauncherActDialog(AndroidManifestInjector.getLauncherActivity(sc_id))), true);
+        basicCategoryView.addLibraryItem(createOption("All Activities", "افزودن ویژگی برای همه اکتیویتی‌ها", R.drawable.ic_mtrl_frame_source, v -> {
             Intent intent = new Intent();
             intent.setClass(getApplicationContext(), AndroidManifestInjectionDetails.class);
             intent.putExtra("sc_id", sc_id);
@@ -126,7 +126,7 @@ public class AndroidManifestInjection extends BaseAppCompatActivity {
             intent.putExtra("type", "all");
             startActivity(intent);
         }), true);
-        basicCategoryView.addLibraryItem(createOption("App Components", "Add extra components", R.drawable.ic_mtrl_component, v -> showAppComponentDialog()), false);
+        basicCategoryView.addLibraryItem(createOption("App Components", "افزودن کامپوننت‌های اضافی", R.drawable.ic_mtrl_component, v -> showAppComponentDialog()), false);
 
         options.forEach(binding.cards::addView);
     }
@@ -165,7 +165,7 @@ public class AndroidManifestInjection extends BaseAppCompatActivity {
         dialog.setPositiveButton(Helper.getResString(R.string.common_word_save), (v, which) -> {
             if (!Helper.getText(activity_name_input).trim().isEmpty()) {
                 AndroidManifestInjector.setLauncherActivity(sc_id, Helper.getText(activity_name_input));
-                SketchwareUtil.toast("Saved");
+                SketchwareUtil.toast("ذخیره شد");
                 v.dismiss();
             } else {
                 activity_name_input.setError("Enter activity name");
@@ -192,7 +192,7 @@ public class AndroidManifestInjection extends BaseAppCompatActivity {
                 SketchwareUtil.toast("اکتیویتی جدید اضافه شد");
                 v.dismiss();
             } else {
-                activity_name_input.setError("Enter activity name");
+                activity_name_input.setError("نام اکتیویتی را وارد کنید");
             }
         });
         dialog.setNegativeButton(Helper.getResString(R.string.common_word_cancel), null);

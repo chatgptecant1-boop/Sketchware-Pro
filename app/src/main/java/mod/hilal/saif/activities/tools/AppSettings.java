@@ -96,22 +96,22 @@ public class AppSettings extends BaseAppCompatActivity {
         managersCategory.setTitle("مدیریت‌ها");
         preferences.add(managersCategory);
 
-        managersCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_block, "Block manager", "Manage your own blocks to use in Logic Editor", new ActivityLauncher(new Intent(getApplicationContext(), BlocksManager.class))), true);
-        managersCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_pull_down, "Block selector menu manager", "Manage your own block selector menus", openSettingsActivity(SettingsActivity.BLOCK_SELECTOR_MANAGER_FRAGMENT)), true);
-        managersCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_component, "Component manager", "Manage your own components", new ActivityLauncher(new Intent(getApplicationContext(), ManageCustomComponentActivity.class))), true);
-        managersCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_list, "Event manager", "Manage your own events", openSettingsActivity(SettingsActivity.EVENTS_MANAGER_FRAGMENT)), true);
-        managersCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_box, "Local library manager", "Manage and download local libraries", new ActivityLauncher(new Intent(getApplicationContext(), ManageLocalLibraryActivity.class), new Pair<>("sc_id", "system"))), true);
+        managersCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_block, "مدیریت بلوک‌ها", "مدیریت بلوک‌های شخصی برای استفاده در ویرایشگر منطق", new ActivityLauncher(new Intent(getApplicationContext(), BlocksManager.class))), true);
+        managersCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_pull_down, "مدیریت منوی انتخابگر بلوک‌ها", "مدیریت منوهای انتخابگر بلوک شخصی", openSettingsActivity(SettingsActivity.BLOCK_SELECTOR_MANAGER_FRAGMENT)), true);
+        managersCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_component, "مدیریت کامپوننت‌ها", "مدیریت کامپوننت‌های شخصی", new ActivityLauncher(new Intent(getApplicationContext(), ManageCustomComponentActivity.class))), true);
+        managersCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_list, "مدیریت رویدادها", "مدیریت رویدادهای شخصی", openSettingsActivity(SettingsActivity.EVENTS_MANAGER_FRAGMENT)), true);
+        managersCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_box, "مدیریت کتابخانه محلی", "مدیریت و دانلود کتابخانه‌های محلی", new ActivityLauncher(new Intent(getApplicationContext(), ManageLocalLibraryActivity.class), new Pair<>("sc_id", "system"))), true);
         managersCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_article, Helper.getResString(R.string.design_drawer_menu_title_logcat_reader), Helper.getResString(R.string.design_drawer_menu_subtitle_logcat_reader), new ActivityLauncher(new Intent(getApplicationContext(), LogReaderActivity.class))), false);
 
         LibraryCategoryView generalCategory = new LibraryCategoryView(this);
         generalCategory.setTitle("همگانی");
         preferences.add(generalCategory);
 
-        generalCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_settings_applications, "App settings", "Change general app settings", new ActivityLauncher(new Intent(getApplicationContext(), ConfigActivity.class))), true);
+        generalCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_settings_applications, "تنظیمات برنامه", "تغییر تنظیمات کلی برنامه", new ActivityLauncher(new Intent(getApplicationContext(), ConfigActivity.class))), true);
         generalCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_palette, Helper.getResString(R.string.settings_appearance), Helper.getResString(R.string.settings_appearance_description), openSettingsActivity(SettingsActivity.SETTINGS_APPEARANCE_FRAGMENT)), true);
-        generalCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_folder, "Open working directory", "Open Sketchware Pro's directory and edit files in it", v -> openWorkingDirectory()), true);
-        generalCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_apk_document, "Sign an APK file with testkey", "Sign an already existing APK file with testkey and signature schemes up to V4", v -> signApkFileDialog()), true);
-        generalCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_settings, Helper.getResString(R.string.main_drawer_title_system_settings), "Auto-save and vibrations", new ActivityLauncher(new Intent(getApplicationContext(), SystemSettingActivity.class))), false);
+        generalCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_folder, "باز کردن پوشه کاری", "باز کردن پوشه کاری Sketchware Pro و ویرایش فایل‌ها", v -> openWorkingDirectory()), true);
+        generalCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_apk_document, "امضای فایل APK با testkey", "امضای فایل APK موجود با testkey و طرح‌های امضا تا V4", v -> signApkFileDialog()), true);
+        generalCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_settings, Helper.getResString(R.string.main_drawer_title_system_settings), "ذخیره خودکار و لرزش", new ActivityLauncher(new Intent(getApplicationContext(), SystemSettingActivity.class))), false);
 
         preferences.forEach(content::addView);
     }
@@ -231,7 +231,7 @@ public class AppSettings extends BaseAppCompatActivity {
                 MaterialAlertDialogBuilder confirmOverwrite = new MaterialAlertDialogBuilder(this);
                 confirmOverwrite.setIcon(R.drawable.color_save_as_new_96);
                 confirmOverwrite.setTitle("فایل موجود است");
-                confirmOverwrite.setMessage("یک APK با نام " + output_apk_file_name + " already exists at /sketchware/signed_apk/.  Overwrite it?");
+                confirmOverwrite.setMessage("یک APK با نام " + output_apk_file_name + " از قبل در /sketchware/signed_apk/ وجود دارد. بازنویسی شود؟");
 
                 confirmOverwrite.setNegativeButton(Helper.getResString(R.string.common_word_cancel), null);
                 confirmOverwrite.setPositiveButton("بازنویسی", (view, which1) -> {

@@ -1198,19 +1198,19 @@ public class DesignActivity extends BaseAppCompatActivity implements View.OnClic
                     if (isMissingDirectory) {
                         dialog.setTitle("پوشه‌ای یافت نشد");
                         dialog.setMessage("پوشه‌ای مهم برای ساخت وجود ندارد. " +
-                                "Sketchware Pro can try creating " + e.getMissingFile().getAbsolutePath() +
-                                " if you'd like to.");
+                                "Sketchware Pro می‌تواند این را بسازد: " + e.getMissingFile().getAbsolutePath() +
+                                " اگر مایلید.");
                         dialog.setNeutralButton("ایجاد", (v, which) -> {
                             v.dismiss();
                             if (!e.getMissingFile().mkdirs()) {
-                                SketchwareUtil.toastError("Failed to create directory / directories!");
+                                SketchwareUtil.toastError("ساخت پوشه ناموفق بود!");
                             }
                         });
                     } else {
                         dialog.setTitle("فایلی یافت نشد");
                         dialog.setMessage("فایلی ضروری برای ساخت وجود ندارد. " +
-                                "Put the correct file back to " + e.getMissingFile().getAbsolutePath() +
-                                " and try building again.");
+                                "فایل درست را به این مسیر برگردانید: " + e.getMissingFile().getAbsolutePath() +
+                                " و دوباره ساخت را امتحان کنید.");
                     }
                     dialog.setPositiveButton("بستن", null);
                     dialog.show();
@@ -1339,7 +1339,7 @@ public class DesignActivity extends BaseAppCompatActivity implements View.OnClic
             btnRun.setIcon(ContextCompat.getDrawable(context, isRunning ? R.drawable.ic_mtrl_stop : R.drawable.ic_mtrl_run));
             btnRun.setIconTint(ColorStateList.valueOf(ThemeUtils.getColor(context, isRunning ? R.attr.colorOnErrorContainer : R.attr.colorSurfaceContainerLowest)));
             btnRun.setTextColor(ColorStateList.valueOf(ThemeUtils.getColor(context, isRunning ? R.attr.colorOnErrorContainer : R.attr.colorSurfaceContainerLowest)));
-            btnRun.setText(isRunning ? "Stop" : "Run");
+            btnRun.setText(isRunning ? "توقف" : "Run");
             btnOptions.setEnabled(!isRunning);
             progressContainer.setVisibility(isRunning ? View.VISIBLE : View.GONE);
         }

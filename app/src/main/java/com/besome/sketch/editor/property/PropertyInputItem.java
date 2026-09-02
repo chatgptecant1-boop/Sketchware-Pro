@@ -475,7 +475,7 @@ public class PropertyInputItem extends RelativeLayout implements View.OnClickLis
 
         PropertyPopupInputTextBinding binding = PropertyPopupInputTextBinding.inflate(LayoutInflater.from(getContext()));
 
-        binding.tiInput.setHint(String.format(Helper.getResString(R.string.property_enter_value), "widget ID"));
+        binding.tiInput.setHint(String.format(Helper.getResString(R.string.property_enter_value), "شناسه ویجت"));
 
         binding.edInput.setSingleLine();
         PropertyNameValidator validator = new PropertyNameValidator(context, binding.tiInput, uq.b, uq.a(), jC.a(sc_id).a(projectFileBean), value);

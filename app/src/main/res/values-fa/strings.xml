@@ -81,7 +81,7 @@
     <string name="block_dialog_dismiss_tail">بستن</string>
     <string name="block_dialog_neutral_button_body_1">دکمه خنثی</string>
     <string name="block_dialog_neutral_button_tail">کلیک شد</string>
-    <string name="block_dialog_ok_button_body_1">دکمه تأیید</string>
+    <string name="block_dialog_ok_button_body_1">دکمه تایید</string>
     <string name="block_dialog_ok_button_tail">کلیک شد</string>
     <string name="block_dialog_set_message_body_1">تنظیم پیام</string>
     <string name="block_dialog_set_title_body_1">تنظیم عنوان</string>
@@ -544,7 +544,7 @@
     <string name="common_word_moreblock">موربلاک</string>
     <string name="common_word_next">بعدی</string>
     <string name="common_word_no">خیر</string>
-    <string name="common_word_ok">تأیید</string>
+    <string name="common_word_ok">تایید</string>
     <string name="common_word_prev">قبلی</string>
     <string name="common_word_preview">پیش‌نمایش</string>
     <string name="common_word_private">خصوصی</string>
@@ -611,7 +611,7 @@
     <string name="component_description_soundpool">SoundPool برای پخش افکت‌های صوتی کوتاه استفاده می‌شود</string>
     <string name="component_description_speech_to_text">SpeechToText برای تبدیل گفتار به متن استفاده می‌شود</string>
     <string name="component_description_text_to_speech">TextToSpeech برای تبدیل متن به گفتار استفاده می‌شود</string>
-    <string name="component_description_timer">Timer برای تأخیر انداختن در انجام کارها استفاده می‌شود</string>
+    <string name="component_description_timer">Timer برای تاخیر انداختن در انجام کارها استفاده می‌شود</string>
     <string name="component_description_vibrator">Vibrator برای لرزاندن دستگاه استفاده می‌شود</string>
     <string name="component_file_hint_enter_file_name">نام فایل را وارد کنید</string>
     <string name="component_file_picker_hint_mime_type">نوع MIME را وارد کنید</string>
@@ -704,7 +704,7 @@
     <string name="design_library_admob_widget_setup_first">برای استفاده از این ویجت، ابتدا باید تنظیمات را در مدیریت کتابخانه انجام دهید.</string>
     <string name="design_library_appcompat_description">با فعال‌کردن کتابخانه AppCompat می‌توانید Drawer Layout و Floating Action Button به اکتیویتی‌ها اضافه کنید.</string>
     <string name="design_library_material_3_description">با فعال‌کردن Material 3، جدیدترین اصول طراحی Material You در برنامه شما اعمال می‌شود؛ رابط کاربری مدرن‌تر و جذاب‌تر با کامپوننت‌های قابل‌سفارشی‌سازی و گزینه‌های پیشرفته تم.</string>
-    <string name="design_library_material_3_enable_warning">توجه داشته باشید فعال‌کردن این کتابخانه ممکن است بر طراحی و ظاهر کلی برنامه تأثیر بگذارد، مخصوصاً اگر پروژه قدیمی باشد. توصیه می‌شود قبل از فعال‌سازی، تغییرات را بررسی و با پیکربندی فعلی سازگاری آن را مطمئن شوید.</string>
+    <string name="design_library_material_3_enable_warning">توجه داشته باشید فعال‌کردن این کتابخانه ممکن است بر طراحی و ظاهر کلی برنامه تاثیر بگذارد، مخصوصاً اگر پروژه قدیمی باشد. توصیه می‌شود قبل از فعال‌سازی، تغییرات را بررسی و با پیکربندی فعلی سازگاری آن را مطمئن شوید.</string>
     <string name="design_library_material_3_theme_mode_description">\nبا انتخاب حالت تم می‌توانید ظاهر برنامه را شخصی‌سازی کنید. نکات:\n\n۱. انتخاب تم `DayNight` برای تجربه تطبیقی که بر اساس تنظیمات سیستم بین `روشن` و `تاریک` به‌صورت خودکار جابجا می‌شود\n\n۲. این تنظیم روی EditorView هم اثر می‌گذارد؛ مثلاً با فعال‌بودن DayNight رنگ‌های ویرایشگر از تم سیستم پیروی کرده و بین روشن و تاریک جابجا می‌شوند.\n</string>
     <string name="design_library_dynamic_colors_description">با فعال‌کردن Dynamic Colors، طرح رنگی برنامه شما بر اساس تنظیمات سیستم کاربر تطبیق پیدا می‌کند و تجربه‌ای یکپارچه و شخصی‌سازی‌شده مطابق تم انتخابی کاربر ایجاد می‌شود.</string>
     <string name="design_library_title_material3">مدیریت Material3</string>
@@ -765,7 +765,7 @@
     <string name="design_manager_block_detail_actionbar_title">جزئیات بلوک</string>
     <string name="design_manager_block_hint_enter_block_name">نام بلوک را وارد کنید</string>
     <string name="design_manager_change_name_button">تغییر نام</string>
-    <string name="design_manager_font_description_example_sentence">\n    جمله‌ای برای پیش‌نمایش\n    预览 的例句\n    عرض مثالي للتوضيح\n    プレビューの例文\n    Пример предложения для предварительного просмотра\n    </string>
+    <string name="design_manager_font_description_example_sentence">\n    جمله‌ای برای پیش‌نمایش\n    预览 的例句\n    عرض مثالی للتوضیح\n    プレビューの例文\n    Пример предложения для предварительного просмотра\n    </string>
     <string name="design_manager_font_description_guide_add_font">فایل‌های فونت با پسوند .ttf اضافه کنید</string>
     <string name="design_manager_font_description_look_like_this">فونت جدید من این‌طوری دیده می‌شود!</string>
     <string name="design_manager_font_hint_enter_font_name">نام فونت را وارد کنید</string>
@@ -1145,7 +1145,7 @@
     <string name="myprojects_sign_apk_new_certificate_button_create">ساخت</string>
     <string name="myprojects_sign_apk_new_certificate_hint_certificate_name">نام گواهی را وارد کنید</string>
     <string name="myprojects_sign_apk_new_certificate_hint_city">شهر یا محل</string>
-    <string name="myprojects_sign_apk_new_certificate_hint_confirm_password">تأیید رمز عبور</string>
+    <string name="myprojects_sign_apk_new_certificate_hint_confirm_password">تایید رمز عبور</string>
     <string name="myprojects_sign_apk_new_certificate_hint_country_code">کد کشور (XX)</string>
     <string name="myprojects_sign_apk_new_certificate_hint_first_and_last_name">نام و نام خانوادگی</string>
     <string name="myprojects_sign_apk_new_certificate_hint_organization">سازمان</string>
@@ -1285,7 +1285,7 @@
     <string name="publish_message_dialog_cannot_start_publish">لطفاً بعد از «ذخیره به‌عنوان نسخه جدید» دوباره تلاش کنید</string>
     <string name="publish_message_dialog_change_version_code">کد نسخه این برنامه تغییر کرده است. می‌خواهید فایل APK را دوباره امضا کنید؟</string>
     <string name="publish_message_dialog_compile_apk_failed">کامپایل فایل APK ناموفق بود. لطفاً این پروژه را بررسی کنید</string>
-    <string name="publish_message_dialog_conflict_version_code">این کد نسخه قابل استفاده نیست. اگر می‌خواهید کد نسخه را به‌روزرسانی کنید، روی دکمه تأیید بزنید.</string>
+    <string name="publish_message_dialog_conflict_version_code">این کد نسخه قابل استفاده نیست. اگر می‌خواهید کد نسخه را به‌روزرسانی کنید، روی دکمه تایید بزنید.</string>
     <string name="publish_message_dialog_default_package_name">لطفاً نام پکیج دیگری استفاده کنید. پروژه‌هایی که با نام پکیج "%s" شروع می‌شوند قابل انتشار نیستند</string>
     <string name="publish_message_dialog_invalid_json">فایل json نامعتبر است. لطفاً فایل را دوباره بررسی کنید</string>
     <string name="root_spec_common_define">تعریف</string>
@@ -1725,7 +1725,7 @@
     <string name="resources_manager_xml_load_failed_title">بارگذاری داده ناموفق بود</string>
     <string name="resources_manager_xml_important_note_title">نکته مهم:</string>
     <string name="resources_manager_xml_important_note_message_strings">تغییر مقدار `app_name` مستقیماً روی نام برنامه این پروژه اثر می‌گذارد</string>
-    <string name="resources_manager_xml_important_note_message_colors">تغییر رنگ‌های اصلی روی تم بصری برنامه اثر می‌گذارد؛ شامل دکمه‌ها و رنگ‌های تأکیدی</string>
+    <string name="resources_manager_xml_important_note_message_colors">تغییر رنگ‌های اصلی روی تم بصری برنامه اثر می‌گذارد؛ شامل دکمه‌ها و رنگ‌های تاکیدی</string>
     <string name="resources_editor_unsaved_changes_message">در "%s" تغییرات ذخیره‌نشده دارید\nمی‌خواهید قبل از خروج تغییرات را ذخیره کنید؟</string>
     <string name="resources_editor_unsaved_changes_message_variant_change">در "%s" تغییرات ذخیره‌نشده دارید\nمی‌خواهید قبل از تغییر variant تغییرات را ذخیره کنید؟</string>
     <string name="save_to_collection">ذخیره در مجموعه</string>

@@ -429,9 +429,9 @@ public class MainActivity extends BasePermissionAppCompatActivity {
                 dialog.setNeutralButton("دیگر نشان نده", (v, which) -> {
                     try {
                         if (!optOutFile.createNewFile())
-                            throw new IOException("Failed to create file " + optOutFile);
+                            throw new IOException("ساخت فایل ناموفق: " + optOutFile);
                     } catch (IOException e) {
-                        Log.e("MainActivity", "Error while trying to create " + "\"Don't show Android 11 hint\" dialog file: " + e.getMessage(), e);
+                        Log.e("MainActivity", "خطا هنگام ساخت: " + "\"Don't show Android 11 hint\" dialog file: " + e.getMessage(), e);
                     }
                     v.dismiss();
                 });

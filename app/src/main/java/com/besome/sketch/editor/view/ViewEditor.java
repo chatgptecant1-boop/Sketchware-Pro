@@ -1067,10 +1067,10 @@ public class ViewEditor extends RelativeLayout implements View.OnClickListener, 
         }
         if (isCustomWidget) {
             deleteIcon.setImageDrawable(AppCompatResources.getDrawable(getContext(), R.drawable.ic_mtrl_edit));
-            deleteText.setText(D ? "Release to see the actions" : "Drag here to see the Actions");
+            deleteText.setText(D ? "برای دیدن عملیات رها کنید" : "برای دیدن عملیات اینجا بکشید");
         } else {
             deleteIcon.setImageDrawable(AppCompatResources.getDrawable(getContext(), R.drawable.ic_mtrl_delete));
-            deleteText.setText(D ? "Release to delete" : "Drag here to delete");
+            deleteText.setText(D ? "برای حذف رها کنید" : "برای حذف اینجا بکشید");
         }
     }
 

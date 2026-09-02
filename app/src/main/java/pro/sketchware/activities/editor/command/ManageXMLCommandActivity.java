@@ -226,7 +226,7 @@ public class ManageXMLCommandActivity extends BaseAppCompatActivity {
                     }
                 });
         dialog.show();
-        binding.title.setText(!edit ? "Add new command" : "Edit command");
+        binding.title.setText(!edit ? "افزودن دستور جدید" : "ویرایش دستور");
 
         if (edit) {
             var command = commands.get(position);
@@ -297,7 +297,7 @@ public class ManageXMLCommandActivity extends BaseAppCompatActivity {
 
     private void showConfirmationDialog() {
         MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(this);
-        dialog.setTitle("تأیید");
+        dialog.setTitle("تایید");
         dialog.setMessage("فعال‌سازی دستور جدید XML؟ سرعت تولید و کامپایل XML را بالا می‌برد، اما این تغییر قابل بازگشت نیست. نگران نباشید، تغییرات قبلی شما با بلوک XML Command به اینجا منتقل می‌شوند و دست‌نخورده می‌مانند.");
         dialog.setPositiveButton(
                 R.string.common_word_yes,

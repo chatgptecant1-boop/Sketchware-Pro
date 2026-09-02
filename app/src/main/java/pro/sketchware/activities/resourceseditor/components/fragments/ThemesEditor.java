@@ -112,7 +112,7 @@ public class ThemesEditor extends Fragment {
     private void updateNoContentLayout() {
         if (themesList.isEmpty()) {
             binding.noContentLayout.setVisibility(View.VISIBLE);
-            binding.noContentTitle.setText(String.format(Helper.getResString(R.string.resource_manager_no_list_title), "Themes"));
+            binding.noContentTitle.setText(String.format(Helper.getResString(R.string.resource_manager_no_list_title), "تم‌ها"));
             binding.noContentBody.setText(String.format(Helper.getResString(R.string.resource_manager_no_list_body), "themes"));
         } else {
             binding.noContentLayout.setVisibility(View.GONE);
@@ -257,14 +257,14 @@ public class ThemesEditor extends Fragment {
             binding.attrValue.setText(theme.getAttribute(attr));
         }
 
-        dialog.setTitle(isEditing ? "Edit attribute " : "Create new attribute");
+        dialog.setTitle(isEditing ? "Edit attribute " : "ساخت ویژگی جدید");
 
         dialog.setPositiveButton(Helper.getResString(R.string.common_word_save), (d, which) -> {
             String attribute = Objects.requireNonNull(binding.attrName.getText()).toString();
             String value = Objects.requireNonNull(binding.attrValue.getText()).toString();
 
             if (attribute.isEmpty() || value.isEmpty()) {
-                SketchwareUtil.toastError("Please fill in all fields");
+                SketchwareUtil.toastError("لطفاً همه فیلدها را پر کنید");
                 return;
             }
 

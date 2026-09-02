@@ -119,7 +119,7 @@ public class StylesEditor extends Fragment {
     private void updateNoContentLayout() {
         if (stylesList.isEmpty()) {
             binding.noContentLayout.setVisibility(View.VISIBLE);
-            binding.noContentTitle.setText(String.format(Helper.getResString(R.string.resource_manager_no_list_title), "Styles"));
+            binding.noContentTitle.setText(String.format(Helper.getResString(R.string.resource_manager_no_list_title), "استایل‌ها"));
             binding.noContentBody.setText(String.format(Helper.getResString(R.string.resource_manager_no_list_body), "styles"));
         } else {
             binding.noContentLayout.setVisibility(View.GONE);
@@ -269,14 +269,14 @@ public class StylesEditor extends Fragment {
             binding.attrValue.setText(style.getAttribute(attr));
         }
 
-        dialog.setTitle(isEditing ? "Edit attribute" : "Create new attribute");
+        dialog.setTitle(isEditing ? "ویرایش ویژگی" : "ساخت ویژگی جدید");
 
         dialog.setPositiveButton(Helper.getResString(R.string.common_word_save), (d, which) -> {
             String attribute = Objects.requireNonNull(binding.attrName.getText()).toString();
             String value = Objects.requireNonNull(binding.attrValue.getText()).toString();
 
             if (attribute.isEmpty() || value.isEmpty()) {
-                SketchwareUtil.toastError("Please fill in all fields");
+                SketchwareUtil.toastError("لطفاً همه فیلدها را پر کنید");
                 return;
             }
 

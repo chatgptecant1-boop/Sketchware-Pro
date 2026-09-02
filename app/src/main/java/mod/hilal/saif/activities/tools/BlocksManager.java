@@ -332,7 +332,7 @@ public class BlocksManager extends BaseAppCompatActivity {
         if (pallet_listmap.isEmpty()) {
             binding.paletteCount.setText("پالتی وجود ندارد");
         } else {
-            binding.paletteCount.setText(pallet_listmap.size() + " Palettes");
+            binding.paletteCount.setText(pallet_listmap.size() + " پالت");
         }
     }
 
@@ -435,7 +435,7 @@ public class BlocksManager extends BaseAppCompatActivity {
     private void showPaletteDialog(boolean isEditing, Integer oldPosition, String oldName, String oldColor, Integer insertAtPosition) {
         MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(this);
         dialog.setIcon(R.drawable.icon_style_white_96);
-        dialog.setTitle(!isEditing ? "Create a new palette" : "Edit palette");
+        dialog.setTitle(!isEditing ? "ساخت پالت جدید" : "ویرایش پالت");
 
         dialogBinding = DialogPaletteBinding.inflate(getLayoutInflater());
 

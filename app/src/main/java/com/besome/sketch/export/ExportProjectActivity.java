@@ -259,7 +259,7 @@ public class ExportProjectActivity extends BaseAppCompatActivity {
     private void initializeAppBundleExportViews() {
         export_aab_button.setOnClickListener(view -> {
             MaterialAlertDialogBuilder confirmationDialog = new MaterialAlertDialogBuilder(this);
-            confirmationDialog.setTitle("Important note");
+            confirmationDialog.setTitle("نکته مهم");
             confirmationDialog.setMessage("فایل .aab باید امضا شود.\nکی‌استور را در /Internal storage/sketchware/keystore/release_key.jks کپی و رمز alias را وارد کنید.");
             confirmationDialog.setIcon(R.drawable.ic_mtrl_info);
 

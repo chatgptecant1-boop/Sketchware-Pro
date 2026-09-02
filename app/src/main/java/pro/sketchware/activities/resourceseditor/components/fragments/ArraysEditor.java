@@ -118,7 +118,7 @@ public class ArraysEditor extends Fragment {
     private void updateNoContentLayout() {
         if (arraysList.isEmpty()) {
             binding.noContentLayout.setVisibility(View.VISIBLE);
-            binding.noContentTitle.setText(String.format(Helper.getResString(R.string.resource_manager_no_list_title), "Arrays"));
+            binding.noContentTitle.setText(String.format(Helper.getResString(R.string.resource_manager_no_list_title), "آرایه‌ها"));
             binding.noContentBody.setText(String.format(Helper.getResString(R.string.resource_manager_no_list_body), "arrays"));
         } else {
             binding.noContentLayout.setVisibility(View.GONE);
@@ -301,14 +301,14 @@ public class ArraysEditor extends Fragment {
             binding.itemValue.requestFocus();
         }
 
-        dialog.setTitle(isEditing ? "Edit item" : "Create new item");
+        dialog.setTitle(isEditing ? "ویرایش مورد" : "ساخت مورد جدید");
 
         dialog.setPositiveButton(Helper.getResString(R.string.common_word_save), (d, which) -> {
             String attribute = Objects.requireNonNull(binding.itemName.getText()).toString();
             String value = Objects.requireNonNull(binding.itemValue.getText()).toString();
 
             if (attribute.isEmpty() || value.isEmpty()) {
-                SketchwareUtil.toastError("Please fill in all fields");
+                SketchwareUtil.toastError("لطفاً همه فیلدها را پر کنید");
                 return;
             }
 

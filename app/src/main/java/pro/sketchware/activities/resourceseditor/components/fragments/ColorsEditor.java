@@ -123,7 +123,7 @@ public class ColorsEditor extends Fragment {
     private void updateNoContentLayout() {
         if (colorList.isEmpty()) {
             binding.noContentLayout.setVisibility(View.VISIBLE);
-            binding.noContentTitle.setText(String.format(Helper.getResString(R.string.resource_manager_no_list_title), "Color"));
+            binding.noContentTitle.setText(String.format(Helper.getResString(R.string.resource_manager_no_list_title), "رنگ"));
             binding.noContentBody.setText(String.format(Helper.getResString(R.string.resource_manager_no_list_body), "color"));
         } else {
             binding.noContentLayout.setVisibility(View.GONE);

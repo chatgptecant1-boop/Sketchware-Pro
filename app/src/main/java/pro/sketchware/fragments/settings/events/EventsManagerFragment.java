@@ -148,7 +148,7 @@ public class EventsManagerFragment extends qA {
         }
 
         var dialog = new MaterialAlertDialogBuilder(requireContext())
-                .setTitle(existingListener == null ? "New Listener" : "Edit Listener")
+                .setTitle(existingListener == null ? "شنونده جدید" : "Edit Listener")
                 .setView(listenerBinding.getRoot())
                 .setPositiveButton("ذخیره", (di, i) -> {
                     String listenerName = Helper.getText(listenerBinding.listenerName);

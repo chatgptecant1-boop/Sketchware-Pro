@@ -134,7 +134,7 @@ public class PropertyIndentItem extends RelativeLayout implements View.OnClickLi
         k = top;
         l = right;
         m = bottom;
-        tvValue.setText("چپ: " + j + ", top: " + k + ", right: " + l + ", bottom: " + m);
+        tvValue.setText("چپ: " + j + "، بالا: " + k + "، راست: " + l + "، پایین: " + m);
     }
 
     private void showDialog() {
@@ -148,7 +148,7 @@ public class PropertyIndentItem extends RelativeLayout implements View.OnClickLi
         View view = binding.getRoot();
 
         binding.tiAll.setHint(String.format(Helper.getResString(R.string.property_enter_value), propertyType.toLowerCase()));
-        binding.chkPtyAll.setText(String.format("%s on all sides", propertyType));
+        binding.chkPtyAll.setText(String.format("%s در همه طرف‌ها", propertyType));
 
         MinMaxInputValidator ti_all = new MinMaxInputValidator(context, binding.tiAll, 0, 999);
         MinMaxInputValidator ti_left = new MinMaxInputValidator(context, binding.tiLeft, 0, 999);

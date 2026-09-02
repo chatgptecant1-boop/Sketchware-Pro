@@ -137,8 +137,8 @@ public class ViewEvents extends LinearLayout {
                     binding.container.setOnLongClickListener(v -> {
                         MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(itemView.getContext());
                         dialog.setIcon(R.drawable.delete_96);
-                        dialog.setTitle("تأیید حذف");
-                        dialog.setMessage("برای حذف رویداد انتخاب‌شده، روی تأیید بزنید.");
+                        dialog.setTitle("تایید حذف");
+                        dialog.setMessage("برای حذف رویداد انتخاب‌شده، روی تایید بزنید.");
 
                         dialog.setPositiveButton(Helper.getResString(R.string.common_word_delete), (view, which) -> {
                             view.dismiss();

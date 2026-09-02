@@ -117,7 +117,7 @@ public class StringsEditor extends Fragment {
     public void updateNoContentLayout() {
         if (listmap.isEmpty()) {
             binding.noContentLayout.setVisibility(View.VISIBLE);
-            binding.noContentTitle.setText(String.format(Helper.getResString(R.string.resource_manager_no_list_title), "Strings"));
+            binding.noContentTitle.setText(String.format(Helper.getResString(R.string.resource_manager_no_list_title), "رشته‌ها"));
             binding.noContentBody.setText(String.format(Helper.getResString(R.string.resource_manager_no_list_body), "string"));
         } else {
             binding.noContentLayout.setVisibility(View.GONE);
@@ -148,7 +148,7 @@ public class StringsEditor extends Fragment {
             String value = Objects.requireNonNull(binding.stringValueInput.getText()).toString();
 
             if (key.isEmpty() || value.isEmpty()) {
-                SketchwareUtil.toastError("Please fill in all fields");
+                SketchwareUtil.toastError("لطفاً همه فیلدها را پر کنید");
                 return;
             }
 

@@ -192,7 +192,7 @@ public class ManageResourceActivity extends BaseAppCompatActivity {
 
         var dialog = new MaterialAlertDialogBuilder(this)
                 .setView(dialogBinding.getRoot())
-                .setTitle(isFolder ? "Create a new folder" : "Create a new file")
+                .setTitle(isFolder ? "ساخت پوشه جدید" : "ساخت فایل جدید")
                 .setMessage("نامی برای مورد جدید وارد کنید: " + (isFolder ? "folder" : "file"))
                 .setNegativeButton("لغو", (dialogInterface, i) -> dialogInterface.dismiss())
                 .setPositiveButton("ایجاد", null)
@@ -320,7 +320,7 @@ public class ManageResourceActivity extends BaseAppCompatActivity {
                 .setPositiveButton(R.string.common_word_delete, (dialog, which) -> {
                     FileUtil.deleteFile(frc.listFileResource.get(position));
                     handleAdapter(temp);
-                    SketchwareUtil.toast("Deleted");
+                    SketchwareUtil.toast("حذف شد");
                 })
                 .setNegativeButton(R.string.common_word_cancel, null)
                 .create()
