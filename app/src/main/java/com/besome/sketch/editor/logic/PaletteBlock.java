@@ -9,6 +9,7 @@ import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -42,11 +43,25 @@ public class PaletteBlock extends LinearLayout {
         f = wB.a(context, 1.0F);
     }
 
+
+    private void applyBidiSafeTextDirection(View root) {
+        if (root instanceof TextView) {
+            ((TextView) root).setTextDirection(View.TEXT_DIRECTION_FIRST_STRONG);
+        }
+        if (root instanceof ViewGroup) {
+            ViewGroup group = (ViewGroup) root;
+            for (int i = 0; i < group.getChildCount(); i++) {
+                applyBidiSafeTextDirection(group.getChildAt(i));
+            }
+        }
+    }
+
     public Ts a(String var1, String var2, String var3) {
         View view = new View(context);
         view.setLayoutParams(getLayoutParams(8.0F));
         binding.blockBuilder.addView(view);
         Rs blockView = new Rs(context, -1, var1, var2, var3);
+        applyBidiSafeTextDirection(blockView);
         blockView.setContentDescription(generateContentDescription(var3));
         blockView.setBlockType(1);
         binding.blockBuilder.addView(blockView);
@@ -58,6 +73,7 @@ public class PaletteBlock extends LinearLayout {
         view.setLayoutParams(getLayoutParams(8.0F));
         binding.blockBuilder.addView(view);
         Rs blockView = new Rs(context, -1, var1, var2, var3, var4);
+        applyBidiSafeTextDirection(blockView);
         blockView.setContentDescription(generateContentDescription(var4));
         blockView.setBlockType(1);
         binding.blockBuilder.addView(blockView);
@@ -67,6 +83,7 @@ public class PaletteBlock extends LinearLayout {
     public TextView a(String title) {
         var textView = new TextView(context);
         textView.setText(title);
+        textView.setTextDirection(View.TEXT_DIRECTION_FIRST_STRONG);
         textView.setTextSize(10.0F);
         textView.setTypeface(null, Typeface.BOLD);
         textView.setGravity(Gravity.CENTER);
@@ -98,6 +115,7 @@ public class PaletteBlock extends LinearLayout {
 
         TextView textView = new TextView(context);
         textView.setText(title);
+        textView.setTextDirection(View.TEXT_DIRECTION_FIRST_STRONG);
         textView.setTextColor(getColor(context, isDarkThemeEnabled(context) ? R.attr.colorOnSurface : R.attr.colorOnSurfaceInverse));
         textView.setTextSize(10.0F);
         textView.setGravity(Gravity.CENTER | Gravity.LEFT);
