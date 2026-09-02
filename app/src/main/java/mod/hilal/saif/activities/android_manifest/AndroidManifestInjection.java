@@ -189,7 +189,7 @@ public class AndroidManifestInjection extends BaseAppCompatActivity {
         dialog.setPositiveButton(Helper.getResString(R.string.common_word_save), (v, which) -> {
             if (!Helper.getText(activity_name_input).trim().isEmpty()) {
                 addNewActivity(Helper.getText(activity_name_input));
-                SketchwareUtil.toast("New Activity added");
+                SketchwareUtil.toast("اکتیویتی جدید اضافه شد");
                 v.dismiss();
             } else {
                 activity_name_input.setError("Enter activity name");
@@ -291,7 +291,7 @@ public class AndroidManifestInjection extends BaseAppCompatActivity {
         FileUtil.writeFile(path, getGson().toJson(data));
         refreshList();
         removeComponents(activity_name);
-        SketchwareUtil.toast("Activity removed");
+        SketchwareUtil.toast("اکتیویتی حذف شد");
     }
 
     private void removeComponents(String str) {
@@ -315,7 +315,7 @@ public class AndroidManifestInjection extends BaseAppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("AndroidManifest Manager");
+        getSupportActionBar().setTitle("مدیریت AndroidManifest");
         toolbar.setNavigationOnClickListener(view -> onBackPressed());
     }
 

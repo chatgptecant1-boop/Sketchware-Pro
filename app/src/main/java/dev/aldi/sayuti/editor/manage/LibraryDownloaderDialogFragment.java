@@ -81,7 +81,7 @@ public class LibraryDownloaderDialogFragment extends BottomSheetDialogFragment {
             return;
         }
 
-        binding.dependencyInfo.setText("Looking for dependency...");
+        binding.dependencyInfo.setText("در حال جستجوی وابستگی…");
         binding.dependencyInputLayout.setErrorEnabled(false);
         setDownloadState(true);
 
@@ -191,7 +191,7 @@ public class LibraryDownloaderDialogFragment extends BottomSheetDialogFragment {
                 @Override
                 public void onTaskCompleted(@NonNull List<String> dependencies) {
                     handler.post(() -> {
-                        SketchwareUtil.toast("Library downloaded successfully");
+                        SketchwareUtil.toast("کتابخانه با موفقیت دانلود شد");
                         if (!notAssociatedWithProject) {
                             new SetTextRunnable("Adding dependencies to project...").run();
                             var fileContent = FileUtil.readFile(localLibFile);

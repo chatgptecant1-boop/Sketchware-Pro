@@ -129,8 +129,8 @@ public class StylesEditor extends Fragment {
     public void showAddStyleDialog() {
         MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(requireActivity());
         StyleEditorAddBinding binding = StyleEditorAddBinding.inflate(getLayoutInflater());
-        dialog.setTitle("Create new style");
-        dialog.setPositiveButton("Create", (d, which) -> {
+        dialog.setTitle("استایل جدید");
+        dialog.setPositiveButton("ایجاد", (d, which) -> {
             String styleName = Objects.requireNonNull(binding.styleName.getText()).toString();
             String parent = Objects.requireNonNull(binding.styleParent.getText()).toString();
             String header = Objects.requireNonNull(binding.styleHeaderInput.getText()).toString();
@@ -171,8 +171,8 @@ public class StylesEditor extends Fragment {
             binding.styleHeaderInput.setText(notesMap.get(position));
         }
 
-        dialog.setTitle("Edit style");
-        dialog.setPositiveButton("Edit", (d, which) -> {
+        dialog.setTitle("ویرایش استایل");
+        dialog.setPositiveButton("ویرایش", (d, which) -> {
             String styleName = Objects.requireNonNull(binding.styleName.getText()).toString();
             String parent = Objects.requireNonNull(binding.styleParent.getText()).toString();
             String header = Objects.requireNonNull(binding.styleHeaderInput.getText()).toString();
@@ -193,8 +193,8 @@ public class StylesEditor extends Fragment {
             adapter.notifyItemChanged(position);
         });
         dialog.setNeutralButton(Helper.getResString(R.string.common_word_delete), (d, which) -> new MaterialAlertDialogBuilder(requireContext())
-                .setTitle("Warning")
-                .setMessage("Are you sure you want to delete " + style.getStyleName() + "?")
+                .setTitle("هشدار")
+                .setMessage("مطمئنید که می‌خواهید حذف کنید: " + style.getStyleName() + "?")
                 .setPositiveButton(R.string.common_word_yes, (d2, w) -> {
                     stylesList.remove(position);
                     notesMap.remove(position);
@@ -203,7 +203,7 @@ public class StylesEditor extends Fragment {
                     updateNoContentLayout();
                     hasUnsavedChanges = true;
                 })
-                .setNegativeButton("Cancel", null)
+                .setNegativeButton("لغو", null)
                 .create()
                 .show());
         dialog.setNegativeButton(getString(R.string.cancel), null);
@@ -231,15 +231,15 @@ public class StylesEditor extends Fragment {
                     @Override
                     public void onItemLongClick(LinkedHashMap<String, String> attributes, String attr) {
                         new MaterialAlertDialogBuilder(requireContext())
-                                .setTitle("Warning")
-                                .setMessage("Are you sure you want to delete " + attr + "?")
+                                .setTitle("هشدار")
+                                .setMessage("مطمئنید که می‌خواهید حذف کنید: " + attr + "?")
                                 .setPositiveButton(R.string.common_word_yes, (d, w) -> {
                                     attributes.remove(attr);
                                     style.setAttributes(attributes);
                                     attributesAdapter.submitList(new ArrayList<>(attributes.keySet()));
                                     hasUnsavedChanges = true;
                                 })
-                                .setNegativeButton("Cancel", null)
+                                .setNegativeButton("لغو", null)
                                 .create()
                                 .show();
                     }

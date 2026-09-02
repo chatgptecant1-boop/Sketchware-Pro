@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
-        android:hint="Custom android.jar">
+        android:hint="android.jar سفارشی">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
         android:layout_marginTop="16dp"
-        android:hint="Classpath 'separated by :'">
+        android:hint="مسیر کلاس (با : جدا می‌شود)">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"

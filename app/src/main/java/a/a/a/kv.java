@@ -41,7 +41,7 @@ public class kv extends LinearLayout implements nv {
                     firebaseLibraryBean.useYn = "Y";
                 }
             } else {
-                SketchwareUtil.toast("Configure Firebase settings first, either by importing google-services.json, " +
+                SketchwareUtil.toast("ابتدا تنظیمات Firebase را انجام دهید؛ یا google-services.json را وارد کنید، " +
                         "or by manually entering the project's details.", Toast.LENGTH_LONG);
             }
         });

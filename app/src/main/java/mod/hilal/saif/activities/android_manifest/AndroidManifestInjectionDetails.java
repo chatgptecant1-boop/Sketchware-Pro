@@ -131,7 +131,7 @@ public class AndroidManifestInjectionDetails extends BaseAppCompatActivity {
 
     private void showDial(int pos) {
         MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(this);
-        dialog.setTitle("Edit Value");
+        dialog.setTitle("ویرایش مقدار");
         DialogCreateNewFileLayoutBinding attributeBinding = DialogCreateNewFileLayoutBinding.inflate(getLayoutInflater());
         attributeBinding.chipGroupTypes.setVisibility(View.GONE);
         dialog.setView(attributeBinding.getRoot());
@@ -241,8 +241,8 @@ public class AndroidManifestInjectionDetails extends BaseAppCompatActivity {
             attributeView.setOnClickListener(v -> showDial(position));
             attributeView.setOnLongClickListener(v -> {
                 new MaterialAlertDialogBuilder(AndroidManifestInjectionDetails.this)
-                        .setTitle("Delete this attribute?")
-                        .setMessage("This action cannot be undone.")
+                        .setTitle("این ویژگی حذف شود؟")
+                        .setMessage("این کار قابل بازگشت نیست.")
                         .setPositiveButton(R.string.common_word_delete, (dialog, which) -> {
                             listMap.remove(position);
                             applyChange();

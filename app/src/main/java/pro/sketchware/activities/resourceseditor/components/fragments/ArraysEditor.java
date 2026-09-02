@@ -128,12 +128,12 @@ public class ArraysEditor extends Fragment {
     public void showAddArrayDialog() {
         MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(requireActivity());
         ArraysEditorAddBinding binding = ArraysEditorAddBinding.inflate(getLayoutInflater());
-        dialog.setTitle("Create new array");
+        dialog.setTitle("آرایه جدید");
 
         binding.arrayType.setOnClickListener(view -> {
             String[] arrayTypes = {"STRING", "INTEGER", "OBJECT"};
             new MaterialAlertDialogBuilder(requireContext())
-                    .setTitle("Select Array Type")
+                    .setTitle("نوع آرایه را انتخاب کنید")
                     .setSingleChoiceItems(arrayTypes, -1, (dialogInterface, which) -> {
                         binding.arrayType.setText(arrayTypes[which]);
                         dialogInterface.dismiss();
@@ -141,7 +141,7 @@ public class ArraysEditor extends Fragment {
                     .show();
         });
 
-        dialog.setPositiveButton("Create", (d, which) -> {
+        dialog.setPositiveButton("ایجاد", (d, which) -> {
             String arrayName = Objects.requireNonNull(binding.arrayName.getText()).toString();
             String arrayTypeString = Objects.requireNonNull(binding.arrayType.getText()).toString();
             String header = Objects.requireNonNull(binding.arrayHeaderInput.getText()).toString();
@@ -187,7 +187,7 @@ public class ArraysEditor extends Fragment {
         binding.arrayType.setOnClickListener(view -> {
             String[] arrayTypes = {"STRING", "INTEGER", "OBJECT"};
             new MaterialAlertDialogBuilder(requireContext())
-                    .setTitle("Select Array Type")
+                    .setTitle("نوع آرایه را انتخاب کنید")
                     .setSingleChoiceItems(arrayTypes, -1, (dialogInterface, which) -> {
                         binding.arrayType.setText(arrayTypes[which]);
                         dialogInterface.dismiss();
@@ -195,8 +195,8 @@ public class ArraysEditor extends Fragment {
                     .show();
         });
 
-        dialog.setTitle("Edit array");
-        dialog.setPositiveButton("Edit", (d, which) -> {
+        dialog.setTitle("ویرایش آرایه");
+        dialog.setPositiveButton("ویرایش", (d, which) -> {
             String arrayName = Objects.requireNonNull(binding.arrayName.getText()).toString();
             String arrayType = Objects.requireNonNull(binding.arrayType.getText()).toString();
             String header = Objects.requireNonNull(binding.arrayHeaderInput.getText()).toString();
@@ -217,8 +217,8 @@ public class ArraysEditor extends Fragment {
             hasUnsavedChanges = true;
         });
         dialog.setNeutralButton(Helper.getResString(R.string.common_word_delete), (d, which) -> new MaterialAlertDialogBuilder(requireContext())
-                .setTitle("Warning")
-                .setMessage("Are you sure you want to delete " + array.getArrayName() + "?")
+                .setTitle("هشدار")
+                .setMessage("مطمئنید که می‌خواهید حذف کنید: " + array.getArrayName() + "?")
                 .setPositiveButton(R.string.common_word_yes, (d2, w) -> {
                     arraysList.remove(position);
                     notesMap.remove(position);
@@ -227,7 +227,7 @@ public class ArraysEditor extends Fragment {
                     updateNoContentLayout();
                     hasUnsavedChanges = true;
                 })
-                .setNegativeButton("Cancel", null)
+                .setNegativeButton("لغو", null)
                 .show());
         dialog.setNegativeButton(getString(R.string.cancel), null);
         dialog.setView(binding.getRoot());
@@ -254,15 +254,15 @@ public class ArraysEditor extends Fragment {
                     @Override
                     public void onItemLongClick(LinkedHashMap<String, String> attributes, String attr) {
                         new MaterialAlertDialogBuilder(requireContext())
-                                .setTitle("Warning")
-                                .setMessage("Are you sure you want to delete " + attr + "?")
+                                .setTitle("هشدار")
+                                .setMessage("مطمئنید که می‌خواهید حذف کنید: " + attr + "?")
                                 .setPositiveButton(R.string.common_word_yes, (d, w) -> {
                                     attributes.remove(attr);
                                     array.setAttributes(attributes);
                                     attributesAdapter.submitList(new ArrayList<>(attributes.keySet()));
                                     hasUnsavedChanges = true;
                                 })
-                                .setNegativeButton("Cancel", null)
+                                .setNegativeButton("لغو", null)
                                 .create()
                                 .show();
                     }

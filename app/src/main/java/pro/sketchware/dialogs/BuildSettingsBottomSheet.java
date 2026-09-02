@@ -59,7 +59,7 @@ public class BuildSettingsBottomSheet extends BottomSheetDialogFragment {
 
     public static void handleJavaVersionChange(String choice) {
         if (!choice.equals(SETTING_JAVA_VERSION_1_7)) {
-            SketchwareUtil.toast("Don't forget to enable D8 to be able to compile Java 8+ code");
+            SketchwareUtil.toast("فراموش نکنید برای کامپایل کد Java 8+ باید D8 را فعال کنید");
         }
     }
 
@@ -157,7 +157,7 @@ public class BuildSettingsBottomSheet extends BottomSheetDialogFragment {
         checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
                 if (key.equals(SETTING_NO_HTTP_LEGACY)) {
-                    SketchwareUtil.toast("Note that this option may cause issues if RequestNetwork component is used");
+                    SketchwareUtil.toast("توجه: اگر از کامپوننت RequestNetwork استفاده کنید، این گزینه ممکن است مشکل‌ساز شود");
                 }
             }
         });

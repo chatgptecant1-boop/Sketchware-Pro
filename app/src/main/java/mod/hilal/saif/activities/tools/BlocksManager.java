@@ -206,7 +206,7 @@ public class BlocksManager extends BaseAppCompatActivity {
     private void showBlockConfigurationDialog() {
         MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(this);
         dialog.setIcon(R.drawable.ic_folder_48dp);
-        dialog.setTitle("Block configuration");
+        dialog.setTitle("پیکربندی بلوک");
 
         DialogBlockConfigurationBinding dialogBinding = DialogBlockConfigurationBinding.inflate(getLayoutInflater());
 
@@ -226,7 +226,7 @@ public class BlocksManager extends BaseAppCompatActivity {
 
         dialog.setNegativeButton(Helper.getResString(R.string.common_word_cancel), null);
 
-        dialog.setNeutralButton("Defaults", (view, which) -> {
+        dialog.setNeutralButton("پیش‌فرض‌ها", (view, which) -> {
             ConfigActivity.setSetting(ConfigActivity.SETTING_BLOCKMANAGER_DIRECTORY_PALETTE_FILE_PATH, ConfigActivity.getDefaultValue(ConfigActivity.SETTING_BLOCKMANAGER_DIRECTORY_PALETTE_FILE_PATH));
             ConfigActivity.setSetting(ConfigActivity.SETTING_BLOCKMANAGER_DIRECTORY_BLOCK_FILE_PATH, ConfigActivity.getDefaultValue(ConfigActivity.SETTING_BLOCKMANAGER_DIRECTORY_BLOCK_FILE_PATH));
 
@@ -312,7 +312,7 @@ public class BlocksManager extends BaseAppCompatActivity {
         }
 
         binding.paletteRecycler.setAdapter(new PaletteAdapter(pallet_listmap));
-        binding.recycleSub.setText("Blocks: " + (long) getN(-1));
+        binding.recycleSub.setText("بلوک‌ها: " + (long) getN(-1));
         refreshCount();
     }
 
@@ -330,7 +330,7 @@ public class BlocksManager extends BaseAppCompatActivity {
 
     private void refreshCount() {
         if (pallet_listmap.isEmpty()) {
-            binding.paletteCount.setText("No palettes");
+            binding.paletteCount.setText("پالتی وجود ندارد");
         } else {
             binding.paletteCount.setText(pallet_listmap.size() + " Palettes");
         }
@@ -346,10 +346,10 @@ public class BlocksManager extends BaseAppCompatActivity {
         });
         view.setOnLongClickListener(v -> {
             new MaterialAlertDialogBuilder(this)
-                    .setTitle("Recycle bin")
-                    .setMessage("Are you sure you want to empty the recycle bin? " +
+                    .setTitle("سطل بازیافت")
+                    .setMessage("مطمئنید که می‌خواهید سطل بازیافت خالی شود؟ " +
                             "Blocks inside will be deleted PERMANENTLY, you CANNOT recover them!")
-                    .setPositiveButton("Empty", (dialog, which) -> emptyRecyclebin())
+                    .setPositiveButton("خالی", (dialog, which) -> emptyRecyclebin())
                     .setNegativeButton(R.string.common_word_cancel, null)
                     .show();
             return true;
@@ -467,14 +467,14 @@ public class BlocksManager extends BaseAppCompatActivity {
             String colorInput = Objects.requireNonNull(dialogBinding.colorEditText.getText()).toString();
 
             if (nameInput.isEmpty()) {
-                SketchwareUtil.toast("Name cannot be empty", Toast.LENGTH_SHORT);
+                SketchwareUtil.toast("نام نمی‌تواند خالی باشد", Toast.LENGTH_SHORT);
                 return;
             }
             // add hash for the color 
             colorInput = "#" + colorInput;
 
             if (!PropertiesUtil.isHexColor(colorInput)) {
-                SketchwareUtil.toast("Please enter a valid HEX color", Toast.LENGTH_SHORT);
+                SketchwareUtil.toast("لطفاً یک رنگ HEX معتبر وارد کنید", Toast.LENGTH_SHORT);
                 return;
             }
 
@@ -568,10 +568,10 @@ public class BlocksManager extends BaseAppCompatActivity {
 
             holder.itemView.setVisibility(View.VISIBLE);
             holder.itemBinding.title.setText(Objects.requireNonNull(pallet_listmap.get(position).get("name")).toString());
-            holder.itemBinding.sub.setText("Blocks: " + (long) getN(position + 9));
+            holder.itemBinding.sub.setText("بلوک‌ها: " + (long) getN(position + 9));
             holder.itemBinding.color.setBackgroundColor(backgroundColor);
             holder.itemBinding.dragHandler.setVisibility(View.VISIBLE);
-            binding.recycleSub.setText("Blocks: " + (long) getN(-1));
+            binding.recycleSub.setText("بلوک‌ها: " + (long) getN(-1));
 
             holder.itemBinding.backgroundCard.setOnLongClickListener(v -> {
                 final String edit = "Edit";
@@ -595,8 +595,8 @@ public class BlocksManager extends BaseAppCompatActivity {
                         case delete:
                             new MaterialAlertDialogBuilder(BlocksManager.this)
                                     .setTitle(Objects.requireNonNull(pallet_listmap.get(pos).get("name")).toString())
-                                    .setMessage("Remove all blocks related to this palette?")
-                                    .setPositiveButton("Remove permanently", (dialog, which) -> {
+                                    .setMessage("همه بلوک‌های مرتبط با این پالت حذف شوند؟")
+                                    .setPositiveButton("حذف همیشگی", (dialog, which) -> {
                                         palettes.remove(pos);
                                         notifyItemRemoved(pos);
                                         FileUtil.writeFile(pallet_dir, getGson().toJson(pallet_listmap));

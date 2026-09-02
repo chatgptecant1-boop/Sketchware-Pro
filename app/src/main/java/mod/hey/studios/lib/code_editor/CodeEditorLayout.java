@@ -164,7 +164,7 @@ public class CodeEditorLayout extends LinearLayout implements TextWatcher {
                     numPicker.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
 
                     builder.setView(numPicker)
-                            .setTitle("Select font size")
+                            .setTitle("اندازه فونت را انتخاب کنید")
                             .setPositiveButton(R.string.common_word_save, (dialog, which) -> {
                                 setTextSize(numPicker.getValue());
                                 dialog.dismiss();

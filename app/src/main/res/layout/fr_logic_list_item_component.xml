@@ -35,7 +35,7 @@
                 android:layout_marginStart="52dp"
                 android:layout_marginTop="14dp"
                 android:textSize="14sp"
-                tools:text="Firebase DB" />
+                tools:text="پایگاه‌داده Firebase" />
 
             <TextView
                 android:id="@+id/tv_component_id"

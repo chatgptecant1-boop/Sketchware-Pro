@@ -2935,7 +2935,7 @@ public class Lx {
                             _intent.putExtra("return-data", false);
                             _activity.startActivityForResult(_intent, _requestCode);
                         } catch (ActivityNotFoundException _e) {
-                            Toast.makeText(_activity, "Your device doesn't support the crop action!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(_activity, "دستگاه شما از برش تصویر پشتیبانی نمی‌کند!", Toast.LENGTH_SHORT).show();
                         }
                     }
                 

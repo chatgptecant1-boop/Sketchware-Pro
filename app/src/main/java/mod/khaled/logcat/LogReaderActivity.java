@@ -127,21 +127,21 @@ public class LogReaderActivity extends BaseAppCompatActivity {
         dialogBinding.imgDelete.setVisibility(View.GONE);
 
         var builder = new MaterialAlertDialogBuilder(this)
-                .setTitle("Filter by package name")
-                .setMessage("For multiple package names, separate them with a comma (,).")
+                .setTitle("فیلتر بر اساس نام پکیج")
+                .setMessage("برای چند نام پکیج، آن‌ها را با کاما (,) جدا کنید.")
                 .setIcon(R.drawable.ic_mtrl_filter)
                 .setView(view)
-                .setPositiveButton("Apply", (dialog, which) -> {
+                .setPositiveButton("اعمال", (dialog, which) -> {
                     pkgFilter = Helper.getText(dialogBinding.easyEdInput);
                     pkgFilterList = new ArrayList<>(Arrays.asList(pkgFilter.split(",")));
                     binding.searchInput.setText(Helper.getText(binding.searchInput));
                 })
-                .setNeutralButton("Reset", (dialog, which) -> {
+                .setNeutralButton("بازنشانی", (dialog, which) -> {
                     pkgFilter = "";
                     pkgFilterList.clear();
                     dialogBinding.easyEdInput.setText("");
                 })
-                .setNegativeButton("Cancel", null)
+                .setNegativeButton("لغو", null)
                 .create();
 
         builder.show();
@@ -190,7 +190,7 @@ public class LogReaderActivity extends BaseAppCompatActivity {
 
             }
             FileUtil.writeFile(filePath, contentBuilder.toString());
-            SketchwareUtil.toast("Logcat exported successfully: " + filePath);
+            SketchwareUtil.toast("خروجی Logcat با موفقیت گرفته شد: " + filePath);
         } catch (Exception ex) {
             SketchwareUtil.toastError("Something went wrong!");
         }
@@ -348,7 +348,7 @@ public class LogReaderActivity extends BaseAppCompatActivity {
                 binding.dateHeader.setVisibility(View.GONE);
             }
             binding.getRoot().setOnLongClickListener(v -> {
-                SketchwareUtil.toast("Copied to clipboard");
+                SketchwareUtil.toast("در کلیپ‌بورد کپی شد");
                 ((ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE)).setPrimaryClip(ClipData.newPlainText("clipboard", data.get(position).get("logRaw").toString()));
                 return true;
             });

@@ -172,7 +172,7 @@ public class ManageLocalLibraryActivity extends BaseAppCompatActivity {
                     deleteSelectedLocalLibraries(scId, adapter.getLocalLibraries(), projectUsedLibs);
                     runOnUiThread(() -> {
                         h();
-                        SketchwareUtil.toast("Deleted successfully");
+                        SketchwareUtil.toast("با موفقیت حذف شد");
                         adapter.isSelectionModeEnabled = false;
                         adapter.notifyDataSetChanged();
                         collapseContextualToolbar();
@@ -404,8 +404,8 @@ public class ManageLocalLibraryActivity extends BaseAppCompatActivity {
             }
             if (library.isSelected() && isUsedLibrary(library.getName())) {
                 new MaterialAlertDialogBuilder(ManageLocalLibraryActivity.this)
-                        .setTitle("Warning")
-                        .setMessage("This library \"" + library.getName() + "\" already used in your project, removing it may break your project\rDo you want to continue removing it?")
+                        .setTitle("هشدار")
+                        .setMessage("این کتابخانه \"" + library.getName() + "\" already used in your project, removing it may break your project\rDo you want to continue removing it?")
                         .setPositiveButton(Helper.getResString(R.string.common_word_yes), (dialog, which) -> dialog.dismiss())
                         .setNegativeButton(Helper.getResString(R.string.common_word_cancel), (dialog, which) -> {
                             toggleLocalLibrary(card, library, onLocalLibrarySelectedStateChangedListener);

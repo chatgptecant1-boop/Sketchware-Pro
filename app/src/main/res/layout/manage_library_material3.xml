@@ -138,7 +138,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Light" />
+                            android:text="روشن" />
 
                         <com.google.android.material.button.MaterialButton
                             android:id="@+id/select_dark"
@@ -146,7 +146,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Dark" />
+                            android:text="تاریک" />
 
                     </com.google.android.material.button.MaterialButtonToggleGroup>
 

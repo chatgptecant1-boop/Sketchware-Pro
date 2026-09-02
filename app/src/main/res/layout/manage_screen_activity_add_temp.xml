@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:navigationIcon="?attr/homeAsUpIndicator"
-        app:title="Create view" />
+        app:title="ساخت ویجت" />
 
     <com.google.android.material.divider.MaterialDivider
         android:layout_width="match_parent"
@@ -169,7 +169,7 @@
                     android:id="@+id/ed_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Enter name"
+                    android:hint="نام را وارد کنید"
                     android:imeOptions="actionDone"
                     android:inputType="text"
                     android:lines="1" />
@@ -321,7 +321,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Portrait" />
+                            android:text="عمودی" />
 
                         <Button
                             android:id="@+id/select_landscape"
@@ -329,7 +329,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Landscape" />
+                            android:text="افقی" />
 
                         <Button
                             android:id="@+id/select_both"
@@ -337,7 +337,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Both" />
+                            android:text="هر دو" />
 
                     </com.google.android.material.button.MaterialButtonToggleGroup>
                 </LinearLayout>
@@ -373,7 +373,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Unspecified" />
+                            android:text="نامشخص" />
 
                         <Button
                             android:id="@+id/select_visible"
@@ -381,7 +381,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Visible" />
+                            android:text="نمایان" />
 
                         <Button
                             android:id="@+id/select_hidden"
@@ -389,7 +389,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Hidden" />
+                            android:text="مخفی" />
                     </com.google.android.material.button.MaterialButtonToggleGroup>
                 </LinearLayout>
             </LinearLayout>

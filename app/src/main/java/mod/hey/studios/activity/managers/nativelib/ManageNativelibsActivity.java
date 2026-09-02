@@ -102,15 +102,15 @@ public class ManageNativelibsActivity extends BaseAppCompatActivity implements V
 
     private void handleFab() {
         if (isInMainDirectory()) {
-            binding.showOptionsButton.setText("New folder");
+            binding.showOptionsButton.setText("پوشه جدید");
         } else {
-            binding.showOptionsButton.setText("Import library");
+            binding.showOptionsButton.setText("وارد کردن کتابخانه");
         }
     }
 
     private void setupUI() {
         binding.topAppBar.setNavigationOnClickListener(Helper.getBackPressedClickListener(this));
-        binding.topAppBar.setTitle("Native Library Manager");
+        binding.topAppBar.setTitle("مدیریت کتابخانه Native");
 
         binding.showOptionsButton.setOnClickListener(view -> hideShowOptionsButton(false));
         binding.closeButton.setOnClickListener(view -> hideShowOptionsButton(true));
@@ -167,14 +167,14 @@ public class ManageNativelibsActivity extends BaseAppCompatActivity implements V
 
         var dialog = new MaterialAlertDialogBuilder(this)
                 .setView(dialogBinding.getRoot())
-                .setTitle("Create a new folder")
-                .setMessage("Enter the name of the new folder")
-                .setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.dismiss())
-                .setPositiveButton("Create", null)
+                .setTitle("ساخت پوشه جدید")
+                .setMessage("نام پوشه جدید را وارد کنید")
+                .setNegativeButton("لغو", (dialogInterface, i) -> dialogInterface.dismiss())
+                .setPositiveButton("ایجاد", null)
                 .create();
 
         dialogBinding.chipGroupTypes.setVisibility(View.GONE);
-        textInputLayout.setHint("Folder name");
+        textInputLayout.setHint("نام پوشه");
 
         inputText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -213,7 +213,7 @@ public class ManageNativelibsActivity extends BaseAppCompatActivity implements V
 
                 FileUtil.makeDir(path);
                 handleAdapter(nativeLibrariesPath);
-                SketchwareUtil.toast("Created folder successfully");
+                SketchwareUtil.toast("پوشه با موفقیت ساخته شد");
 
                 dialog.dismiss();
             });
@@ -231,7 +231,7 @@ public class ManageNativelibsActivity extends BaseAppCompatActivity implements V
 
     private void setupDialog() {
         FilePickerOptions options = new FilePickerOptions();
-        options.setTitle("Import Native Libraries");
+        options.setTitle("وارد کردن کتابخانه‌های Native");
         options.setMultipleSelection(true);
         options.setExtensions(new String[]{"so"});
         FilePickerCallback callback = new FilePickerCallback() {
@@ -258,21 +258,21 @@ public class ManageNativelibsActivity extends BaseAppCompatActivity implements V
         var inputText = dialogBinding.inputText;
 
         var dialog = new MaterialAlertDialogBuilder(this)
-                .setTitle("Rename")
+                .setTitle("تغییر نام")
                 .setView(dialogBinding.getRoot())
-                .setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.dismiss())
-                .setPositiveButton("Rename", (dialogInterface, i) -> {
+                .setNegativeButton("لغو", (dialogInterface, i) -> dialogInterface.dismiss())
+                .setPositiveButton("تغییر نام", (dialogInterface, i) -> {
                     String newName = Helper.getText(inputText);
                     if (!newName.isEmpty()) {
                         if (FileUtil.renameFile(path, path.substring(0, path.lastIndexOf(File.separator)) + File.separator + newName)) {
-                            SketchwareUtil.toast("Renamed successfully");
+                            SketchwareUtil.toast("با موفقیت تغییر نام یافت");
                         } else {
                             SketchwareUtil.toastError("Renaming failed");
                         }
                         handleAdapter(nativeLibrariesPath);
                         handleFab();
                     } else {
-                        SketchwareUtil.toast("Nothing changed");
+                        SketchwareUtil.toast("چیزی تغییر نکرد");
                     }
                     dialogInterface.dismiss();
                 })

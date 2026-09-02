@@ -102,7 +102,7 @@ public class BlocksManagerDetailsActivity extends BaseAppCompatActivity {
     public void openFileExplorerImport() {
         FilePickerOptions options = new FilePickerOptions();
         options.setExtensions(new String[]{"json"});
-        options.setTitle("Select a JSON file");
+        options.setTitle("یک فایل JSON انتخاب کنید");
 
         FilePickerCallback callback = new FilePickerCallback() {
             @Override
@@ -200,7 +200,7 @@ public class BlocksManagerDetailsActivity extends BaseAppCompatActivity {
                 if (paletteName instanceof String) {
                     String exportTo = new File(BLOCK_EXPORT_PATH, paletteName + ".json").getAbsolutePath();
                     FileUtil.writeFile(exportTo, getGson().toJson(filtered_list));
-                    SketchwareUtil.toast("Successfully exported blocks to:\n" + exportTo, Toast.LENGTH_LONG);
+                    SketchwareUtil.toast("بلوک‌ها با موفقیت خروجی گرفته شدند در:\\n" + exportTo, Toast.LENGTH_LONG);
                 } else {
                     SketchwareUtil.toastError("Invalid name of palette #" + (palette - 9));
                 }
@@ -218,13 +218,13 @@ public class BlocksManagerDetailsActivity extends BaseAppCompatActivity {
         blocks_path = getIntent().getStringExtra("dirB");
         _refreshLists();
         if (palette == -1) {
-            getSupportActionBar().setTitle("Recycle Bin");
+            getSupportActionBar().setTitle("سطل بازیافت");
             fab_button.setVisibility(View.GONE);
         } else {
             Object paletteName = pallet_list.get(palette - 9).get("name");
 
             if (paletteName instanceof String) {
-                getSupportActionBar().setTitle("Manage Block");
+                getSupportActionBar().setTitle("مدیریت بلوک");
                 getSupportActionBar().setSubtitle((String) paletteName);
             }
         }
@@ -361,11 +361,11 @@ public class BlocksManagerDetailsActivity extends BaseAppCompatActivity {
 
                 case "Delete":
                     new MaterialAlertDialogBuilder(this)
-                            .setTitle("Delete block?")
-                            .setMessage("Are you sure you want to delete this block?")
-                            .setPositiveButton("Recycle bin", (dialog, which) -> _moveToRecycleBin(position))
+                            .setTitle("بلوک حذف شود؟")
+                            .setMessage("مطمئنید که می‌خواهید این بلوک را حذف کنید؟")
+                            .setPositiveButton("سطل بازیافت", (dialog, which) -> _moveToRecycleBin(position))
                             .setNegativeButton(R.string.common_word_cancel, null)
-                            .setNeutralButton("Delete permanently", (dialog, which) -> _deleteBlock(position))
+                            .setNeutralButton("حذف همیشگی", (dialog, which) -> _deleteBlock(position))
                             .show();
                     break;
 
@@ -422,9 +422,9 @@ public class BlocksManagerDetailsActivity extends BaseAppCompatActivity {
                 .setNegativeButton(R.string.common_word_cancel, null);
         if (palette == -1) {
             AtomicInteger restoreToChoice = new AtomicInteger(-1);
-            builder.setTitle("Restore to")
+            builder.setTitle("بازیابی به")
                     .setSingleChoiceItems(paletteNames.toArray(new String[0]), -1, (dialog, which) -> restoreToChoice.set(which))
-                    .setPositiveButton("Restore", (dialog, which) -> {
+                    .setPositiveButton("بازیابی", (dialog, which) -> {
                         if (restoreToChoice.get() != -1) {
                             all_blocks_list.get(position).put("palette", String.valueOf(restoreToChoice.get() + 9));
                             Collections.swap(all_blocks_list, position, all_blocks_list.size() - 1);
@@ -434,9 +434,9 @@ public class BlocksManagerDetailsActivity extends BaseAppCompatActivity {
                     });
         } else {
             AtomicInteger moveToChoice = new AtomicInteger(palette - 9);
-            builder.setTitle("Move to")
+            builder.setTitle("انتقال به")
                     .setSingleChoiceItems(paletteNames.toArray(new String[0]), palette - 9, (dialog, which) -> moveToChoice.set(which))
-                    .setPositiveButton("Move", (dialog, which) -> {
+                    .setPositiveButton("انتقال", (dialog, which) -> {
                         all_blocks_list.get(position).put("palette", String.valueOf(moveToChoice.get() + 9));
                         Collections.swap(all_blocks_list, position, all_blocks_list.size() - 1);
                         FileUtil.writeFile(blocks_path, getGson().toJson(all_blocks_list));
@@ -460,7 +460,7 @@ public class BlocksManagerDetailsActivity extends BaseAppCompatActivity {
                 }
             }
             MaterialAlertDialogBuilder import_dialog = new MaterialAlertDialogBuilder(this);
-            import_dialog.setTitle("Import blocks")
+            import_dialog.setTitle("وارد کردن بلوک‌ها")
                     .setMultiChoiceItems(names.toArray(new CharSequence[0]), null, (dialog, which, isChecked) -> {
                         if (isChecked) {
                             toAdd.add(which);
@@ -468,7 +468,7 @@ public class BlocksManagerDetailsActivity extends BaseAppCompatActivity {
                             toAdd.remove((Integer) which);
                         }
                     })
-                    .setPositiveButton("Import", (dialog, which) -> {
+                    .setPositiveButton("وارد کردن", (dialog, which) -> {
                         for (int i = 0; i < blocks.size(); i++) {
                             if (toAdd.contains(i)) {
                                 HashMap<String, Object> map = blocks.get(i);
@@ -478,9 +478,9 @@ public class BlocksManagerDetailsActivity extends BaseAppCompatActivity {
                         }
                         FileUtil.writeFile(blocks_path, getGson().toJson(all_blocks_list));
                         _refreshLists();
-                        SketchwareUtil.toast("Imported successfully");
+                        SketchwareUtil.toast("با موفقیت وارد شد");
                     })
-                    .setNegativeButton("Reverse", (dialog, which) -> {
+                    .setNegativeButton("معکوس", (dialog, which) -> {
                         for (int i = 0; i < blocks.size(); i++) {
                             if (!toAdd.contains(i)) {
                                 HashMap<String, Object> map = blocks.get(i);
@@ -490,9 +490,9 @@ public class BlocksManagerDetailsActivity extends BaseAppCompatActivity {
                         }
                         FileUtil.writeFile(blocks_path, getGson().toJson(all_blocks_list));
                         _refreshLists();
-                        SketchwareUtil.toast("Imported successfully");
+                        SketchwareUtil.toast("با موفقیت وارد شد");
                     })
-                    .setNeutralButton("All", (dialog, which) -> {
+                    .setNeutralButton("همه", (dialog, which) -> {
                         for (int i = 0; i < blocks.size(); i++) {
                             HashMap<String, Object> map = blocks.get(i);
                             map.put("palette", String.valueOf(palette));
@@ -500,7 +500,7 @@ public class BlocksManagerDetailsActivity extends BaseAppCompatActivity {
                         }
                         FileUtil.writeFile(blocks_path, getGson().toJson(all_blocks_list));
                         _refreshLists();
-                        SketchwareUtil.toast("Imported successfully");
+                        SketchwareUtil.toast("با موفقیت وارد شد");
                     })
                     .show();
         } catch (Exception e) {
@@ -569,7 +569,7 @@ public class BlocksManagerDetailsActivity extends BaseAppCompatActivity {
                 spec.setHint("");
             } else {
                 name.setText("");
-                name.setHint("(Invalid block name entry)");
+                name.setHint("(نام بلوک نامعتبر است)");
             }
 
             Object blockSpec = block.get("spec");
@@ -578,7 +578,7 @@ public class BlocksManagerDetailsActivity extends BaseAppCompatActivity {
                 spec.setHint("");
             } else {
                 spec.setText("");
-                spec.setHint("(Invalid block spec entry)");
+                spec.setHint("(مشخصات بلوک نامعتبر است)");
             }
 
             Object blockType = block.get("type");

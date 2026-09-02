@@ -199,8 +199,7 @@ public class ManageAppCompatActivity extends BaseAppCompatActivity {
             case 0 -> {
                 MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(this);
                 dialog.setTitle(R.string.common_word_reset);
-                dialog.setMessage(
-                        "Are you sure you want to reset appcompat attributes for " + filename + "?");
+                dialog.setMessage("مطمئنید که می‌خواهید ویژگی‌های appcompat این مورد بازنشانی شود: " + filename + "?");
                 dialog.setPositiveButton(
                         R.string.common_word_yes,
                         (d, w) -> {

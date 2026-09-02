@@ -362,7 +362,7 @@ public class BlocksHandler {
         hashMap.put("palette", "-1");
         hashMap.put(
                 "spec",
-                "CustomToast %s textColor %m.color textSize %d bgColor %m.color cornerRadius %d"
+                "CustomToast %s رنگ متن %m.color اندازه متن %d رنگ پس‌زمینه %m.color گردی گوشه %d"
                         + " gravity %m.gravity_t");
         arrayList.add(hashMap);
 

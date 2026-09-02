@@ -59,7 +59,7 @@ public class ManageLocalLibrary {
                 if (assetsPath instanceof String) {
                     assets.add((String) assetsPath);
                 } else {
-                    SketchwareUtil.toastError("Invalid assets path of enabled Local library #" + i, Toast.LENGTH_LONG);
+                    SketchwareUtil.toastError("مسیر assets کتابخانه محلی فعال نامعتبر است، شماره " + i, Toast.LENGTH_LONG);
                 }
             }
         }
@@ -77,7 +77,7 @@ public class ManageLocalLibrary {
             if (dexPath instanceof String) {
                 dexes.add((String) dexPath);
             } else {
-                SketchwareUtil.toastError("Invalid DEX path of enabled Local library #" + i, Toast.LENGTH_LONG);
+                SketchwareUtil.toastError("مسیر DEX کتابخانه محلی فعال نامعتبر است، شماره " + i, Toast.LENGTH_LONG);
             }
         }
 
@@ -146,7 +146,7 @@ public class ManageLocalLibrary {
             if (jarPath instanceof String) {
                 jars.add(new File((String) jarPath));
             } else {
-                SketchwareUtil.toastError("Invalid JAR path of enabled Local library #" + i + "->" + localLibrary.get("name"), Toast.LENGTH_LONG);
+                SketchwareUtil.toastError("مسیر JAR کتابخانه محلی فعال نامعتبر است، شماره " + i + "->" + localLibrary.get("name"), Toast.LENGTH_LONG);
             }
         }
 
@@ -164,7 +164,7 @@ public class ManageLocalLibrary {
                 classpath.append(":");
                 classpath.append((String) jarPath);
             } else {
-                SketchwareUtil.toastError("Invalid JAR path of enabled Local library #" + i + "->" + localLibrary.get("name"), Toast.LENGTH_LONG);
+                SketchwareUtil.toastError("مسیر JAR کتابخانه محلی فعال نامعتبر است، شماره " + i + "->" + localLibrary.get("name"), Toast.LENGTH_LONG);
             }
         }
 
@@ -196,7 +196,7 @@ public class ManageLocalLibrary {
                 if (packageName instanceof String) {
                     packageNames.add((String) packageName);
                 } else {
-                    SketchwareUtil.toastError("Invalid package name of enabled Local library #" + i, Toast.LENGTH_LONG);
+                    SketchwareUtil.toastError("نام پکیج کتابخانه محلی فعال نامعتبر است، شماره " + i, Toast.LENGTH_LONG);
                 }
             }
         }
@@ -228,7 +228,7 @@ public class ManageLocalLibrary {
                 if (proguardRulesPath instanceof String) {
                     proguardRules.add((String) proguardRulesPath);
                 } else {
-                    SketchwareUtil.toastError("Invalid ProGuard path of enabled Local library #" + i, Toast.LENGTH_LONG);
+                    SketchwareUtil.toastError("مسیر ProGuard کتابخانه محلی فعال نامعتبر است، شماره " + i, Toast.LENGTH_LONG);
                 }
             }
         }
@@ -247,7 +247,7 @@ public class ManageLocalLibrary {
                 if (resPath instanceof String) {
                     localLibraryRes.add((String) resPath);
                 } else {
-                    SketchwareUtil.toastError("Invalid res/ folder path of enabled Local library #" + i, Toast.LENGTH_LONG);
+                    SketchwareUtil.toastError("مسیر پوشه res/ کتابخانه محلی فعال نامعتبر است، شماره " + i, Toast.LENGTH_LONG);
                 }
             }
         }

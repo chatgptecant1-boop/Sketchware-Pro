@@ -66,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:textAppearance="?attr/textAppearanceBodyLarge"
-                tools:text="Custom view" />
+                tools:text="ویجت سفارشی" />
         </LinearLayout>
 
         <ImageView

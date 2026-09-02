@@ -64,15 +64,15 @@ public class ComponentsHandler {
                             try {
                                 return Integer.parseInt((String) id);
                             } catch (NumberFormatException e) {
-                                SketchwareUtil.toastError("Invalid ID entry in Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                                SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                                 break;
                             }
                         } else {
-                            SketchwareUtil.toastError("Invalid ID entry in Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                            SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                         }
                     }
                 } else {
-                    SketchwareUtil.toastError("Invalid type name entry in Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                    SketchwareUtil.toastError("ورودی نام نوع کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                 }
             } else {
                 SketchwareUtil.toastError("Invalid (null) Custom Component at position " + i);
@@ -106,15 +106,15 @@ public class ComponentsHandler {
                             if (componentTypeName instanceof String) {
                                 return (String) componentTypeName;
                             } else {
-                                SketchwareUtil.toastError("Invalid type name entry at Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                                SketchwareUtil.toastError("ورودی نام نوع کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                                 break;
                             }
                         }
                     } catch (NumberFormatException e) {
-                        SketchwareUtil.toastError("Invalid ID entry at Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                        SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                     }
                 } else {
-                    SketchwareUtil.toastError("Invalid ID entry at Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                    SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                 }
             } else {
                 SketchwareUtil.toastError("Invalid (null) Custom Component at position " + i);
@@ -148,15 +148,15 @@ public class ComponentsHandler {
                             if (componentName instanceof String) {
                                 return (String) componentName;
                             } else {
-                                SketchwareUtil.toastError("Invalid name entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                                SketchwareUtil.toastError("ورودی نام کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                                 break;
                             }
                         }
                     } catch (NumberFormatException e) {
-                        SketchwareUtil.toastError("Invalid ID entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                        SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                     }
                 } else {
-                    SketchwareUtil.toastError("Invalid ID entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                    SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                 }
             } else {
                 SketchwareUtil.toastError("Invalid (null) Custom Component at position " + i);
@@ -190,16 +190,16 @@ public class ComponentsHandler {
                                 try {
                                     return OldResourceIdMapper.getDrawableFromOldResourceId(Integer.parseInt((String) iconObject));
                                 } catch (NumberFormatException e) {
-                                    SketchwareUtil.toastError("Invalid icon entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                                    SketchwareUtil.toastError("ورودی آیکون کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                                     break;
                                 }
                             }
                         }
                     } catch (NumberFormatException e) {
-                        SketchwareUtil.toastError("Invalid ID entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                        SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                     }
                 } else {
-                    SketchwareUtil.toastError("Invalid ID entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                    SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                 }
             } else {
                 SketchwareUtil.toastError("Invalid (null) Custom Component at position " + i);
@@ -244,15 +244,15 @@ public class ComponentsHandler {
                             if (componentDescription instanceof String) {
                                 return (String) component.get("description");
                             } else {
-                                SketchwareUtil.toastError("Invalid description entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                                SketchwareUtil.toastError("ورودی توضیحات کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                                 break;
                             }
                         }
                     } catch (NumberFormatException e) {
-                        SketchwareUtil.toastError("Invalid ID entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                        SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                     }
                 } else {
-                    SketchwareUtil.toastError("Invalid ID entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                    SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                 }
             } else {
                 SketchwareUtil.toastError("Invalid (null) Custom Component at position " + i);
@@ -282,15 +282,15 @@ public class ComponentsHandler {
                                 if (componentUrl instanceof String) {
                                     return (String) componentUrl;
                                 } else {
-                                    SketchwareUtil.toastError("Invalid URL entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                                    SketchwareUtil.toastError("آدرس اینترنتی کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                                     break;
                                 }
                             }
                         } catch (NumberFormatException e) {
-                            SketchwareUtil.toastError("Invalid ID entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                            SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                         }
                     } else {
-                        SketchwareUtil.toastError("Invalid ID entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                        SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                     }
                 } else {
                     SketchwareUtil.toastError("Invalid (null) Custom Component at position " + i);
@@ -325,15 +325,15 @@ public class ComponentsHandler {
                             if (componentBuildClass instanceof String) {
                                 return (String) componentBuildClass;
                             } else {
-                                SketchwareUtil.toastError("Invalid build class entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                                SketchwareUtil.toastError("ورودی کلاس build کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                                 break;
                             }
                         }
                     } catch (NumberFormatException e) {
-                        SketchwareUtil.toastError("Invalid ID entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                        SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                     }
                 } else {
-                    SketchwareUtil.toastError("Invalid ID entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                    SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                 }
             } else {
                 SketchwareUtil.toastError("Invalid (null) Custom Component at position " + i);
@@ -363,10 +363,10 @@ public class ComponentsHandler {
                     try {
                         list.add(new ComponentBean(Integer.parseInt((String) componentId)));
                     } catch (NumberFormatException e) {
-                        SketchwareUtil.toastError("Invalid ID entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                        SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                     }
                 } else {
-                    SketchwareUtil.toastError("Invalid ID entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                    SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                 }
             } else {
                 SketchwareUtil.toastError("Invalid (null) Custom Component at position " + i);
@@ -395,15 +395,15 @@ public class ComponentsHandler {
                             if (componentVarName instanceof String) {
                                 return (String) componentVarName;
                             } else {
-                                SketchwareUtil.toastError("Invalid variable name entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                                SketchwareUtil.toastError("ورودی نام متغیر کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                                 break;
                             }
                         }
                     } catch (NumberFormatException e) {
-                        SketchwareUtil.toastError("Invalid ID entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                        SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                     }
                 } else {
-                    SketchwareUtil.toastError("Invalid ID entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                    SketchwareUtil.toastError("شناسه کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                 }
             } else {
                 SketchwareUtil.toastError("Invalid (null) Custom Component at position " + i);
@@ -435,12 +435,12 @@ public class ComponentsHandler {
                         if (componentClass instanceof String) {
                             return (String) componentClass;
                         } else {
-                            SketchwareUtil.toastError("Invalid class entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                            SketchwareUtil.toastError("ورودی کلاس کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                             break;
                         }
                     }
                 } else {
-                    SketchwareUtil.toastError("Invalid type name entry for Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                    SketchwareUtil.toastError("ورودی نام نوع کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                 }
             } else {
                 SketchwareUtil.toastError("Invalid (null) Custom Component at position " + i);
@@ -473,11 +473,11 @@ public class ComponentsHandler {
                                         ((String) componentAdditionalVar).replace("###", varName);
                             }
                         } else {
-                            SketchwareUtil.toastError("Invalid additional variable entry at Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                            SketchwareUtil.toastError("ورودی متغیر اضافی کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                         }
                     }
                 } else {
-                    SketchwareUtil.toastError("Invalid name entry at Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                    SketchwareUtil.toastError("ورودی نام کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                 }
             } else {
                 SketchwareUtil.toastError("Invalid (null) Custom Component at position " + i);
@@ -505,7 +505,7 @@ public class ComponentsHandler {
                                 return ((String) componentDefineAdditionalVar).replace("###", varName);
                             }
                         } else {
-                            SketchwareUtil.toastError("Invalid additional variable entry in Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                            SketchwareUtil.toastError("ورودی متغیر اضافی کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                         }
                     }
                 } else {
@@ -533,12 +533,12 @@ public class ComponentsHandler {
                             String[] componentImportsArray = componentImportsString.split("\n");
                             arrayList.addAll(Arrays.asList(componentImportsArray));
                         } else {
-                            SketchwareUtil.toastError("Invalid imports entry in Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                            SketchwareUtil.toastError("ورودی ایمپورت‌های کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                             break;
                         }
                     }
                 } else {
-                    SketchwareUtil.toastError("Invalid variable name entry in Custom Component #" + (i + 1), Toast.LENGTH_LONG);
+                    SketchwareUtil.toastError("ورودی نام متغیر کامپوننت سفارشی نامعتبر است، شماره " + (i + 1), Toast.LENGTH_LONG);
                 }
             } else {
                 SketchwareUtil.toastError("Invalid (null) Custom Component at position " + i);

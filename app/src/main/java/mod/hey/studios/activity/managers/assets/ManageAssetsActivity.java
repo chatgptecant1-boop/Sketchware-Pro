@@ -119,10 +119,10 @@ public class ManageAssetsActivity extends BaseAppCompatActivity {
 
         var dialog = new MaterialAlertDialogBuilder(this)
                 .setView(dialogBinding.getRoot())
-                .setTitle("Create new")
-                .setMessage("If you're creating a file, make sure to add an extension.")
-                .setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.dismiss())
-                .setPositiveButton("Create", null)
+                .setTitle("ایجاد جدید")
+                .setMessage("اگر فایل می‌سازید، حتماً پسوند آن را وارد کنید.")
+                .setNegativeButton("لغو", (dialogInterface, i) -> dialogInterface.dismiss())
+                .setPositiveButton("ایجاد", null)
                 .create();
 
         dialog.setOnShowListener(dialogInterface -> {
@@ -141,12 +141,12 @@ public class ManageAssetsActivity extends BaseAppCompatActivity {
                 } else if (checkedChipId == R.id.chip_folder) {
                     FileUtil.makeDir(new File(current_path, editable).getAbsolutePath());
                 } else {
-                    SketchwareUtil.toast("Select a file type");
+                    SketchwareUtil.toast("نوع فایل را انتخاب کنید");
                     return;
                 }
 
                 refresh();
-                SketchwareUtil.toast("File was created successfully");
+                SketchwareUtil.toast("فایل با موفقیت ساخته شد");
                 dialogInterface.dismiss();
             });
         });
@@ -165,7 +165,7 @@ public class ManageAssetsActivity extends BaseAppCompatActivity {
         FilePickerOptions options = new FilePickerOptions();
         options.setSelectionMode(SelectionMode.BOTH);
         options.setMultipleSelection(true);
-        options.setTitle("Select an asset file");
+        options.setTitle("یک فایل Asset انتخاب کنید");
 
         FilePickerCallback callback = new FilePickerCallback() {
             @Override
@@ -190,14 +190,14 @@ public class ManageAssetsActivity extends BaseAppCompatActivity {
         var inputText = dialogBinding.inputText;
 
         var dialog = new MaterialAlertDialogBuilder(this)
-                .setTitle("Rename " + assetsAdapter.getFileName(position))
+                .setTitle("تغییر نام " + assetsAdapter.getFileName(position))
                 .setView(dialogBinding.getRoot())
-                .setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.dismiss())
-                .setPositiveButton("Rename", (dialogInterface, i) -> {
+                .setNegativeButton("لغو", (dialogInterface, i) -> dialogInterface.dismiss())
+                .setPositiveButton("تغییر نام", (dialogInterface, i) -> {
                     if (!Helper.getText(inputText).isEmpty()) {
                         FileUtil.renameFile(assetsAdapter.getItem(position), new File(current_path, Helper.getText(inputText)).getAbsolutePath());
                         refresh();
-                        SketchwareUtil.toast("Renamed successfully");
+                        SketchwareUtil.toast("با موفقیت تغییر نام یافت");
                     }
                     dialogInterface.dismiss();
                 })
@@ -213,13 +213,13 @@ public class ManageAssetsActivity extends BaseAppCompatActivity {
 
     private void showDeleteDialog(int position) {
         new MaterialAlertDialogBuilder(this)
-                .setTitle("Delete " + assetsAdapter.getFileName(position) + "?")
-                .setMessage("Are you sure you want to delete this " + (assetsAdapter.isFolder(position) ? "folder" : "file") + "? "
+                .setTitle("حذف " + assetsAdapter.getFileName(position) + "?")
+                .setMessage("مطمئنید که می‌خواهید این " + (assetsAdapter.isFolder(position) ? "folder" : "file") + "? "
                         + "This action cannot be undone.")
                 .setPositiveButton(R.string.common_word_delete, (dialog, which) -> {
                     FileUtil.deleteFile(assetsAdapter.getItem(position));
                     refresh();
-                    SketchwareUtil.toast("Deleted successfully");
+                    SketchwareUtil.toast("با موفقیت حذف شد");
                 })
                 .setNegativeButton(R.string.common_word_cancel, null)
                 .create()

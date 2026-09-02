@@ -123,15 +123,15 @@ public class ManageResourceActivity extends BaseAppCompatActivity {
     private void handleFab() {
         var optionsButton = binding.showOptionsButton;
         if (isInMainDirectory()) {
-            optionsButton.setText("Create new");
+            optionsButton.setText("ایجاد جدید");
             hideShowOptionsButton(true);
         } else {
-            optionsButton.setText("Create or import");
+            optionsButton.setText("ایجاد یا وارد کردن");
         }
     }
 
     private void initToolbar() {
-        binding.topAppBar.setTitle("Resource Manager");
+        binding.topAppBar.setTitle("مدیریت منابع");
         binding.topAppBar.setNavigationOnClickListener(v -> onBackPressed());
         binding.showOptionsButton.setOnClickListener(view -> {
             if (isInMainDirectory()) {
@@ -193,9 +193,9 @@ public class ManageResourceActivity extends BaseAppCompatActivity {
         var dialog = new MaterialAlertDialogBuilder(this)
                 .setView(dialogBinding.getRoot())
                 .setTitle(isFolder ? "Create a new folder" : "Create a new file")
-                .setMessage("Enter a name for the new " + (isFolder ? "folder" : "file"))
-                .setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.dismiss())
-                .setPositiveButton("Create", null)
+                .setMessage("نامی برای مورد جدید وارد کنید: " + (isFolder ? "folder" : "file"))
+                .setNegativeButton("لغو", (dialogInterface, i) -> dialogInterface.dismiss())
+                .setPositiveButton("ایجاد", null)
                 .create();
 
         dialogBinding.chipGroupTypes.setVisibility(View.GONE);
@@ -229,7 +229,7 @@ public class ManageResourceActivity extends BaseAppCompatActivity {
                     FileUtil.writeFile(path, "<?xml version=\"1.0\" encoding=\"utf-8\"?>");
                 }
                 handleAdapter(temp);
-                SketchwareUtil.toast("Created file successfully");
+                SketchwareUtil.toast("فایل با موفقیت ساخته شد");
                 dialog.dismiss();
             });
 
@@ -251,7 +251,7 @@ public class ManageResourceActivity extends BaseAppCompatActivity {
         FilePickerOptions options = new FilePickerOptions();
         options.setSelectionMode(SelectionMode.BOTH);
         options.setMultipleSelection(true);
-        options.setTitle("Select resource files");
+        options.setTitle("فایل‌های منبع را انتخاب کنید");
 
         FilePickerCallback callback = new FilePickerCallback() {
             @Override
@@ -281,13 +281,13 @@ public class ManageResourceActivity extends BaseAppCompatActivity {
         var inputText = dialogBinding.inputText;
 
         var dialog = new MaterialAlertDialogBuilder(this)
-                .setTitle("Rename")
+                .setTitle("تغییر نام")
                 .setView(dialogBinding.getRoot())
-                .setNegativeButton("Cancel", (dialogInterface, i) -> dialogInterface.dismiss())
-                .setPositiveButton("Rename", (dialogInterface, i) -> {
+                .setNegativeButton("لغو", (dialogInterface, i) -> dialogInterface.dismiss())
+                .setPositiveButton("تغییر نام", (dialogInterface, i) -> {
                     if (!Helper.getText(inputText).isEmpty()) {
                         if (FileUtil.renameFile(path, path.substring(0, path.lastIndexOf("/")) + "/" + Helper.getText(inputText))) {
-                            SketchwareUtil.toast("Renamed successfully");
+                            SketchwareUtil.toast("با موفقیت تغییر نام یافت");
                         } else {
                             SketchwareUtil.toastError("Renaming failed");
                         }
@@ -314,8 +314,8 @@ public class ManageResourceActivity extends BaseAppCompatActivity {
 
     private void showDeleteDialog(int position) {
         new MaterialAlertDialogBuilder(this)
-                .setTitle("Delete " + Uri.fromFile(new File(adapter.getItem(position))).getLastPathSegment() + "?")
-                .setMessage("Are you sure you want to delete this " + (FileUtil.isDirectory(adapter.getItem(position)) ? "folder" : "file") + "? "
+                .setTitle("حذف " + Uri.fromFile(new File(adapter.getItem(position))).getLastPathSegment() + "?")
+                .setMessage("مطمئنید که می‌خواهید این " + (FileUtil.isDirectory(adapter.getItem(position)) ? "folder" : "file") + "? "
                         + "This action cannot be undone.")
                 .setPositiveButton(R.string.common_word_delete, (dialog, which) -> {
                     FileUtil.deleteFile(frc.listFileResource.get(position));
@@ -339,7 +339,7 @@ public class ManageResourceActivity extends BaseAppCompatActivity {
             }
             startActivity(intent);
         } else {
-            SketchwareUtil.toast("Only XML files can be edited");
+            SketchwareUtil.toast("فقط فایل‌های XML قابل ویرایش هستند");
         }
     }
 
@@ -352,7 +352,7 @@ public class ManageResourceActivity extends BaseAppCompatActivity {
             intent.putExtra("xml", "");
             startActivity(intent);
         } else {
-            SketchwareUtil.toast("Only XML files can be edited");
+            SketchwareUtil.toast("فقط فایل‌های XML قابل ویرایش هستند");
         }
     }
 
@@ -407,7 +407,7 @@ public class ManageResourceActivity extends BaseAppCompatActivity {
                                 intent.setDataAndType(Uri.fromFile(new File(frc.listFileResource.get(position))), "text/plain");
                                 startActivity(intent);
                             } else {
-                                SketchwareUtil.toast("Only XML files can be edited");
+                                SketchwareUtil.toast("فقط فایل‌های XML قابل ویرایش هستند");
                             }
                         }
                         case "Edit" -> goEdit2(position);

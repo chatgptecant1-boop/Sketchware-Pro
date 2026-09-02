@@ -156,10 +156,10 @@ public class ColorsEditor extends Fragment {
             dialogBinding.colorPreview.setBackgroundColor(PropertiesUtil.parseColor(colorsEditorManager.getColorValue(activity.getApplicationContext(), colorModel.getColorValue(), 3, isNightVariant)));
             dialogBinding.importantNote.setVisibility(defaultColors.containsKey(colorModel.getColorName()) ? View.VISIBLE : View.GONE);
 
-            dialog.setTitle("Edit color");
+            dialog.setTitle("ویرایش رنگ");
 
         } else {
-            dialog.setTitle("Create new color");
+            dialog.setTitle("رنگ جدید");
             dialogBinding.colorPreview.setBackgroundColor(0xFFFFFF);
         }
 
@@ -205,12 +205,12 @@ public class ColorsEditor extends Fragment {
             }
         });
 
-        dialog.setPositiveButton("Save", (v1, which) -> {
+        dialog.setPositiveButton("ذخیره", (v1, which) -> {
             String key = Objects.requireNonNull(dialogBinding.colorKeyInput.getText()).toString();
             String value = Objects.requireNonNull(dialogBinding.colorValueInput.getText()).toString();
 
             if (key.isEmpty() || value.isEmpty()) {
-                SketchwareUtil.toastError("Please fill in all fields", Toast.LENGTH_SHORT);
+                SketchwareUtil.toastError("لطفاً همه فیلدها را پر کنید", Toast.LENGTH_SHORT);
                 return;
             }
 
@@ -259,7 +259,7 @@ public class ColorsEditor extends Fragment {
         });
 
         if (colorModel != null && !defaultColors.containsKey(colorModel.getColorName())) {
-            dialog.setNeutralButton("Delete", (v1, which) -> {
+            dialog.setNeutralButton("حذف", (v1, which) -> {
                 colorList.remove(position);
                 adapter.notifyItemRemoved(position);
                 adapter.notifyItemRangeChanged(position, colorList.size());

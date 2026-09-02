@@ -125,7 +125,7 @@
                         style="@style/Widget.Material3.Chip.Filter"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="String"
+                        android:text="رشته"
                         app:checkedIconTint="?colorPrimary"
                         app:chipCornerRadius="8dp"
                         app:closeIconVisible="false" />
@@ -135,7 +135,7 @@
                         style="@style/Widget.Material3.Chip.Filter"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Number"
+                        android:text="عدد"
                         app:checkedIconTint="?colorPrimary"
                         app:chipCornerRadius="8dp"
                         app:closeIconVisible="false" />
@@ -145,7 +145,7 @@
                         style="@style/Widget.Material3.Chip.Filter"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Boolean"
+                        android:text="بولی"
                         app:checkedIconTint="?colorPrimary"
                         app:chipCornerRadius="8dp"
                         app:closeIconVisible="false" />
@@ -165,7 +165,7 @@
                         style="@style/Widget.Material3.Chip.Filter"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="List String"
+                        android:text="لیست String"
                         app:checkedIconTint="?colorPrimary"
                         app:chipCornerRadius="8dp"
                         app:closeIconVisible="false" />
@@ -175,7 +175,7 @@
                         style="@style/Widget.Material3.Chip.Filter"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="List Map"
+                        android:text="لیست Map"
                         app:checkedIconTint="?colorPrimary"
                         app:chipCornerRadius="8dp"
                         app:closeIconVisible="false" />
@@ -185,7 +185,7 @@
                         style="@style/Widget.Material3.Chip.Filter"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="View"
+                        android:text="نما"
                         app:checkedIconTint="?colorPrimary"
                         app:chipCornerRadius="8dp"
                         app:closeIconVisible="false" />
@@ -317,7 +317,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
                     android:layout_weight="1"
-                    android:hint="Parameter"
+                    android:hint="پارامتر"
                     app:placeholderText="m.name (without % sign)"
                     app:counterEnabled="true"
                     app:counterMaxLength="100"

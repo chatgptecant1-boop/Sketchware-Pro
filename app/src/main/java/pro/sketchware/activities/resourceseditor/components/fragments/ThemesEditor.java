@@ -122,8 +122,8 @@ public class ThemesEditor extends Fragment {
     public void showAddThemeDialog() {
         MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(activity);
         StyleEditorAddBinding binding = StyleEditorAddBinding.inflate(getLayoutInflater());
-        dialog.setTitle("Create new theme");
-        dialog.setPositiveButton("Create", (d, which) -> {
+        dialog.setTitle("تم جدید");
+        dialog.setPositiveButton("ایجاد", (d, which) -> {
             String themeName = Objects.requireNonNull(binding.styleName.getText()).toString();
             String parent = Objects.requireNonNull(binding.styleParent.getText()).toString();
             String header = Objects.requireNonNull(binding.styleHeaderInput.getText()).toString();
@@ -159,8 +159,8 @@ public class ThemesEditor extends Fragment {
             binding.styleHeaderInput.setText(notesMap.get(position));
         }
 
-        dialog.setTitle("Edit theme");
-        dialog.setPositiveButton("Edit", (d, which) -> {
+        dialog.setTitle("ویرایش تم");
+        dialog.setPositiveButton("ویرایش", (d, which) -> {
             String themeName = Objects.requireNonNull(binding.styleName.getText()).toString();
             String parent = Objects.requireNonNull(binding.styleParent.getText()).toString();
             String header = Objects.requireNonNull(binding.styleHeaderInput.getText()).toString();
@@ -182,8 +182,8 @@ public class ThemesEditor extends Fragment {
             hasUnsavedChanges = true;
         });
         dialog.setNeutralButton(Helper.getResString(R.string.common_word_delete), (d, which) -> new MaterialAlertDialogBuilder(requireContext())
-                .setTitle("Warning")
-                .setMessage("Are you sure you want to delete " + theme.getStyleName() + "?")
+                .setTitle("هشدار")
+                .setMessage("مطمئنید که می‌خواهید حذف کنید: " + theme.getStyleName() + "?")
                 .setPositiveButton(R.string.common_word_yes, (d2, w) -> {
                     themesList.remove(position);
                     notesMap.remove(position);
@@ -192,7 +192,7 @@ public class ThemesEditor extends Fragment {
                     updateNoContentLayout();
                     hasUnsavedChanges = true;
                 })
-                .setNegativeButton("Cancel", null)
+                .setNegativeButton("لغو", null)
                 .show());
         dialog.setNegativeButton(getString(R.string.cancel), null);
         dialog.setView(binding.getRoot());
@@ -219,15 +219,15 @@ public class ThemesEditor extends Fragment {
                     @Override
                     public void onItemLongClick(LinkedHashMap<String, String> attributes, String attr) {
                         new MaterialAlertDialogBuilder(requireContext())
-                                .setTitle("Warning")
-                                .setMessage("Are you sure you want to delete " + attr + "?")
+                                .setTitle("هشدار")
+                                .setMessage("مطمئنید که می‌خواهید حذف کنید: " + attr + "?")
                                 .setPositiveButton(R.string.common_word_yes, (d, w) -> {
                                     attributes.remove(attr);
                                     theme.setAttributes(attributes);
                                     attributesAdapter.submitList(new ArrayList<>(attributes.keySet()));
                                     hasUnsavedChanges = true;
                                 })
-                                .setNegativeButton("Cancel", null)
+                                .setNegativeButton("لغو", null)
                                 .create()
                                 .show();
                     }

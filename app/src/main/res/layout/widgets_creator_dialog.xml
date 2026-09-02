@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="4dp"
-            android:hint="Widget title">
+            android:hint="عنوان ویجت">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/widget_title"
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="4dp"
-            android:hint="Widget class name">
+            android:hint="نام کلاس ویجت">
 
             <com.google.android.material.textfield.MaterialAutoCompleteTextView
                 android:id="@+id/widget_name"
@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="4dp"
-            android:hint="Select widget type">
+            android:hint="نوع ویجت را انتخاب کنید">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/widget_type"
@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="4dp"
-            android:hint="Select category">
+            android:hint="انتخاب دسته">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/add_widget_to"
@@ -79,7 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="4dp"
-            android:hint="XML attributes">
+            android:hint="ویژگی‌های XML">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/inject_code"

@@ -101,7 +101,7 @@ public class ViewCodeEditorActivity extends BaseAppCompatActivity {
         projectLibrary = jC.c(sc_id).c();
         getOnBackPressedDispatcher().addCallback(this, onBackPressedCallback);
         setSupportActionBar(binding.toolbar);
-        getSupportActionBar().setTitle("XML Editor");
+        getSupportActionBar().setTitle("ویرایشگر XML");
         getSupportActionBar().setSubtitle(title);
         binding.toolbar.setNavigationOnClickListener(v -> {
             if (onBackPressedCallback.isEnabled()) {
@@ -237,7 +237,7 @@ public class ViewCodeEditorActivity extends BaseAppCompatActivity {
                 }
                 SketchwareUtil.toast("Saved");
             } else {
-                SketchwareUtil.toast("No changes to save");
+                SketchwareUtil.toast("تغییری برای ذخیره نیست");
             }
         } catch (Exception e) {
             SketchwareUtil.toastError(e.toString());

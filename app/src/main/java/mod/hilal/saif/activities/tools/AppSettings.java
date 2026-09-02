@@ -93,7 +93,7 @@ public class AppSettings extends BaseAppCompatActivity {
         var preferences = new ArrayList<LibraryCategoryView>();
 
         LibraryCategoryView managersCategory = new LibraryCategoryView(this);
-        managersCategory.setTitle("Managers");
+        managersCategory.setTitle("مدیریت‌ها");
         preferences.add(managersCategory);
 
         managersCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_block, "Block manager", "Manage your own blocks to use in Logic Editor", new ActivityLauncher(new Intent(getApplicationContext(), BlocksManager.class))), true);
@@ -104,7 +104,7 @@ public class AppSettings extends BaseAppCompatActivity {
         managersCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_article, Helper.getResString(R.string.design_drawer_menu_title_logcat_reader), Helper.getResString(R.string.design_drawer_menu_subtitle_logcat_reader), new ActivityLauncher(new Intent(getApplicationContext(), LogReaderActivity.class))), false);
 
         LibraryCategoryView generalCategory = new LibraryCategoryView(this);
-        generalCategory.setTitle("General");
+        generalCategory.setTitle("همگانی");
         preferences.add(generalCategory);
 
         generalCategory.addLibraryItem(createPreference(R.drawable.ic_mtrl_settings_applications, "App settings", "Change general app settings", new ActivityLauncher(new Intent(getApplicationContext(), ConfigActivity.class))), true);
@@ -138,7 +138,7 @@ public class AppSettings extends BaseAppCompatActivity {
         FilePickerOptions options = new FilePickerOptions();
         options.setSelectionMode(SelectionMode.BOTH);
         options.setMultipleSelection(true);
-        options.setTitle("Select an entry to modify");
+        options.setTitle("یک مورد را برای ویرایش انتخاب کنید");
         options.setInitialDirectory(getFilesDir().getParentFile().getAbsolutePath());
 
         FilePickerCallback callback = new FilePickerCallback() {
@@ -147,11 +147,11 @@ public class AppSettings extends BaseAppCompatActivity {
                 boolean isDirectory = files.get(0).isDirectory();
                 if (files.size() > 1 || isDirectory) {
                     new MaterialAlertDialogBuilder(AppSettings.this)
-                            .setTitle("Select an action")
+                            .setTitle("یک عمل انتخاب کنید")
                             .setSingleChoiceItems(new String[]{"Delete"}, -1, (actionDialog, which) -> {
                                 new MaterialAlertDialogBuilder(AppSettings.this)
-                                        .setTitle("Delete " + (isDirectory ? "folder" : "file") + "?")
-                                        .setMessage("Are you sure you want to delete this " + (isDirectory ? "folder" : "file") + " permanently? This cannot be undone.")
+                                        .setTitle("حذف " + (isDirectory ? "folder" : "file") + "?")
+                                        .setMessage("مطمئنید که می‌خواهید این " + (isDirectory ? "folder" : "file") + " permanently? This cannot be undone.")
                                         .setPositiveButton(R.string.common_word_delete, (deleteConfirmationDialog, pressedButton) -> {
                                             for (File file : files) {
                                                 FileUtil.deleteFile(file.getAbsolutePath());
@@ -165,7 +165,7 @@ public class AppSettings extends BaseAppCompatActivity {
                             .show();
                 } else {
                     new MaterialAlertDialogBuilder(AppSettings.this)
-                            .setTitle("Select an action")
+                            .setTitle("یک عمل انتخاب کنید")
                             .setSingleChoiceItems(new String[]{"Edit", "Delete"}, -1, (actionDialog, which) -> {
                                 switch (which) {
                                     case 0 -> {
@@ -176,8 +176,8 @@ public class AppSettings extends BaseAppCompatActivity {
                                         startActivity(intent);
                                     }
                                     case 1 -> new MaterialAlertDialogBuilder(AppSettings.this)
-                                            .setTitle("Delete file?")
-                                            .setMessage("Are you sure you want to delete this file permanently? This cannot be undone.")
+                                            .setTitle("فایل حذف شود؟")
+                                            .setMessage("مطمئنید که می‌خواهید این فایل را برای همیشه حذف کنید؟ این کار قابل بازگشت نیست.")
                                             .setPositiveButton(R.string.common_word_delete, (deleteDialog, pressedButton) ->
                                                     FileUtil.deleteFile(files.get(0).getAbsolutePath()))
                                             .setNegativeButton(R.string.common_word_cancel, null)
@@ -196,7 +196,7 @@ public class AppSettings extends BaseAppCompatActivity {
     private void signApkFileDialog() {
         boolean[] isAPKSelected = {false};
         MaterialAlertDialogBuilder apkPathDialog = new MaterialAlertDialogBuilder(this);
-        apkPathDialog.setTitle("Sign APK with testkey");
+        apkPathDialog.setTitle("امضای APK با testkey");
 
         DialogSelectApkToSignBinding binding = DialogSelectApkToSignBinding.inflate(getLayoutInflater());
         View testkey_root = binding.getRoot();
@@ -216,9 +216,9 @@ public class AppSettings extends BaseAppCompatActivity {
             dialog.show(getSupportFragmentManager(), "file_picker");
         });
 
-        apkPathDialog.setPositiveButton("Continue", (v, which) -> {
+        apkPathDialog.setPositiveButton("ادامه", (v, which) -> {
             if (!isAPKSelected[0]) {
-                SketchwareUtil.toast("Please select an APK file to sign", Toast.LENGTH_SHORT);
+                SketchwareUtil.toast("لطفاً فایل APK را برای امضا انتخاب کنید", Toast.LENGTH_SHORT);
                 shakeView(binding.selectFile);
                 return;
             }
@@ -230,11 +230,11 @@ public class AppSettings extends BaseAppCompatActivity {
             if (new File(output_apk_path).exists()) {
                 MaterialAlertDialogBuilder confirmOverwrite = new MaterialAlertDialogBuilder(this);
                 confirmOverwrite.setIcon(R.drawable.color_save_as_new_96);
-                confirmOverwrite.setTitle("File exists");
-                confirmOverwrite.setMessage("An APK named " + output_apk_file_name + " already exists at /sketchware/signed_apk/.  Overwrite it?");
+                confirmOverwrite.setTitle("فایل موجود است");
+                confirmOverwrite.setMessage("یک APK با نام " + output_apk_file_name + " already exists at /sketchware/signed_apk/.  Overwrite it?");
 
                 confirmOverwrite.setNegativeButton(Helper.getResString(R.string.common_word_cancel), null);
-                confirmOverwrite.setPositiveButton("Overwrite", (view, which1) -> {
+                confirmOverwrite.setPositiveButton("بازنویسی", (view, which1) -> {
                     v.dismiss();
                     signApkFileWithDialog(input_apk_path, output_apk_path, true,
                             null, null, null, null);
@@ -263,7 +263,7 @@ public class AppSettings extends BaseAppCompatActivity {
         scroll_view.addView(tv_log);
         layout_quiz.addView(scroll_view);
 
-        tv_progress.setText("Signing APK...");
+        tv_progress.setText("در حال امضای APK…");
 
         AlertDialog building_dialog = new MaterialAlertDialogBuilder(this)
                 .setView(building_root)
@@ -288,11 +288,11 @@ public class AppSettings extends BaseAppCompatActivity {
                 runOnUiThread(() -> {
                     if (ApkSigner.LogCallback.errorCount.get() == 0) {
                         building_dialog.dismiss();
-                        SketchwareUtil.toast("Successfully saved signed APK to: /Internal storage/sketchware/signed_apk/"
+                        SketchwareUtil.toast("APK امضاشده در /Internal storage/sketchware/signed_apk/ ذخیره شد"
                                         + Uri.fromFile(new File(outputApkPath)).getLastPathSegment(),
                                 Toast.LENGTH_LONG);
                     } else {
-                        tv_progress.setText("An error occurred. Check the log for more details.");
+                        tv_progress.setText("خطایی رخ داد. جزئیات بیشتر را در لاگ ببینید.");
                     }
                 });
             }

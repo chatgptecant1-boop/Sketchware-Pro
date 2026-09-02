@@ -278,7 +278,7 @@ public class WidgetsCreatorManager {
                 FilePickerOptions options = new FilePickerOptions();
                 options.setMultipleSelection(true);
                 options.setExtensions(new String[]{"json"});
-                options.setTitle("Select .json widgets files");
+                options.setTitle("فایل‌های ویجت .json را انتخاب کنید");
 
                 FilePickerCallback callback = new FilePickerCallback() {
                     @Override
@@ -291,7 +291,7 @@ public class WidgetsCreatorManager {
             } else {
                 String exportFilePath = widgetExportDirectoryPath + "allWidgets.json";
                 FileUtil.writeFile(exportFilePath, getGson().toJson(widgetConfigurationsList));
-                SketchwareUtil.toast("Exported in " + exportFilePath);
+                SketchwareUtil.toast("خروجی گرفته شد در " + exportFilePath);
             }
             return true;
         });
@@ -333,7 +333,7 @@ public class WidgetsCreatorManager {
         if (!widgetConfigurationsList.isEmpty()) {
             FileUtil.writeFile(widgetsJsonFilePath, getGson().toJson(widgetConfigurationsList));
             viewEditorFragment.e();
-            SketchwareUtil.toast("Imported!");
+            SketchwareUtil.toast("وارد شد!");
         }
     }
 
@@ -473,7 +473,7 @@ public class WidgetsCreatorManager {
         Activity activity = viewEditorFragment.requireActivity();
         DialogSelectorActionsBinding dialogBinding = DialogSelectorActionsBinding.inflate(LayoutInflater.from(activity));
         MaterialAlertDialogBuilder dialogBuilder = new MaterialAlertDialogBuilder(activity);
-        dialogBuilder.setTitle("Actions");
+        dialogBuilder.setTitle("عملگرها");
         dialogBuilder.setView(dialogBinding.getRoot());
 
         AlertDialog dialog = dialogBuilder.create();
@@ -488,7 +488,7 @@ public class WidgetsCreatorManager {
             HashMap<String, Object> mapToExport = widgetConfigurationsList.get(position);
             String exportFilePath = widgetExportDirectoryPath + mapToExport.get("title") + ".json";
             FileUtil.writeFile(exportFilePath, "[" + getGson().toJson(mapToExport) + "]");
-            SketchwareUtil.toast("Exported in " + exportFilePath);
+            SketchwareUtil.toast("خروجی گرفته شد در " + exportFilePath);
             dialog.dismiss();
         });
         dialogBinding.delete.setOnClickListener(v -> {

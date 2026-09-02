@@ -76,7 +76,7 @@ public class ManageGoogleMapActivity extends BaseAppCompatActivity implements Vi
         intent.putExtra("google_map", googleMapLibraryBean);
         setResult(RESULT_OK, intent);
         if (Helper.getText(editApiKey).isEmpty() && libSwitch.isChecked()) {
-            bB.a(getApplicationContext(), "Api key can't be empty!", Toast.LENGTH_SHORT).show();
+            bB.a(getApplicationContext(), "کلید API نمی‌تواند خالی باشد!", Toast.LENGTH_SHORT).show();
         } else {
             super.onBackPressed();
         }
@@ -118,7 +118,7 @@ public class ManageGoogleMapActivity extends BaseAppCompatActivity implements Vi
             googleMapLibraryBean = savedInstanceState.getParcelable("google_map");
         }
 
-        getSupportActionBar().setTitle("GoogleMap Settings");
+        getSupportActionBar().setTitle("تنظیمات GoogleMap");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
         toolbar.setNavigationOnClickListener(v -> onBackPressed());

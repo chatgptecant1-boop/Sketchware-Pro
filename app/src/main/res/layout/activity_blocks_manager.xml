@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true"
         app:navigationIcon="?attr/homeAsUpIndicator"
-        app:title="Block Manager" />
+        app:title="مدیریت بلوک‌ها" />
 
     <LinearLayout
         android:id="@+id/background"
@@ -79,7 +79,7 @@
                         android:textAppearance="?attr/textAppearanceBodyMedium"
                         android:textColor="?attr/colorOnSurfaceVariant"
                         android:textSize="12sp"
-                        tools:text="Blocks: 23" />
+                        tools:text="بلوک‌ها: ۲۳" />
                 </LinearLayout>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>

@@ -106,7 +106,7 @@ public class CustomBlocksDialog {
 
             } else {
                 context.runOnUiThread(() -> {
-                    dialogBinding.subtitle.setText("You haven't used any custom blocks in this project");
+                    dialogBinding.subtitle.setText("در این پروژه از بلوک سفارشی استفاده نکرده‌اید");
                     dialogBinding.progressIndicator.setVisibility(View.GONE);
                 });
             }
@@ -137,18 +137,18 @@ public class CustomBlocksDialog {
         AtomicInteger selectedPalette = new AtomicInteger(paletteList.size() - 1);
 
         new MaterialAlertDialogBuilder(context)
-                .setTitle("Import Custom blocks to")
+                .setTitle("وارد کردن بلوک‌های سفارشی به")
                 .setSingleChoiceItems(paletteNames.toArray(new String[0]), selectedPalette.get(), (dialog, which) -> selectedPalette.set(which))
-                .setNegativeButton("Create new palette", (dialog, which) -> {
+                .setNegativeButton("پالت جدید", (dialog, which) -> {
                     showCreatePaletteDialog(context, paletteList, paletteDir, customBlocksManager, list, blocksList, allBlocksList, blocksDir);
                     dialog.dismiss();
                 })
-                .setPositiveButton("Import", (dialog, which) -> {
+                .setPositiveButton("وارد کردن", (dialog, which) -> {
                     addBlocksToList(customBlocksManager, list, blocksList, selectedPalette.get() + 9);
                     allBlocksList.addAll(blocksList);
                     FileUtil.writeFile(blocksDir, new Gson().toJson(allBlocksList));
                     BlockLoader.refresh();
-                    SketchwareUtil.toast("Blocks imported!");
+                    SketchwareUtil.toast("بلوک‌ها وارد شدند!");
                 })
                 .show();
     }
@@ -183,7 +183,7 @@ public class CustomBlocksDialog {
 
         MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(context);
         dialog.setIcon(R.drawable.icon_style_white_96);
-        dialog.setTitle("Create a new palette");
+        dialog.setTitle("ساخت پالت جدید");
 
         DialogPaletteBinding binding = DialogPaletteBinding.inflate(((Activity) context).getLayoutInflater());
 
@@ -219,7 +219,7 @@ public class CustomBlocksDialog {
             allBlocksList.addAll(blocksList);
             FileUtil.writeFile(blocksDir, new Gson().toJson(allBlocksList));
             BlockLoader.refresh();
-            SketchwareUtil.toast("Blocks imported!");
+            SketchwareUtil.toast("بلوک‌ها وارد شدند!");
             dialogInterface.dismiss();
         });
         dialog.setNegativeButton(Helper.getResString(R.string.common_word_cancel), null);

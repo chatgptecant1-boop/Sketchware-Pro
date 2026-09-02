@@ -134,7 +134,7 @@ public class BlocksManagerCreatorActivity extends BaseAppCompatActivity {
                     "Header (h)"
             );
             AtomicInteger choice = new AtomicInteger();
-            new MaterialAlertDialogBuilder(this).setTitle("Block type")
+            new MaterialAlertDialogBuilder(this).setTitle("نوع بلوک")
                     .setSingleChoiceItems(choices.toArray(new String[0]),
                             types.indexOf(Helper.getText(binding.type)), (dialog, which) -> choice.set(which))
                     .setPositiveButton(R.string.common_word_save, (dialog, which) -> binding.type.setText(types.get(choice.get())))
@@ -338,14 +338,14 @@ public class BlocksManagerCreatorActivity extends BaseAppCompatActivity {
         if (mode.equals("add")) {
             blockPosition = Integer.parseInt(getIntent().getStringExtra("pallet"));
             binding.colour.setText(palletColour);
-            getSupportActionBar().setTitle("Add a new block");
+            getSupportActionBar().setTitle("افزودن بلوک جدید");
             return;
         }
         blockPosition = Integer.parseInt(getIntent().getStringExtra("pos"));
         binding.colour.setText(palletColour);
-        getSupportActionBar().setTitle("Insert block");
+        getSupportActionBar().setTitle("درج بلوک");
         if (mode.equals("edit")) {
-            getSupportActionBar().setTitle("Edit block");
+            getSupportActionBar().setTitle("ویرایش بلوک");
             fillUpInputs(blockPosition);
         }
     }
@@ -428,7 +428,7 @@ public class BlocksManagerCreatorActivity extends BaseAppCompatActivity {
         if (codeObject instanceof String) {
             binding.code.setText((String) codeObject);
         } else {
-            binding.code.setHint("(Invalid code block data)");
+            binding.code.setHint("(داده بلوک کد نامعتبر است)");
         }
     }
 
@@ -470,7 +470,7 @@ public class BlocksManagerCreatorActivity extends BaseAppCompatActivity {
             if (matcher.find()) {
                 int position = matcher.end();
                 //Unable to resolve this error because the Rs class still undecompiled.
-                block.setText("Error: '%m' must be followed by '.param' at position " + position);
+                block.setText("خطا: '%m' باید با '.param' در موقعیت " + position);
             } else {
                 block.setText(e.toString());
             }

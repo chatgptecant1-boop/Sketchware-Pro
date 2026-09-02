@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:navigationIcon="?attr/homeAsUpIndicator"
-            app:title="Edit block" />
+            app:title="ویرایش بلوک" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
@@ -64,7 +64,7 @@
                             android:id="@+id/name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Name"
+                            android:hint="نام"
                             android:maxLength="40"
                             android:textSize="14sp" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -87,7 +87,7 @@
                                 android:id="@+id/type"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="Type"
+                                android:hint="نوع"
                                 android:maxLength="10"
                                 android:textSize="14sp" />
                         </com.google.android.material.textfield.TextInputLayout>
@@ -114,7 +114,7 @@
                             android:id="@+id/typename"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Type name"
+                            android:hint="نام نوع"
                             android:maxLength="40"
                             android:textSize="14sp" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -151,7 +151,7 @@
                                 android:id="@+id/colour"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="Color"
+                                android:hint="رنگ"
                                 android:maxLength="10"
                                 android:textSize="14sp" />
                         </com.google.android.material.textfield.TextInputLayout>
@@ -216,7 +216,7 @@
                             android:id="@+id/spec"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Spec"
+                            android:hint="مشخصات"
                             android:textSize="14sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -230,7 +230,7 @@
                             android:id="@+id/spec2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Spec2"
+                            android:hint="مشخصات ۲"
                             android:textSize="14sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -291,7 +291,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="top"
-                            android:hint="Enter imports line by line"
+                            android:hint="ایمپورت‌ها را خط به خط وارد کنید"
                             android:textSize="14sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -317,7 +317,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="top"
-                            android:hint="Code"
+                            android:hint="کد"
                             android:textSize="14sp" />
                     </com.google.android.material.textfield.TextInputLayout>
 

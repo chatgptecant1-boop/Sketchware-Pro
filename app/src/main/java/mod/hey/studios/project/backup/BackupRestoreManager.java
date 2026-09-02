@@ -65,7 +65,7 @@ public class BackupRestoreManager {
 
         MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(act);
         dialog.setIcon(R.drawable.ic_backup);
-        dialog.setTitle("Backup Options");
+        dialog.setTitle("گزینه‌های پشتیبان‌گیری");
 
         LinearLayout checkboxContainer = new LinearLayout(act);
         checkboxContainer.setOrientation(LinearLayout.VERTICAL);
@@ -97,7 +97,7 @@ public class BackupRestoreManager {
 
         CheckBox includeLocalLibraries = new CheckBox(act);
         includeLocalLibraries.setTag(localLibrariesTag);
-        includeLocalLibraries.setText("Include used Local libraries");
+        includeLocalLibraries.setText("کتابخانه‌های محلی استفاده‌شده لحاظ شود");
         includeLocalLibraries.setLayoutParams(new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT));
@@ -106,7 +106,7 @@ public class BackupRestoreManager {
 
         CheckBox includeUsedCustomBlocks = new CheckBox(act);
         includeUsedCustomBlocks.setTag(customBlocksTag);
-        includeUsedCustomBlocks.setText("Include used Custom Blocks");
+        includeUsedCustomBlocks.setText("بلوک‌های سفارشی استفاده‌شده لحاظ شود");
         includeUsedCustomBlocks.setLayoutParams(new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT));
@@ -114,7 +114,7 @@ public class BackupRestoreManager {
         checkboxContainer.addView(includeUsedCustomBlocks);
 
         dialog.setView(checkboxContainer);
-        dialog.setPositiveButton("Back up", (v, which) -> {
+        dialog.setPositiveButton("پشتیبان‌گیری", (v, which) -> {
             v.dismiss();
             doBackup(sc_id, project_name);
         });
@@ -133,7 +133,7 @@ public class BackupRestoreManager {
         FilePickerOptions options = new FilePickerOptions();
         options.setMultipleSelection(true);
         options.setExtensions(new String[]{BackupFactory.EXTENSION});
-        options.setTitle("Select backups to restore (" + BackupFactory.EXTENSION + ")");
+        options.setTitle("انتخاب پشتیبان‌ها برای بازیابی (" + BackupFactory.EXTENSION + ")");
 
         FilePickerCallback callback = new FilePickerCallback() {
             @Override
@@ -145,11 +145,11 @@ public class BackupRestoreManager {
                         boolean restoringMultipleBackups = files.size() > 1;
 
                         new MaterialAlertDialogBuilder(act)
-                                .setTitle("Warning")
+                                .setTitle("هشدار")
                                 .setMessage(getRestoreIntegratedLocalLibrariesMessage(restoringMultipleBackups, i, files.size(),
                                         FileUtil.getFileNameNoExtension(backupFilePath)))
-                                .setPositiveButton("Copy", (dialog, which) -> doRestore(backupFilePath, true))
-                                .setNegativeButton("Don't copy", (dialog, which) -> doRestore(backupFilePath, false))
+                                .setPositiveButton("کپی", (dialog, which) -> doRestore(backupFilePath, true))
+                                .setNegativeButton("کپی نکن", (dialog, which) -> doRestore(backupFilePath, false))
                                 .setNeutralButton(R.string.common_word_cancel, null)
                                 .show();
 
@@ -186,9 +186,9 @@ public class BackupRestoreManager {
         @Override
         protected void onPreExecute() {
             ProgressMsgBoxBinding loadingDialogBinding = ProgressMsgBoxBinding.inflate(LayoutInflater.from(activityWeakReference.get()));
-            loadingDialogBinding.tvProgress.setText("Creating backup...");
+            loadingDialogBinding.tvProgress.setText("در حال تهیه پشتیبان…");
             dlg = new MaterialAlertDialogBuilder(activityWeakReference.get())
-                    .setTitle("Please wait")
+                    .setTitle("لطفاً صبر کنید")
                     .setCancelable(false)
                     .setView(loadingDialogBinding.getRoot())
                     .create();
@@ -211,7 +211,7 @@ public class BackupRestoreManager {
             dlg.dismiss();
 
             if (bm.getOutFile() != null) {
-                SketchwareUtil.toast("Successfully created backup to: " + bm.getOutFile().getAbsolutePath());
+                SketchwareUtil.toast("پشتیبان با موفقیت ساخته شد در: " + bm.getOutFile().getAbsolutePath());
             } else {
                 SketchwareUtil.toastError("Error: " + bm.error, Toast.LENGTH_LONG);
             }
@@ -238,9 +238,9 @@ public class BackupRestoreManager {
         @Override
         protected void onPreExecute() {
             ProgressMsgBoxBinding loadingDialogBinding = ProgressMsgBoxBinding.inflate(LayoutInflater.from(activityWeakReference.get()));
-            loadingDialogBinding.tvProgress.setText("Restoring...");
+            loadingDialogBinding.tvProgress.setText("در حال بازیابی…");
             dlg = new MaterialAlertDialogBuilder(activityWeakReference.get())
-                    .setTitle("Please wait")
+                    .setTitle("لطفاً صبر کنید")
                     .setCancelable(false)
                     .setView(loadingDialogBinding.getRoot())
                     .create();
@@ -267,12 +267,12 @@ public class BackupRestoreManager {
             dlg.dismiss();
 
             if (!bm.isRestoreSuccess() || error) {
-                SketchwareUtil.toastError("Couldn't restore: " + bm.error, Toast.LENGTH_LONG);
+                SketchwareUtil.toastError("بازیابی ناموفق: " + bm.error, Toast.LENGTH_LONG);
             } else if (projectsFragment != null) {
                 projectsFragment.refreshProjectsList();
-                SketchwareUtil.toast("Restored successfully");
+                SketchwareUtil.toast("با موفقیت بازیابی شد");
             } else {
-                SketchwareUtil.toast("Restored successfully. Refresh to see the project", Toast.LENGTH_LONG);
+                SketchwareUtil.toast("با موفقیت بازیابی شد. برای دیدن پروژه، بازخوانی کنید", Toast.LENGTH_LONG);
             }
         }
     }

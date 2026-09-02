@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Persian (fa) translation of values/strings.xml -->
-<!-- Placeholders (%s, %d, %1$s) and technical tokens preserved. -->
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
     <string name="app_name">Sketchware Pro</string>
     <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
@@ -41,18 +39,18 @@
     <string name="block_calendar_diff_body_1">-</string>
     <string name="block_calendar_diff_head">اختلاف</string>
     <string name="block_calendar_format_body_1">قالب</string>
-    <string name="block_calendar_get_now_tail">getNow</string>
-    <string name="block_calendar_get_time_tail">getTime(ms)</string>
+    <string name="block_calendar_get_now_tail">گرفتن تاریخ امروز</string>
+    <string name="block_calendar_get_time_tail">گرفتن زمان (میلی‌ثانیه)</string>
     <string name="block_calendar_set_body_1">تنظیم</string>
     <string name="block_calendar_set_body_2">مقدار</string>
-    <string name="block_calendar_set_time_body_1">setTime</string>
+    <string name="block_calendar_set_time_body_1">تنظیم زمان</string>
     <string name="block_calendar_set_time_tail">ms</string>
-    <string name="block_calendarview_get_date_tail">getDate(ms)</string>
-    <string name="block_calendarview_set_date_body_1">setDate</string>
+    <string name="block_calendarview_get_date_tail">گرفتن تاریخ</string>
+    <string name="block_calendarview_set_date_body_1">تنظیم تاریخ</string>
     <string name="block_calendarview_set_date_tail">ms</string>
-    <string name="block_calendarview_set_max_date_body_1">setMaxDate</string>
+    <string name="block_calendarview_set_max_date_body_1">تنظیم بیشینه تاریخ</string>
     <string name="block_calendarview_set_max_date_tail">ms</string>
-    <string name="block_calendarview_set_min_date_body_1">setMinDate</string>
+    <string name="block_calendarview_set_min_date_body_1">تنظیم کمینه تاریخ</string>
     <string name="block_calendarview_set_min_date_tail">ms</string>
     <string name="block_camera_start_take_picture_tail">گرفتن عکس</string>
     <string name="block_category_component_func">کامپوننت</string>
@@ -65,12 +63,12 @@
     <string name="block_category_var">متغیر</string>
     <string name="block_category_view_func">نما</string>
     <string name="block_clear_list_head">خالی کردن</string>
-    <string name="block_close_drawer_head">closeDrawer</string>
+    <string name="block_close_drawer_head">بستن کشو</string>
     <string name="block_contain_list_int_body_1">شامل</string>
     <string name="block_contain_list_map_body_1">شامل در</string>
     <string name="block_contain_list_map_body_2">کلید</string>
     <string name="block_contain_list_str_body_1">شامل</string>
-    <string name="block_copy_to_clipboard_head">copyToClipboard</string>
+    <string name="block_copy_to_clipboard_head">کپی در کلیپ‌بورد</string>
     <string name="block_crop_bitmap_center_body_1">به مسیر</string>
     <string name="block_crop_bitmap_center_body_2">عرض</string>
     <string name="block_crop_bitmap_center_body_3">ارتفاع</string>
@@ -89,10 +87,10 @@
     <string name="block_dialog_set_title_body_1">تنظیم عنوان</string>
     <string name="block_dialog_show_tail">نمایش</string>
     <string name="block_divide_body_1">÷</string>
-    <string name="block_do_toast_head">Toast</string>
+    <string name="block_do_toast_head">نمایش توست</string>
     <string name="block_else_head">در غیر این صورت</string>
     <string name="block_equal_body_1">=</string>
-    <string name="block_false_head">false</string>
+    <string name="block_false_head">غلط</string>
     <string name="block_file_get_data_body_1">getData کلید</string>
     <string name="block_file_picker_start_pick_files_tail">انتخاب فایل‌ها</string>
     <string name="block_file_remove_data_body_1">removeData کلید</string>
@@ -131,11 +129,11 @@
     <string name="block_firebase_stop_listen_tail">توقف گوش دادن</string>
     <string name="block_firebaseauth_create_user_body_1">ساخت کاربر با ایمیل</string>
     <string name="block_firebaseauth_create_user_body_2">و رمز عبور</string>
-    <string name="block_firebaseauth_get_email_tail">FirebaseAuth getEmail</string>
-    <string name="block_firebaseauth_get_uid_tail">FirebaseAuth getUid</string>
+    <string name="block_firebaseauth_get_email_tail">دریافت ایمیل Firebase Auth</string>
+    <string name="block_firebaseauth_get_uid_tail">دریافت شناسه کاربر Firebase</string>
     <string name="block_firebaseauth_is_logged_in_tail">FirebaseAuth ورود انجام شده؟</string>
     <string name="block_firebaseauth_reset_password_body_1">ارسال ایمیل بازیابی رمز به</string>
-    <string name="block_firebaseauth_signin_anonymously_tail">signInAnonymously</string>
+    <string name="block_firebaseauth_signin_anonymously_tail">ورود ناشناس Firebase</string>
     <string name="block_firebaseauth_signin_user_body_1">ورود با ایمیل</string>
     <string name="block_firebaseauth_signin_user_body_2">و رمز عبور</string>
     <string name="block_firebaseauth_signout_tail">FirebaseAuth خروج</string>
@@ -145,7 +143,7 @@
     <string name="block_firebasestorage_upload_file_body_1">بارگذاری فایل از مسیر</string>
     <string name="block_firebasestorage_upload_file_body_2">با نام</string>
     <string name="block_forever_head">برای همیشه</string>
-    <string name="block_get_alpha_tail">getAlpha</string>
+    <string name="block_get_alpha_tail">دریافت شفافیت</string>
     <string name="block_get_at_list_int_body_1">از</string>
     <string name="block_get_at_list_int_head">گرفتن در اندیس</string>
     <string name="block_get_at_list_map_body_1">کلید</string>
@@ -153,23 +151,23 @@
     <string name="block_get_at_list_map_head">گرفتن مقدار در</string>
     <string name="block_get_at_list_str_body_1">از</string>
     <string name="block_get_at_list_str_head">گرفتن در اندیس</string>
-    <string name="block_get_checked_tail">getChecked</string>
-    <string name="block_get_enable_tail">getEnable</string>
+    <string name="block_get_checked_tail">دریافت وضعیت انتخاب</string>
+    <string name="block_get_enable_tail">دریافت فعال بودن</string>
     <string name="block_get_external_storage_dir_head">گرفتن مسیر حافظه خارجی</string>
     <string name="block_get_jpeg_rotate_head">گرفتن چرخش JPEG از مسیر فایل</string>
-    <string name="block_get_location_x_tail">getLocationX</string>
-    <string name="block_get_location_y_tail">getLocationY</string>
+    <string name="block_get_location_x_tail">دریافت مختصات X</string>
+    <string name="block_get_location_y_tail">دریافت مختصات Y</string>
     <string name="block_get_map_in_list_body_1">از</string>
     <string name="block_get_map_in_list_body_2">به</string>
     <string name="block_get_map_in_list_head">گرفتن در</string>
     <string name="block_get_package_data_dir_head">گرفتن پوشه داده‌ی پکیج</string>
     <string name="block_get_public_dir_head">گرفتن نوع پوشه عمومی</string>
-    <string name="block_get_rotate_tail">getRotation</string>
-    <string name="block_get_scale_x_tail">getScaleX</string>
-    <string name="block_get_scale_y_tail">getScaleY</string>
-    <string name="block_get_text_tail">getText</string>
-    <string name="block_get_translation_x_tail">getTranslationX</string>
-    <string name="block_get_translation_y_tail">getTranslationY</string>
+    <string name="block_get_rotate_tail">دریافت چرخش</string>
+    <string name="block_get_scale_x_tail">دریافت مقیاس X</string>
+    <string name="block_get_scale_y_tail">دریافت مقیاس Y</string>
+    <string name="block_get_text_tail">دریافت متن</string>
+    <string name="block_get_translation_x_tail">دریافت جابه‌جایی X</string>
+    <string name="block_get_translation_y_tail">دریافت جابه‌جایی Y</string>
     <string name="block_gyroscope_start_listen_tail">شروع سنسور</string>
     <string name="block_gyroscope_stop_listen_tail">توقف سنسور</string>
     <string name="block_if_else_head">اگر</string>
@@ -197,25 +195,25 @@
     <string name="block_intent_get_string_head">گرفتن getExtra کلید از اکتیویتی</string>
     <string name="block_intent_put_extra_body_1">putExtra کلید</string>
     <string name="block_intent_put_extra_body_2">مقدار</string>
-    <string name="block_intent_set_action_body_1">setAction</string>
-    <string name="block_intent_set_data_body_1">setData</string>
-    <string name="block_intent_set_flags_body_1">setFlags</string>
-    <string name="block_intent_set_screen_body_1">setScreen</string>
+    <string name="block_intent_set_action_body_1">تنظیم اکشن</string>
+    <string name="block_intent_set_data_body_1">تنظیم داده</string>
+    <string name="block_intent_set_flags_body_1">تنظیم فلگ‌ها</string>
+    <string name="block_intent_set_screen_body_1">تنظیم صفحه</string>
     <string name="block_interstitialad_create_tail">ساخت</string>
     <string name="block_interstitialad_load_ad_tail">بارگیری</string>
     <string name="block_interstitialad_show_tail">نمایش</string>
-    <string name="block_is_drawer_open_head">isDrawerOpen</string>
+    <string name="block_is_drawer_open_head">کشو باز است</string>
     <string name="block_length_list_head">طول</string>
-    <string name="block_list_get_checked_count_tail">getCheckedCount</string>
-    <string name="block_list_get_checked_position_tail">getCheckedPosition</string>
+    <string name="block_list_get_checked_count_tail">تعداد انتخاب‌شده‌ها</string>
+    <string name="block_list_get_checked_position_tail">موقعیت انتخاب‌شده</string>
     <string name="block_list_get_checked_positions_body_1">getCheckedPositions به</string>
     <string name="block_list_map_to_str_tail">به متن JSON</string>
-    <string name="block_list_refresh_tail">refreshData</string>
-    <string name="block_list_set_custom_view_data_body_1">setListCustomViewData</string>
-    <string name="block_list_set_data_body_1">setListViewData</string>
+    <string name="block_list_refresh_tail">بازخوانی داده</string>
+    <string name="block_list_set_custom_view_data_body_1">تنظیم داده ویجت سفارشی</string>
+    <string name="block_list_set_data_body_1">تنظیم داده لیست</string>
     <string name="block_list_set_item_checked_body_1">setItemChecked موقعیت</string>
     <string name="block_list_set_item_checked_body_2">مقدار</string>
-    <string name="block_list_smooth_scrollto_body_1">smoothScrollToPosition</string>
+    <string name="block_list_smooth_scrollto_body_1">پیمایش نرم به موقعیت</string>
     <string name="block_locationmanager_remove_updates_tail">حذف به‌روزرسانی‌ها</string>
     <string name="block_locationmanager_request_location_updates_body_1">درخواست به‌روزرسانی مکان از نوع</string>
     <string name="block_locationmanager_request_location_updates_body_2">حداقل زمان</string>
@@ -452,7 +450,7 @@
     <string name="block_to_string_with_decimal_tail">با اعشار</string>
     <string name="block_to_upper_case_head">toUpperCase</string>
     <string name="block_trim_head">حذف فاصله‌های اضافی</string>
-    <string name="block_true_head">true</string>
+    <string name="block_true_head">درست</string>
     <string name="block_vibrator_action_body_1">لرزش به مدت</string>
     <string name="block_vibrator_action_tail">ms</string>
     <string name="block_view_on_click_head">وقتی</string>
@@ -515,7 +513,7 @@
     <string name="common_word_contributor">مشارکت‌کننده</string>
     <string name="common_word_copy">کپی</string>
     <string name="common_word_create">ساخت</string>
-    <string name="common_word_custom_view">Custom View</string>
+    <string name="common_word_custom_view">ویجت سفارشی</string>
     <string name="common_word_decrypt">رمزگشایی</string>
     <string name="common_word_delete">حذف</string>
     <string name="common_word_deleted">حذف شد!</string>
@@ -543,7 +541,7 @@
     <string name="common_word_information">اطلاعات</string>
     <string name="common_word_locale">زبان</string>
     <string name="common_word_modify">ویرایش</string>
-    <string name="common_word_moreblock">Moreblock</string>
+    <string name="common_word_moreblock">موربلاک</string>
     <string name="common_word_next">بعدی</string>
     <string name="common_word_no">خیر</string>
     <string name="common_word_ok">تأیید</string>
@@ -1069,7 +1067,7 @@
     <string name="main_drawer_title_remove_ads">حذف تبلیغات</string>
     <string name="main_drawer_title_save_sketchware">ذخیره Sketchware</string>
     <string name="main_drawer_title_share_with_friends">اشتراک‌گذاری با دوستان</string>
-    <string name="main_drawer_title_sketchware_for_arduino">Sketchware for Arduino</string>
+    <string name="main_drawer_title_sketchware_for_arduino">Sketchware برای Arduino</string>
     <string name="main_drawer_title_subscribe">اشتراک</string>
     <string name="main_drawer_title_system_settings">تنظیمات سیستم</string>
     <string name="main_tab_title_competitions">مسابقات</string>
@@ -1189,15 +1187,15 @@
     <string name="property_checked">علامت‌خورده</string>
     <string name="property_choice_mode">حالت انتخاب</string>
     <string name="property_clickable">قابل کلیک</string>
-    <string name="property_custom_view_listview">Custom View</string>
+    <string name="property_custom_view_listview">ویجت سفارشی</string>
     <string name="property_inject">ویژگی‌های سفارشی</string>
     <string name="property_convert">تبدیل</string>
     <string name="property_description_component_intent_usage">"این مثال‌ها را رعایت کنید! وگرنه ممکن است خطای زمان اجرا بگیرید!\n\nACTION_CALL، ACTION_DIAL\n tel:number (tel:12345678)\n\nACTION_VIEW\n نوع url (http://sketchware.io)"</string>
     <string name="property_description_edittext_ime_options">"وقتی single_line برابر 'false' و input_type برابر 'text' است کار نمی‌کند"</string>
     <string name="property_divider_height">ارتفاع جداکننده</string>
     <string name="property_enabled">فعال</string>
-    <string name="property_first_day_of_week">firstDayOfWeek</string>
-    <string name="property_gravity">Gravity</string>
+    <string name="property_first_day_of_week">اولین روز هفته</string>
+    <string name="property_gravity">گراویته</string>
     <string name="property_group_basic">پایه</string>
     <string name="property_group_event">رویداد</string>
     <string name="property_group_recent">اخیر</string>
@@ -1214,7 +1212,7 @@
     <string name="property_ime_option">گزینه IME</string>
     <string name="property_indeterminate">نامعین</string>
     <string name="property_input_type">نوع ورودی</string>
-    <string name="property_layout_gravity">Layout Gravity</string>
+    <string name="property_layout_gravity">گراویته لی‌اوت</string>
     <string name="property_layout_height">ارتفاع</string>
     <string name="property_layout_width">عرض</string>
     <string name="property_lines">خطوط</string>
@@ -1228,8 +1226,8 @@
     <string name="property_resource">منبع</string>
     <string name="property_rotate">چرخش</string>
     <string name="property_scale_type">نوع مقیاس</string>
-    <string name="property_scale_x">ScaleX</string>
-    <string name="property_scale_y">ScaleY</string>
+    <string name="property_scale_x">مقیاس X</string>
+    <string name="property_scale_y">مقیاس Y</string>
     <string name="property_single_line">تک‌خطی</string>
     <string name="property_spinner_mode">حالت Spinner</string>
     <string name="property_text">متن</string>
@@ -1237,8 +1235,8 @@
     <string name="property_text_font">فونت متن</string>
     <string name="property_text_size">اندازه متن</string>
     <string name="property_text_style">استایل متن</string>
-    <string name="property_translation_x">TranslationX</string>
-    <string name="property_translation_y">TranslationY</string>
+    <string name="property_translation_x">جابه‌جایی X</string>
+    <string name="property_translation_y">جابه‌جایی Y</string>
     <string name="property_weight">وزن</string>
     <string name="property_weight_sum">مجموع وزن</string>
     <string name="property_visibility">نمایش</string>
@@ -1686,7 +1684,7 @@
     <string name="link_discord_invite">https://discord.gg/kq39yhT4rX</string>
     <string name="link_telegram_invite">https://t.me/sketchwarepro</string>
     <string name="link_about_team">https://sketchware-pro.github.io/Sketchware-Pro/about.json</string>
-    <string name="link_github_commits_url"><![CDATA[https://api.github.com/repos/Sketchware-Pro/Sketchware-Pro/commits?per_page=%s&page=%s]]></string>
+    <string name="link_github_commits_url">https://api.github.com/repos/Sketchware-Pro/Sketchware-Pro/commits?per_page=%s&amp;page=%s</string>
     <string name="github_api_error_message">مشکلی پیش آمد. لطفاً صبر کنید و دوباره تلاش کنید.</string>
     <string name="github_api_date_unavailable">تاریخ موجود نیست</string>
     <string name="link_github_url">https://github.com/Sketchware-Pro/Sketchware-Pro</string>
@@ -1718,7 +1716,7 @@
     <string name="widget_type_title">نوع ویجت</string>
     <string name="new_class">یا ساخت دسته جدید</string>
     <string name="add_to">افزودن به دسته</string>
-    <string name="title_activity_icon_creator">IconCreatorActivity</string>
+    <string name="title_activity_icon_creator">سازنده آیکون</string>
     <string name="used_custom_blocks">بلوک‌های سفارشی استفاده‌شده</string>
     <string name="property_enter_value">مقدار %s را وارد کنید</string>
     <string name="code_viewer">نمایشگر کد</string>
@@ -1733,7 +1731,7 @@
     <string name="save_to_collection">ذخیره در مجموعه</string>
     <string name="unknown_attr">ویژگی ناشناخته</string>
     <string name="attr_already_exist">این ویژگی از قبل وجود دارد</string>
-    <!-- empty placeholder keys (parity with values/) -->
+    
     <string name="block_add_list_int_tail" />
     <string name="block_add_list_map_tail" />
     <string name="block_add_list_str_tail" />

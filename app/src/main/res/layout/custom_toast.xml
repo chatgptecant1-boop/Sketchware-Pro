@@ -17,6 +17,6 @@
         android:gravity="center"
         android:textSize="14sp"
         android:textColor="?colorPrimary"
-        tools:text="toast!"/>
+        tools:text="توست!"/>
 
 </com.google.android.material.card.MaterialCardView>

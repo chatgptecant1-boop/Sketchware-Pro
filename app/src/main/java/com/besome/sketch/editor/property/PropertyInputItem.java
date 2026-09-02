@@ -346,7 +346,7 @@ public class PropertyInputItem extends RelativeLayout implements View.OnClickLis
         });
 
         dialog.setNegativeButton(Helper.getResString(R.string.common_word_reset), null);
-        dialog.setNeutralButton("Custom", null);
+        dialog.setNeutralButton("سفارشی", null);
 
         AlertDialog alertDialog = dialog.create();
 
@@ -380,11 +380,11 @@ public class PropertyInputItem extends RelativeLayout implements View.OnClickLis
                     binding.sliderSection.setVisibility(View.GONE);
                     binding.tiInput.setVisibility(View.VISIBLE);
                     binding.edInput.requestFocus();
-                    customButton.setText("Slider");
+                    customButton.setText("اسلایدر");
                 } else {
                     binding.sliderSection.setVisibility(View.VISIBLE);
                     binding.tiInput.setVisibility(View.GONE);
-                    customButton.setText("Custom");
+                    customButton.setText("سفارشی");
                 }
             });
 
@@ -892,8 +892,8 @@ public class PropertyInputItem extends RelativeLayout implements View.OnClickLis
                         dialog.dismiss();
                         var builder =
                                 new MaterialAlertDialogBuilder(getContext())
-                                        .setTitle("Delete")
-                                        .setMessage("Are you sure you want to delete " + attr + "?")
+                                        .setTitle("حذف")
+                                        .setMessage("مطمئنید که می‌خواهید حذف کنید: " + attr + "?")
                                         .setPositiveButton(
                                                 R.string.common_word_yes,
                                                 (d, w) -> {
@@ -931,7 +931,7 @@ public class PropertyInputItem extends RelativeLayout implements View.OnClickLis
 
     private void addNewAttribute(Map<String, String> attributes) {
         var builder = new MaterialAlertDialogBuilder(getContext());
-        builder.setTitle("Add new attribute");
+        builder.setTitle("افزودن ویژگی جدید");
 
         PropertyPopupInputTextBinding binding =
                 PropertyPopupInputTextBinding.inflate(LayoutInflater.from(getContext()));
@@ -939,7 +939,7 @@ public class PropertyInputItem extends RelativeLayout implements View.OnClickLis
         var input = binding.edTiAutoCompleteInput;
         binding.tiInput.setVisibility(View.GONE);
         binding.tiAutoCompleteInput.setVisibility(View.VISIBLE);
-        binding.tiAutoCompleteInput.setHint("Enter new attribute");
+        binding.tiAutoCompleteInput.setHint("ویژگی جدید را وارد کنید");
         input.setAdapter(
                 new ArrayAdapter<>(
                         getContext(),

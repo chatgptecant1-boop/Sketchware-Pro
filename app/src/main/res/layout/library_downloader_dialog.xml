@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="16dp"
-        android:hint="Enter a dependency"
+        android:hint="وابستگی را وارد کنید"
         android:importantForAutofill="noExcludeDescendants"
         app:placeholderText="@string/local_library_manager_dependency_example">
 

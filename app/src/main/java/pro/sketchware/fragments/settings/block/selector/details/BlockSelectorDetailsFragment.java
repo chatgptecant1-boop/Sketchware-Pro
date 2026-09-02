@@ -122,14 +122,14 @@ public class BlockSelectorDetailsFragment extends qA {
 
     private void showCreateEditDialog(boolean isEdit, int indexA) {
         DialogAddCustomActivityBinding dialogBinding = DialogAddCustomActivityBinding.inflate(LayoutInflater.from(requireContext()));
-        dialogBinding.activityNameInputLayout.setHint("Name");
+        dialogBinding.activityNameInputLayout.setHint("نام");
         if (isEdit) {
             dialogBinding.activityNameInput.setText(selectors.get(index).getData().get(indexA));
         }
 
         MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(requireActivity());
-        dialog.setTitle("New Selector Item");
-        dialog.setPositiveButton("Create", (v, which) -> {
+        dialog.setTitle("مورد جدید انتخابگر");
+        dialog.setPositiveButton("ایجاد", (v, which) -> {
             String newItem = Helper.getText(dialogBinding.activityNameInput);
             if (newItem != null && !newItem.isEmpty()) {
                 if (!isEdit) {
@@ -142,7 +142,7 @@ public class BlockSelectorDetailsFragment extends qA {
             }
             v.dismiss();
         });
-        dialog.setNegativeButton("Cancel", null);
+        dialog.setNegativeButton("لغو", null);
         dialog.setView(dialogBinding.getRoot());
         dialog.show();
     }
@@ -151,7 +151,7 @@ public class BlockSelectorDetailsFragment extends qA {
         DialogSelectorActionsBinding dialogBinding = DialogSelectorActionsBinding.inflate(LayoutInflater.from(requireContext()));
 
         AlertDialog dialog = new MaterialAlertDialogBuilder(requireActivity()).create();
-        dialog.setTitle("Actions");
+        dialog.setTitle("عملگرها");
         dialog.setView(dialogBinding.getRoot());
 
         dialogBinding.edit.setOnClickListener(v -> {
@@ -180,10 +180,10 @@ public class BlockSelectorDetailsFragment extends qA {
 
     private void showConfirmationDialog(String message, OnDialogClickListener onConfirm, OnDialogClickListener onCancel) {
         MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(requireActivity());
-        dialog.setTitle("Attention");
+        dialog.setTitle("توجه");
         dialog.setMessage(message);
-        dialog.setPositiveButton("Yes", (v, which) -> onConfirm.onClick(v));
-        dialog.setNegativeButton("Cancel", (v, which) -> onCancel.onClick(v));
+        dialog.setPositiveButton("بله", (v, which) -> onConfirm.onClick(v));
+        dialog.setNegativeButton("لغو", (v, which) -> onCancel.onClick(v));
 
         dialog.show();
     }

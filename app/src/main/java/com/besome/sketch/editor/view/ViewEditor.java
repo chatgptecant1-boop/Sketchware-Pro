@@ -562,7 +562,7 @@ public class ViewEditor extends RelativeLayout implements View.OnClickListener, 
         tvToolbar.setPadding((int) (dip * 16f), 0, 0, 0);
         tvToolbar.setGravity(Gravity.CENTER_VERTICAL);
         tvToolbar.setTextSize(15f);
-        tvToolbar.setText("Toolbar");
+        tvToolbar.setText("نوار ابزار");
         tvToolbar.setTypeface(null, Typeface.BOLD);
         toolbar.addView(tvToolbar);
         shape.addView(toolbar);
@@ -800,10 +800,10 @@ public class ViewEditor extends RelativeLayout implements View.OnClickListener, 
     private void b(boolean z, boolean isCustomWidget) {
         if (isCustomWidget) {
             deleteIcon.setImageDrawable(AppCompatResources.getDrawable(getContext(), R.drawable.ic_mtrl_edit));
-            deleteText.setText("Drag here to see the Actions");
+            deleteText.setText("برای دیدن عملگرها اینجا رها کنید");
         } else if (z) {
             deleteIcon.setImageDrawable(AppCompatResources.getDrawable(getContext(), R.drawable.ic_mtrl_delete));
-            deleteText.setText("Drag here to delete");
+            deleteText.setText("برای حذف اینجا رها کنید");
             setDeleteViewIconAndTextUi(false);
         }
         deleteView.bringToFront();

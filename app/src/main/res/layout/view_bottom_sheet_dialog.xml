@@ -33,7 +33,7 @@
         android:gravity="center"
         android:singleLine="true"
         android:textAppearance="?attr/textAppearanceHeadlineSmall"
-        tools:text="New version is out!" />
+        tools:text="نسخه جدید منتشر شد!" />
 
     <TextView
         android:id="@+id/description"
@@ -45,7 +45,7 @@
         android:gravity="center_horizontal"
         android:textAppearance="?attr/textAppearanceBodyMedium"
         android:textColor="?attr/colorOnSurfaceVariant"
-        tools:text="Meet Sketchware Pro v7.0.0!\nFinally, the long-awaited version has been released!" />
+        tools:text="با Sketchware Pro نسخه 7.0.0 آشنا شوید!\nبالاخره نسخه‌ای که منتظرش بودید منتشر شد!" />
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -51,9 +51,9 @@ public class CompileLogActivity extends BaseAppCompatActivity {
         binding.topAppBar.setNavigationOnClickListener(Helper.getBackPressedClickListener(this));
 
         if (getIntent().getBooleanExtra("showingLastError", false)) {
-            binding.topAppBar.setTitle("Last compile log");
+            binding.topAppBar.setTitle("آخرین لاگ کامپایل");
         } else {
-            binding.topAppBar.setTitle("Compile log");
+            binding.topAppBar.setTitle("لاگ کامپایل");
         }
 
         String sc_id = getIntent().getStringExtra("sc_id");
@@ -69,9 +69,9 @@ public class CompileLogActivity extends BaseAppCompatActivity {
                 if (compileErrorSaver.logFileExists()) {
                     compileErrorSaver.deleteSavedLogs();
                     getIntent().removeExtra("error");
-                    SketchwareUtil.toast("Compile logs have been cleared.");
+                    SketchwareUtil.toast("لاگ‌های کامپایل پاک شدند.");
                 } else {
-                    SketchwareUtil.toast("No compile logs found.");
+                    SketchwareUtil.toast("لاگ کامپایلی یافت نشد.");
                 }
 
                 setErrorText();
@@ -191,9 +191,9 @@ public class CompileLogActivity extends BaseAppCompatActivity {
                 Gravity.CENTER));
 
         new MaterialAlertDialogBuilder(this)
-                .setTitle("Select font size")
+                .setTitle("اندازه فونت را انتخاب کنید")
                 .setView(layout)
-                .setPositiveButton("Save", (dialog, which) -> {
+                .setPositiveButton("ذخیره", (dialog, which) -> {
                     logViewerPreferences.edit().putInt(PREFERENCE_FONT_SIZE, picker.getValue()).apply();
 
                     binding.tvCompileLog.setTextSize((float) picker.getValue());

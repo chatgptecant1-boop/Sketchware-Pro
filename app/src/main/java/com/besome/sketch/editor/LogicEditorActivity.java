@@ -1362,7 +1362,7 @@ public class LogicEditorActivity extends BaseAppCompatActivity implements View.O
         linearLayout.addView(name);
         TextView preview = new TextView(this);
         preview.setLayoutParams(layoutParams);
-        preview.setText("Preview");
+        preview.setText("پیش‌نمایش");
 
         Typeface typeface;
         if (fontName.equalsIgnoreCase("default_font")) {
@@ -1374,7 +1374,7 @@ public class LogicEditorActivity extends BaseAppCompatActivity implements View.O
                 crashlytics.log("Loading font preview");
                 crashlytics.recordException(e);
                 typeface = Typeface.DEFAULT;
-                preview.setText("Couldn't load font");
+                preview.setText("بارگذاری فونت ممکن نشد");
             }
         }
 
@@ -1567,7 +1567,7 @@ public class LogicEditorActivity extends BaseAppCompatActivity implements View.O
         }
 
         dialog.setView(customView);
-        dialog.setNeutralButton("Code Editor", (v, which) -> {
+        dialog.setNeutralButton("ویرایشگر کد", (v, which) -> {
             AsdDialog editor = new AsdDialog(this);
             editor.setContent(ss.getArgValue().toString());
             editor.show();

@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
-            android:text="left"
+            android:text="چپ"
             android:textSize="16sp" />
 
         <CheckBox
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
-            android:text="right"
+            android:text="راست"
             android:textSize="16sp" />
             
         <CheckBox
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
-            android:text="top"
+            android:text="بالا"
             android:textSize="16sp" />
 
         <CheckBox
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
-            android:text="bottom"
+            android:text="پایین"
             android:textSize="16sp" />
 
         <CheckBox

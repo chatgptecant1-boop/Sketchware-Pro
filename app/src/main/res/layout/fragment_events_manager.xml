@@ -80,7 +80,7 @@
                         android:textAppearance="?textAppearanceBodyMedium"
                         android:textColor="?colorOnSurfaceVariant"
                         android:textSize="12sp"
-                        tools:text="Events: 1" />
+                        tools:text="رویدادها: ۱" />
                 </LinearLayout>
             </LinearLayout>
 

@@ -55,7 +55,7 @@
                     app:layout_constraintStart_toEndOf="@+id/icon"
                     app:layout_constraintTop_toTopOf="@+id/icon"
                     app:lineHeight="33dp"
-                    tools:text="Sketchware Pro - a new place to create android apps!" />
+                    tools:text="Sketchware Pro — مکان جدیدی برای ساخت اپ‌های اندروید!" />
 
                 <TextView
                     android:id="@+id/author"
@@ -69,7 +69,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/icon"
                     app:layout_constraintTop_toBottomOf="@+id/name"
-                    tools:text="Modders Team" />
+                    tools:text="تیم مادها" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <com.google.android.material.card.MaterialCardView
@@ -89,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBodyMedium"
                     android:textIsSelectable="true"
-                    tools:text="Meet Sketchware Pro v7.0.0!\nFinally, the long-awaited version has been released!" />
+                    tools:text="با Sketchware Pro نسخه 7.0.0 آشنا شوید!\nبالاخره نسخه‌ای که منتظرش بودید منتشر شد!" />
             </com.google.android.material.card.MaterialCardView>
 
             <TextView
@@ -183,7 +183,7 @@
                     app:layout_constraintBottom_toBottomOf="@id/icon_timestamp"
                     app:layout_constraintStart_toEndOf="@id/icon_timestamp"
                     app:layout_constraintTop_toTopOf="@id/icon_timestamp"
-                    tools:text="Uploaded: 26.09.2024" />
+                    tools:text="آپلودشده: 1403/07/05" />
 
                 <ImageView
                     android:id="@+id/icon_filesize"
@@ -203,7 +203,7 @@
                     app:layout_constraintBottom_toBottomOf="@id/icon_filesize"
                     app:layout_constraintStart_toEndOf="@id/icon_filesize"
                     app:layout_constraintTop_toTopOf="@id/icon_filesize"
-                    tools:text="Size: 112 MB" />
+                    tools:text="حجم: ۱۱۲ مگابایت" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <com.google.android.material.card.MaterialCardView
@@ -224,7 +224,7 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBodyMedium"
                     android:textIsSelectable="true"
-                    tools:text="Sketchware Pro's sources in Java. Now anyone can contribute to Sketchware Pro." />
+                    tools:text="سورس‌های Sketchware Pro به زبان Java. حالا هر کسی می‌تواند در توسعه آن مشارکت کند." />
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
@@ -275,7 +275,7 @@
                 android:singleLine="true"
                 android:textAppearance="?attr/textAppearanceBodyLargeEmphasized"
                 android:textSize="18sp"
-                tools:text="Sketchware Pro - a new place to create android apps!" />
+                tools:text="Sketchware Pro — مکان جدیدی برای ساخت اپ‌های اندروید!" />
 
             <TextView
                 android:id="@+id/toolbar_subtitle"
@@ -286,7 +286,7 @@
                 android:singleLine="true"
                 android:textAppearance="?attr/textAppearanceBodySmall"
                 android:textColor="?attr/colorOnSurfaceVariant"
-                tools:text="Modders Team" />
+                tools:text="تیم مادها" />
         </LinearLayout>
 
         <com.google.android.material.imageview.ShapeableImageView

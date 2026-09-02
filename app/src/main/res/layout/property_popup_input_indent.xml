@@ -62,7 +62,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="left"
+                android:hint="چپ"
                 android:importantForAutofill="noExcludeDescendants"
                 app:errorEnabled="true">
 
@@ -94,7 +94,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="right"
+                android:hint="راست"
                 android:importantForAutofill="noExcludeDescendants"
                 app:errorEnabled="true">
 
@@ -129,7 +129,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="top"
+                android:hint="بالا"
                 android:importantForAutofill="noExcludeDescendants"
                 app:errorEnabled="true">
 
@@ -161,7 +161,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="bottom"
+                android:hint="پایین"
                 android:importantForAutofill="noExcludeDescendants"
                 app:errorEnabled="true">
 

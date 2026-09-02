@@ -63,7 +63,7 @@ public class SketchwareUtil {
         try {
             bB.a(getContext(), message, length).show();
         } catch (RuntimeException e) {
-            LogUtil.e("SketchwareUtil", "Failed to toast regular message, " + "Toast's message was: \"" + message + "\"", e);
+            LogUtil.e("SketchwareUtil", "نمایش پیام توست ناموفق بود، " + "Toast's message was: \"" + message + "\"", e);
         }
     }
 
@@ -86,7 +86,7 @@ public class SketchwareUtil {
         try {
             bB.b(getContext(), message, length).show();
         } catch (RuntimeException e) {
-            LogUtil.e("SketchwareUtil", "Failed to toast regular message, " + "Toast's message was: \"" + message + "\"", e);
+            LogUtil.e("SketchwareUtil", "نمایش پیام توست ناموفق بود، " + "Toast's message was: \"" + message + "\"", e);
         }
     }
 
@@ -154,9 +154,9 @@ public class SketchwareUtil {
     public static void showFailedToParseJsonDialog(Activity context, File json, String componentLabel, Consumer<Void> afterRenameLogic) {
         MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(context);
         dialog.setIcon(R.drawable.break_warning_96_red);
-        dialog.setTitle("Couldn't get " + componentLabel);
-        dialog.setMessage("Failed to parse " + componentLabel + " from file " + json + ". Fix by renaming old file to " + json.getName() + ".bak? " + "If not, no " + componentLabel + " will be used.");
-        dialog.setPositiveButton("Rename", (v, which) -> {
+        dialog.setTitle("دریافت ناموفق بود: " + componentLabel);
+        dialog.setMessage("تجزیه ناموفق: " + componentLabel + " from file " + json + ". Fix by renaming old file to " + json.getName() + ".bak? " + "If not, no " + componentLabel + " will be used.");
+        dialog.setPositiveButton("تغییر نام", (v, which) -> {
             FileUtil.renameFile(json.getAbsolutePath(), json.getAbsolutePath() + ".bak");
             afterRenameLogic.accept(null);
             v.dismiss();
@@ -170,7 +170,7 @@ public class SketchwareUtil {
         builder.setTitle(Helper.getResString(R.string.common_error_an_error_occurred));
         builder.setIcon(R.drawable.ic_mtrl_warning);
         builder.setMessage(errorMessage);
-        builder.setPositiveButton("Okay", null);
+        builder.setPositiveButton("باشه", null);
         builder.show();
     }
 

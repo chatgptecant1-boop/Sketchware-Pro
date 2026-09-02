@@ -154,7 +154,7 @@ public class EventsManagerCreatorFragment extends qA {
 
     private void save() {
         if (!filledIn()) {
-            SketchwareUtil.toast("Some required fields are empty!");
+            SketchwareUtil.toast("برخی فیلدهای ضروری خالی‌اند!");
             return;
         }
         if (!OldResourceIdMapper.isValidIconId(Helper.getText(binding.eventsCreatorIcon))) {
@@ -210,12 +210,12 @@ public class EventsManagerCreatorFragment extends qA {
         configureToolbar(binding.toolbar);
 
         if (isEdit) {
-            binding.toolbar.setTitle("Event Properties");
+            binding.toolbar.setTitle("ویژگی‌های رویداد");
             binding.toolbar.setSubtitle(event_name);
         } else if (isActivityEvent) {
-            binding.toolbar.setTitle("New Activity Event");
+            binding.toolbar.setTitle("رویداد جدید اکتیویتی");
         } else {
-            binding.toolbar.setTitle("New Event");
+            binding.toolbar.setTitle("رویداد جدید");
             binding.toolbar.setSubtitle(lisName);
         }
     }

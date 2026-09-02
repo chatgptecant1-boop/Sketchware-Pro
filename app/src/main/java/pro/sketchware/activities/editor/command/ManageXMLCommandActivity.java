@@ -95,7 +95,7 @@ public class ManageXMLCommandActivity extends BaseAppCompatActivity {
         ManageXmlCommandBinding binding = ManageXmlCommandBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setSupportActionBar(binding.toolbar);
-        getSupportActionBar().setTitle("XML Command Manager");
+        getSupportActionBar().setTitle("مدیریت دستورات XML");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
         UI.addSystemWindowInsetToPadding(binding.list, false, false, false, true);
@@ -147,7 +147,7 @@ public class ManageXMLCommandActivity extends BaseAppCompatActivity {
                                     MaterialAlertDialogBuilder dialog =
                                             new MaterialAlertDialogBuilder(this);
                                     dialog.setTitle(R.string.common_word_delete);
-                                    dialog.setMessage("Are you sure you want to delete this item?");
+                                    dialog.setMessage("مطمئنید که می‌خواهید این مورد را حذف کنید؟");
                                     dialog.setPositiveButton(
                                             R.string.common_word_yes,
                                             (d, w) -> {
@@ -185,7 +185,7 @@ public class ManageXMLCommandActivity extends BaseAppCompatActivity {
         switch (item.getItemId()) {
             case 0 -> {
                 new MaterialAlertDialogBuilder(this)
-                        .setTitle("Select an XML")
+                        .setTitle("یک XML انتخاب کنید")
                         .setAdapter(
                                 new ArrayAdapter<>(
                                         this, android.R.layout.simple_list_item_1, xmlFiles),
@@ -297,9 +297,8 @@ public class ManageXMLCommandActivity extends BaseAppCompatActivity {
 
     private void showConfirmationDialog() {
         MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(this);
-        dialog.setTitle("Confirmation");
-        dialog.setMessage(
-                "Would you like to enable the new XML Command? It will speed up XML generation and compilation, but this change cannot be undone. Don’t worry, your previous changes with the XML Command Block will transfered here so it will remain unaffected.");
+        dialog.setTitle("تأیید");
+        dialog.setMessage("فعال‌سازی دستور جدید XML؟ سرعت تولید و کامپایل XML را بالا می‌برد، اما این تغییر قابل بازگشت نیست. نگران نباشید، تغییرات قبلی شما با بلوک XML Command به اینجا منتقل می‌شوند و دست‌نخورده می‌مانند.");
         dialog.setPositiveButton(
                 R.string.common_word_yes,
                 (d, w) -> {
@@ -330,7 +329,7 @@ public class ManageXMLCommandActivity extends BaseAppCompatActivity {
                                     new MaterialAlertDialogBuilder(this)
                                             .setTitle(filename)
                                             .setCancelable(false)
-                                            .setPositiveButton("Dismiss", null);
+                                            .setPositiveButton("بستن", null);
 
                             runOnUiThread(
                                     () -> {

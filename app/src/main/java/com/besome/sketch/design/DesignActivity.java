@@ -318,7 +318,7 @@ public class DesignActivity extends BaseAppCompatActivity implements View.OnClic
      */
     private void indicateCompileErrorOccurred(String error) {
         new CompileErrorSaver(sc_id).writeLogsToFile(error);
-        Snackbar snackbar = Snackbar.make(coordinatorLayout, "Show compile log", Snackbar.LENGTH_INDEFINITE);
+        Snackbar snackbar = Snackbar.make(coordinatorLayout, "نمایش لاگ کامپایل", Snackbar.LENGTH_INDEFINITE);
         snackbar.setAction(Helper.getResString(R.string.common_word_show), v -> {
             if (!mB.a()) {
                 snackbar.dismiss();
@@ -363,7 +363,7 @@ public class DesignActivity extends BaseAppCompatActivity implements View.OnClic
 
                     Shell.cmd("cat " + apkUri + " | pm install -S " + length).to(stdout, stderr).submit(result -> {
                         if (result.isSuccess()) {
-                            SketchwareUtil.toast("Package installed successfully!");
+                            SketchwareUtil.toast("پکیج با موفقیت نصب شد!");
                             if (ConfigActivity.isSettingEnabled(ConfigActivity.SETTING_ROOT_AUTO_OPEN_AFTER_INSTALLING)) {
                                 Intent launcher = getPackageManager().getLaunchIntentForPackage(q.packageName);
                                 if (launcher != null) {
@@ -374,7 +374,7 @@ public class DesignActivity extends BaseAppCompatActivity implements View.OnClic
                             }
                         } else {
                             String sharedErrorMessage = "Failed to install package, result code: " + result.getCode() + ". ";
-                            SketchwareUtil.toastError(sharedErrorMessage + "Logs are available in /Internal storage/.sketchware/debug.txt", Toast.LENGTH_LONG);
+                            SketchwareUtil.toastError(sharedErrorMessage + "لاگ‌ها در /Internal storage/.sketchware/debug.txt موجودند", Toast.LENGTH_LONG);
                             LogUtil.e("DesignActivity", sharedErrorMessage + "stdout: " + stdout + ", stderr: " + stderr);
                         }
                     });
@@ -491,7 +491,7 @@ public class DesignActivity extends BaseAppCompatActivity implements View.OnClic
             new Thread(() -> {
                 FileUtil.deleteFile(q.projectMyscPath);
                 updateBottomMenu();
-                runOnUiThread(() -> SketchwareUtil.toast("Done cleaning temporary files!"));
+                runOnUiThread(() -> SketchwareUtil.toast("پاک کردن فایل‌های موقت تمام شد!"));
             }).start();
             return true;
         });
@@ -506,7 +506,7 @@ public class DesignActivity extends BaseAppCompatActivity implements View.OnClic
         bottomMenu.add(Menu.NONE, 4, Menu.NONE, "Install last built APK").setVisible(false).setOnMenuItemClickListener(item -> {
             if (FileUtil.isExistFile(q.finalToInstallApkPath)) {
                 installBuiltApk();
-            } else SketchwareUtil.toast("APK doesn't exist anymore");
+            } else SketchwareUtil.toast("APK دیگر وجود ندارد");
             return true;
         });
         bottomMenu.add(Menu.NONE, 6, Menu.NONE, "Show Apk signatures").setVisible(false).setOnMenuItemClickListener(item -> {
@@ -796,7 +796,7 @@ public class DesignActivity extends BaseAppCompatActivity implements View.OnClic
                 if (isFinishing()) return;
                 h();
                 if (code.isEmpty()) {
-                    SketchwareUtil.toast("Failed to generate source.");
+                    SketchwareUtil.toast("تولید سورس ناموفق بود.");
                     return;
                 }
                 var scheme = filename.endsWith(".xml") ? CodeViewerActivity.SCHEME_XML : CodeViewerActivity.SCHEME_JAVA;
@@ -1196,23 +1196,23 @@ public class DesignActivity extends BaseAppCompatActivity implements View.OnClic
 
                     MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(activity);
                     if (isMissingDirectory) {
-                        dialog.setTitle("Missing directory detected");
-                        dialog.setMessage("A directory important for building is missing. " +
+                        dialog.setTitle("پوشه‌ای یافت نشد");
+                        dialog.setMessage("پوشه‌ای مهم برای ساخت وجود ندارد. " +
                                 "Sketchware Pro can try creating " + e.getMissingFile().getAbsolutePath() +
                                 " if you'd like to.");
-                        dialog.setNeutralButton("Create", (v, which) -> {
+                        dialog.setNeutralButton("ایجاد", (v, which) -> {
                             v.dismiss();
                             if (!e.getMissingFile().mkdirs()) {
                                 SketchwareUtil.toastError("Failed to create directory / directories!");
                             }
                         });
                     } else {
-                        dialog.setTitle("Missing file detected");
-                        dialog.setMessage("A file needed for building is missing. " +
+                        dialog.setTitle("فایلی یافت نشد");
+                        dialog.setMessage("فایلی ضروری برای ساخت وجود ندارد. " +
                                 "Put the correct file back to " + e.getMissingFile().getAbsolutePath() +
                                 " and try building again.");
                     }
-                    dialog.setPositiveButton("Dismiss", null);
+                    dialog.setPositiveButton("بستن", null);
                     dialog.show();
                 });
             } catch (zy zy) {

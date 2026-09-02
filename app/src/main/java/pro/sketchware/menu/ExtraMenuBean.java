@@ -546,7 +546,7 @@ public class ExtraMenuBean {
                     }
                     if (!activityMenu.isEmpty()) {
                         TextView txt = new TextView(logicEditor);
-                        txt.setText("Custom Activities");
+                        txt.setText("اکتیویتی‌های سفارشی");
                         txt.setPadding((int) getDip(2), (int) getDip(4), (int) getDip(4), (int) getDip(4));
                         txt.setTextSize(14f);
                         viewGroup.addView(txt);
@@ -604,7 +604,7 @@ public class ExtraMenuBean {
             case "ResAttr":
             case "ResXml":
                 title = "Deprecated";
-                dialog.setMessage("This Block Menu was initially used to parse resource values, but was too I/O heavy and has been removed due to that. Please use the Code Editor instead.");
+                dialog.setMessage("این منوی بلوک در ابتدا برای تحلیل مقادیر منابع بود، اما به‌دلیل فشار زیاد ورودی/خروجی حذف شد. لطفاً به‌جای آن از ویرایشگر کد استفاده کنید.");
                 break;
 
             case "AdUnit":
@@ -710,7 +710,7 @@ public class ExtraMenuBean {
             v.dismiss();
         });
         dialog.setNegativeButton(Helper.getResString(R.string.common_word_cancel), null);
-        dialog.setNeutralButton("Code Editor", (v, which) -> {
+        dialog.setNeutralButton("ویرایشگر کد", (v, which) -> {
             AsdDialog editor = new AsdDialog(logicEditor);
             editor.setContent(menu.getArgValue().toString());
             editor.show();
@@ -758,7 +758,7 @@ public class ExtraMenuBean {
             v.dismiss();
         });
         dialog.setNegativeButton(Helper.getResString(R.string.common_word_cancel), null);
-        dialog.setNeutralButton("Code Editor", (v, which) -> {
+        dialog.setNeutralButton("ویرایشگر کد", (v, which) -> {
             AsdDialog asdDialog = new AsdDialog(logicEditor);
             asdDialog.setContent(Helper.getText(edittext));
             asdDialog.show();
@@ -776,11 +776,11 @@ public class ExtraMenuBean {
         mOptions.setSelectionMode(SelectionMode.BOTH);
         String path = null;
         if (menuName.equals("Assets")) {
-            mOptions.setTitle("Select an Asset");
+            mOptions.setTitle("یک Asset انتخاب کنید");
             path = String.format(ASSETS_PATH, sc_id);
             markedPath.add(0, path + ss.getArgValue().toString());
         } else if (menuName.equals("NativeLib")) {
-            mOptions.setTitle("Select a Native library");
+            mOptions.setTitle("یک کتابخانه Native انتخاب کنید");
             path = String.format(NATIVE_PATH, sc_id);
             markedPath.add(0, path + ss.getArgValue().toString());
         }

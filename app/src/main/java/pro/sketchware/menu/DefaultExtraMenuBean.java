@@ -46,7 +46,7 @@ public class DefaultExtraMenuBean {
             case "gridstretchmode" -> "Stretch Mode";
             case "gravity_v" -> "Gravity Vertical";
             case "gravity_h" -> "Gravity Horizontal";
-            case "gravity_t" -> "Gravity Toast";
+            case "gravity_t" -> "توست گراویته‌دار";
             case "patternviewmode" -> "Pattern Mode";
             case "styleprogress" -> "Progress Style";
             case "cv_theme" -> "Theme";
@@ -177,7 +177,7 @@ public class DefaultExtraMenuBean {
                 menus.addAll(Arrays.asList(uq.GRAVITY_HORIZONTAL));
             }
             case "gravity_t" -> {
-                title = "Select gravity toast";
+                title = "انتخاب موقعیت توست";
                 menus.addAll(Arrays.asList(uq.GRAVITY_TOAST));
             }
             case "patternviewmode" -> {

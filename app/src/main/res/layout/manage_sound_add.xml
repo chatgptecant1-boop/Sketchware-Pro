@@ -74,7 +74,7 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="File name" />
+                tools:text="نام فایل" />
 
             <ImageView
                 android:id="@+id/play"
@@ -132,7 +132,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="5dp"
         android:layout_marginTop="14dp"
-        android:hint="Enter sound name"
+        android:hint="نام صدا را وارد کنید"
         android:importantForAutofill="noExcludeDescendants">
 
         <com.google.android.material.textfield.TextInputEditText

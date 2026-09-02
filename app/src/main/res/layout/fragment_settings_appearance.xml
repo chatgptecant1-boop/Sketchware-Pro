@@ -15,7 +15,7 @@
             android:layout_height="?attr/actionBarSize"
             app:layout_collapseMode="pin"
             app:navigationIcon="?attr/homeAsUpIndicator"
-            app:title="Theme Settings" />
+            app:title="تنظیمات تم" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView

@@ -252,7 +252,7 @@ public class SrcCodeEditor extends BaseAppCompatActivity {
                 .map(pair -> pair.first)
                 .toArray(String[]::new);
         new MaterialAlertDialogBuilder(activity)
-                .setTitle("Select Theme")
+                .setTitle("انتخاب تم")
                 .setSingleChoiceItems(themeItems, selectedThemeIndex, listener)
                 .setNegativeButton(R.string.common_word_cancel, null)
                 .show();
@@ -266,7 +266,7 @@ public class SrcCodeEditor extends BaseAppCompatActivity {
         };
 
         new MaterialAlertDialogBuilder(activity)
-                .setTitle("Select Language")
+                .setTitle("انتخاب زبان")
                 .setSingleChoiceItems(languagesList, languageId, listener)
                 .setNegativeButton(R.string.common_word_cancel, null)
                 .show();
@@ -448,10 +448,10 @@ public class SrcCodeEditor extends BaseAppCompatActivity {
                             if (format != null) {
                                 binding.editor.setText(format);
                             } else {
-                                SketchwareUtil.toastError("Failed to format XML file", Toast.LENGTH_LONG);
+                                SketchwareUtil.toastError("قالب‌بندی فایل XML ناموفق بود", Toast.LENGTH_LONG);
                             }
                         } else {
-                            SketchwareUtil.toast("Only Java and XML files can be formatted");
+                            SketchwareUtil.toast("فقط فایل‌های Java و XML قابل قالب‌بندی هستند");
                         }
                         break;
 
