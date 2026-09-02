@@ -259,12 +259,11 @@ public class ExportProjectActivity extends BaseAppCompatActivity {
     private void initializeAppBundleExportViews() {
         export_aab_button.setOnClickListener(view -> {
             MaterialAlertDialogBuilder confirmationDialog = new MaterialAlertDialogBuilder(this);
-            confirmationDialog.setTitle("نکته مهم");
-            confirmationDialog.setMessage("فایل .aab باید امضا شود.
-کی‌استور را در /Internal storage/sketchware/keystore/release_key.jks کپی و رمز alias را وارد کنید.");
+            confirmationDialog.setTitle("Important note");
+            confirmationDialog.setMessage("فایل .aab باید امضا شود.\nکی‌استور را در /Internal storage/sketchware/keystore/release_key.jks کپی و رمز alias را وارد کنید.");
             confirmationDialog.setIcon(R.drawable.ic_mtrl_info);
 
-            confirmationDialog.setPositiveButton("متوجه شدم", (v, which) -> {
+            confirmationDialog.setPositiveButton("Understood", (v, which) -> {
                 showAabSigningDialog();
                 v.dismiss();
             });
@@ -327,7 +326,7 @@ public class ExportProjectActivity extends BaseAppCompatActivity {
 
         sign_apk_button.setOnClickListener(view -> {
             MaterialAlertDialogBuilder confirmationDialog = new MaterialAlertDialogBuilder(this);
-            confirmationDialog.setTitle("نکته مهم");
+            confirmationDialog.setTitle("Important note");
             confirmationDialog.setMessage("""
                     To sign an APK, you need a keystore. Use your already created one, and copy it to \
                     /Internal storage/sketchware/keystore/release_key.jks and enter the alias's password.
@@ -336,7 +335,7 @@ public class ExportProjectActivity extends BaseAppCompatActivity {
                     use a 3rd-party tool (for now).""");
             confirmationDialog.setIcon(R.drawable.ic_mtrl_info);
 
-            confirmationDialog.setPositiveButton("متوجه شدم", (v, which) -> {
+            confirmationDialog.setPositiveButton("Understood", (v, which) -> {
                 showApkSigningDialog();
                 v.dismiss();
             });
@@ -741,9 +740,8 @@ public class ExportProjectActivity extends BaseAppCompatActivity {
             if (buildingAppBundle && new File(Environment.getExternalStorageDirectory(), "sketchware" + File.separator + "signed_aab" + File.separator + aabFilename).exists()) {
                 MaterialAlertDialogBuilder dialog = new MaterialAlertDialogBuilder(activity.get());
                 dialog.setIcon(R.drawable.open_box_48);
-                dialog.setTitle("خروجی AAB تمام شد");
-                dialog.setMessage("فایل AAB امضاشده اینجاست:
-" +
+                dialog.setTitle("Finished exporting AAB");
+                dialog.setMessage("فایل AAB امضاشده اینجاست:\n" +
                         "/Internal storage/sketchware/signed_aab/" + aabFilename);
                 dialog.setPositiveButton(Helper.getResString(R.string.common_word_ok), null);
                 dialog.show();

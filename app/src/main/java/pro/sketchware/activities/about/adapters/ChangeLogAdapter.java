@@ -52,8 +52,7 @@ public class ChangeLogAdapter extends RecyclerView.Adapter<ChangeLogAdapter.View
                 holder.binding.tvTitle.setText(titleText);
                 holder.binding.tvTitle.setVisibility(View.VISIBLE);
             } else {
-                holder.binding.tvTitle.setText("مشکلی پیش آمد، عذرخواهی ما!
-" +
+                holder.binding.tvTitle.setText("مشکلی پیش آمد، عذرخواهی ما!\n" +
                         "(Details: Invalid data type of \"title\")");
                 holder.binding.tvTitle.setVisibility(View.VISIBLE);
             }
@@ -77,7 +76,7 @@ public class ChangeLogAdapter extends RecyclerView.Adapter<ChangeLogAdapter.View
         if (releaseDate > 0) {
             holder.binding.tvReleaseNote.setVisibility(View.VISIBLE);
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
-            holder.binding.tvReleaseNote.setText("منتشرشده در: " + formatter.format(new Date(releaseDate)));
+            holder.binding.tvReleaseNote.setText("Released on: " + formatter.format(new Date(releaseDate)));
         } else {
             holder.binding.tvReleaseNote.setVisibility(View.GONE);
         }
@@ -87,8 +86,7 @@ public class ChangeLogAdapter extends RecyclerView.Adapter<ChangeLogAdapter.View
             holder.binding.tvSubTitle.setText(description);
             Linkify.addLinks(holder.binding.tvSubTitle, Linkify.WEB_URLS);
         } else {
-            holder.binding.tvSubTitle.setText("مشکلی پیش آمد، عذرخواهی ما!
-" +
+            holder.binding.tvSubTitle.setText("مشکلی پیش آمد، عذرخواهی ما!\n" +
                     "(Details: Invalid data type of \"description\")");
         }
 

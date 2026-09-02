@@ -36,12 +36,12 @@ public class CollectErrorActivity extends BaseAppCompatActivity {
 
             var dialog = new MaterialAlertDialogBuilder(this)
                     .setTitle(R.string.common_error_an_error_occurred)
-                    .setMessage("خطایی هنگام اجرای Sketchware Pro رخ داد. " +
+                    .setMessage("An error occurred while running Sketchware Pro. " +
                             "Do you want to report this error log so that we can fix it? " +
                             "No personal information will be included.")
-                    .setPositiveButton("کپی", null)
-                    .setNegativeButton("لغو", (dialogInterface, which) -> finish())
-                    .setNeutralButton("نمایش خطا", null) // null to set proper onClick listeners later without dismissing the AlertDialog
+                    .setPositiveButton("Copy", null)
+                    .setNegativeButton("Cancel", (dialogInterface, which) -> finish())
+                    .setNeutralButton("Show error", null) // null to set proper onClick listeners later without dismissing the AlertDialog
                     .setCancelable(false)
                     .show();
 
@@ -58,8 +58,7 @@ public class CollectErrorActivity extends BaseAppCompatActivity {
                     info = getPackageManager().getPackageInfo(getPackageName(), 0);
                 } catch (PackageManager.NameNotFoundException e) {
                     messageView.setTextIsSelectable(true);
-                    messageView.setText("اطلاعات پکیج دریافت نشد. جزئیات:
-" + Log.getStackTraceString(e));
+                    messageView.setText("اطلاعات پکیج دریافت نشد. جزئیات:\n" + Log.getStackTraceString(e));
                     return;
                 }
 
