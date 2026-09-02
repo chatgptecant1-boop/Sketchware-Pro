@@ -157,21 +157,21 @@ public class ExtraPaletteBlock {
     private void variables() {
         ArrayList<String> booleanVariables = jC.a(sc_id).e(javaName, 0);
         for (int i = 0; i < booleanVariables.size(); i++) {
-            if (i == 0) logicEditor.a("Boolean", getTitleBgColor());
+            if (i == 0) logicEditor.a("بولی", getTitleBgColor());
 
             logicEditor.a(booleanVariables.get(i), "b", "getVar").setTag(booleanVariables.get(i));
         }
 
         ArrayList<String> numberVariables = jC.a(sc_id).e(javaName, 1);
         for (int i = 0; i < numberVariables.size(); i++) {
-            if (i == 0) logicEditor.a("Number", getTitleBgColor());
+            if (i == 0) logicEditor.a("عدد", getTitleBgColor());
 
             logicEditor.a(numberVariables.get(i), "d", "getVar").setTag(numberVariables.get(i));
         }
 
         ArrayList<String> stringVariables = jC.a(sc_id).e(javaName, 2);
         for (int i = 0; i < stringVariables.size(); i++) {
-            if (i == 0) logicEditor.a("String", getTitleBgColor());
+            if (i == 0) logicEditor.a("رشته", getTitleBgColor());
 
             logicEditor.a(stringVariables.get(i), "s", "getVar").setTag(stringVariables.get(i));
         }
@@ -185,19 +185,19 @@ public class ExtraPaletteBlock {
 
         ArrayList<String> customVariables = jC.a(sc_id).e(javaName, 5);
         for (int i = 0; i < customVariables.size(); i++) {
-            if (i == 0) logicEditor.a("Custom Variable", getTitleBgColor());
+            if (i == 0) logicEditor.a("متغیر سفارشی", getTitleBgColor());
 
             String[] split = customVariables.get(i).split(" ");
             if (split.length > 1) {
                 logicEditor.a(split[1], "v", split[0], "getVar").setTag(customVariables.get(i));
             } else {
-                SketchwareUtil.toastError("Found invalid data of Custom Variable #" + (i + 1) + ": \"" + customVariables.get(i) + "\"");
+                SketchwareUtil.toastError("Found invalid data of Custom Variable #" + (i + 1) + ": \"" + customVariables.get(i) + "\");
             }
         }
 
         ArrayList<String> customVariables2 = jC.a(sc_id).e(javaName, 6);
         for (int i = 0; i < customVariables2.size(); i++) {
-            if (i == 0) logicEditor.a("Custom Variable", getTitleBgColor());
+            if (i == 0) logicEditor.a("متغیر سفارشی", getTitleBgColor());
 
             String variable = customVariables2.get(i);
             String variableType = CustomVariableUtil.getVariableType(variable);
@@ -235,7 +235,7 @@ public class ExtraPaletteBlock {
             ComponentBean component = components.get(i);
 
             if (i == 0) {
-                logicEditor.a("Components", getTitleBgColor());
+                logicEditor.a("کامپوننت‌ها", getTitleBgColor());
             }
 
             if (component.type != 27) {
@@ -260,7 +260,7 @@ public class ExtraPaletteBlock {
                     ViewBean customView = customViews.get(i);
 
                     if (i == 0) {
-                        logicEditor.a("Custom Views", getTitleBgColor());
+                        logicEditor.a("ویوهای سفارشی", getTitleBgColor());
                     }
 
                     if (!customView.convert.equals("include")) {
@@ -282,7 +282,7 @@ public class ExtraPaletteBlock {
             Set<String> toNotAdd = new Ox(new jq(), projectFile).readAttributesToReplace(view);
 
             if (i == 0) {
-                logicEditor.a("Views", getTitleBgColor());
+                logicEditor.a("ویوها", getTitleBgColor());
             }
 
             if (!view.convert.equals("include")) {
@@ -302,7 +302,7 @@ public class ExtraPaletteBlock {
                     ViewBean drawerView = drawerViews.get(i);
 
                     if (i == 0) {
-                        logicEditor.a("Drawer Views", getTitleBgColor());
+                        logicEditor.a("ویوهای کشو", getTitleBgColor());
                     }
 
                     if (!drawerView.convert.equals("include")) {
@@ -318,11 +318,11 @@ public class ExtraPaletteBlock {
     private void blockEvents() {
         switch (eventName) {
             case "onTabAdded", "onTabLayoutNewTabAdded" -> {
-                logicEditor.a("Fragment & TabLayout", getTitleBgColor());
+                logicEditor.a("Fragment و TabLayout", getTitleBgColor());
                 logicEditor.a("f", "returnTitle");
             }
             case "onFragmentAdded" -> {
-                logicEditor.a("Fragment & TabLayout", getTitleBgColor());
+                logicEditor.a("Fragment و TabLayout", getTitleBgColor());
                 logicEditor.a("f", "returnFragment");
             }
             case "onScrollChanged" -> {
@@ -339,7 +339,7 @@ public class ExtraPaletteBlock {
                 logicEditor.a("d", "pagerscrollparam");
             }
             case "onCreateOptionsMenu" -> {
-                logicEditor.a("Menu", getTitleBgColor());
+                logicEditor.a("منو", getTitleBgColor());
                 logicEditor.a(" ", "menuInflater");
                 logicEditor.a(" ", "menuAddItem");
                 logicEditor.a(" ", "menuAddMenuItem");
@@ -385,7 +385,7 @@ public class ExtraPaletteBlock {
             if (paletteId == 3) {
                 logicEditor.a(" ", "addSourceDirectly");
             } else {
-                logicEditor.a("Enter the path without import & semicolon", getTitleBgColor());
+                logicEditor.a("مسیر را بدون import و نقطه-ویرگول وارد کنید", getTitleBgColor());
                 logicEditor.a(" ", "customImport");
                 logicEditor.a(" ", "customImport2");
             }
@@ -399,10 +399,10 @@ public class ExtraPaletteBlock {
                 StringsEditorManager stringsEditorManager = new StringsEditorManager();
                 stringsEditorManager.convertXmlStringsToListMap(FileUtil.readFileIfExist(filePath), StringsListMap);
 
-                logicEditor.b("Open Resources editor", "openResourcesEditor");
+                logicEditor.b("باز کردن ویرایشگر منابع", "openResourcesEditor");
 
                 logicEditor.a("s", "getResString");
-                logicEditor.a("Saved Res Strings :", getTitleBgColor());
+                logicEditor.a("رشته‌های ذخیره‌شده :", getTitleBgColor());
                 if (!stringsEditorManager.isXmlStringsExist(StringsListMap, "app_name")) {
                     logicEditor.a("app_name", "s", "getResStr").setTag("S98ZCSapp_name");
                 }
@@ -413,16 +413,16 @@ public class ExtraPaletteBlock {
                 }
                 return;
             case 0:
-                logicEditor.b("Add variable", "variableAdd");
-                logicEditor.b("Add custom variable", "variableAddNew", clickListener);
-                logicEditor.b("Remove variable", "variableRemove", clickListener);
+                logicEditor.b("افزودن متغیر", "variableAdd");
+                logicEditor.b("افزودن متغیر سفارشی", "variableAddNew", clickListener);
+                logicEditor.b("حذف متغیر", "variableRemove", clickListener);
                 variables();
                 return;
 
             case 1:
-                logicEditor.b("Add list", "listAdd");
-                logicEditor.b("Add custom List", "listAddCustom", clickListener);
-                logicEditor.b("Remove list", "listRemove", clickListener);
+                logicEditor.b("افزودن لیست", "listAdd");
+                logicEditor.b("افزودن لیست سفارشی", "listAddCustom", clickListener);
+                logicEditor.b("حذف لیست", "listRemove", clickListener);
                 list();
                 return;
 
@@ -463,7 +463,7 @@ public class ExtraPaletteBlock {
 
             case 5:
                 extraBlocks.fileBlocks();
-                logicEditor.a("FileUtil Blocks", getTitleBgColor());
+                logicEditor.a("بلوک‌های کار با فایل", getTitleBgColor());
                 if (!frc.getAssetsFile().isEmpty()) {
                     logicEditor.a(" ", "getAssetFile");
                     logicEditor.a("s", "copyAssetFile");
@@ -569,7 +569,7 @@ public class ExtraPaletteBlock {
                 if (textViewUsed || compoundButtonUsed || autoCompleteTextViewUsed
                         || multiAutoCompleteTextViewUsed || imageViewUsed || ratingBarUsed
                         || seekBarUsed || progressBarUsed || videoViewUsed || webViewUsed) {
-                    logicEditor.a("Widgets", getTitleBgColor());
+                    logicEditor.a("ویجت‌ها", getTitleBgColor());
 
                     if (textViewUsed) {
                         logicEditor.a(" ", "setText");
@@ -674,7 +674,7 @@ public class ExtraPaletteBlock {
                 boolean viewPagerUsed = isWidgetUsed("ViewPager");
 
                 if (spinnerUsed || listViewUsed || recyclerViewUsed || gridViewUsed || viewPagerUsed) {
-                    logicEditor.a("List", getTitleBgColor());
+                    logicEditor.a("لیست", getTitleBgColor());
 
                     if (spinnerUsed) {
                         logicEditor.a(" ", "spnSetData");
@@ -742,7 +742,7 @@ public class ExtraPaletteBlock {
                 boolean textInputLayoutUsed = isWidgetUsed("TextInputLayout") || extraBlocks.isCustomVarUsed("TextInputLayout");
 
                 if (drawerUsed || fabUsed || bottomNavigationViewUsed || swipeRefreshLayoutUsed || cardViewUsed || tabLayoutUsed || textInputLayoutUsed) {
-                    logicEditor.a("AndroidX components", getTitleBgColor());
+                    logicEditor.a("کامپوننت‌های AndroidX", getTitleBgColor());
 
                     if (drawerUsed) {
                         logicEditor.a("b", "isDrawerOpen");
@@ -806,7 +806,7 @@ public class ExtraPaletteBlock {
                 boolean otpViewUsed = isWidgetUsed("OTPView");
 
                 if (waveSideBarUsed || badgeViewUsed || bubbleLayoutUsed || patternLockViewUsed || codeViewUsed || lottieAnimationViewUsed) {
-                    logicEditor.a("Library", getTitleBgColor());
+                    logicEditor.a("کتابخانه", getTitleBgColor());
 
                     if (otpViewUsed) {
                         logicEditor.a(" ", "otpViewSetFieldCount");
@@ -873,7 +873,7 @@ public class ExtraPaletteBlock {
                 boolean mapViewUsed = isWidgetUsed("MapView");
 
                 if (signInButtonUsed || youtubePlayerViewUsed || adMobUsed || mapViewUsed) {
-                    logicEditor.a("Google", getTitleBgColor());
+                    logicEditor.a("گوگل", getTitleBgColor());
 
                     if (signInButtonUsed) {
                         logicEditor.a(" ", "signInButtonSetColorScheme");
@@ -909,7 +909,7 @@ public class ExtraPaletteBlock {
                 boolean calendarViewUsed = isWidgetUsed("CalendarView");
 
                 if (timePickerUsed || calendarViewUsed) {
-                    logicEditor.a("Date & Time", getTitleBgColor());
+                    logicEditor.a("تاریخ و ساعت", getTitleBgColor());
 
                     if (timePickerUsed) {
                         logicEditor.a(" ", "timepickerSetHour");
@@ -926,7 +926,7 @@ public class ExtraPaletteBlock {
                     }
                 }
             }
-            logicEditor.a("Function", getTitleBgColor());
+            logicEditor.a("تابع", getTitleBgColor());
             logicEditor.a(" ", "performClick");
             logicEditor.a("c", "viewOnClick");
             logicEditor.a("c", "viewOnLongClick");
@@ -935,7 +935,7 @@ public class ExtraPaletteBlock {
             return;
 
             case 7:
-                logicEditor.b("Add component", "componentAdd");
+                logicEditor.b("افزودن کامپوننت", "componentAdd");
                 logicEditor.a(" ", "changeStatebarColour");
                 logicEditor.a(" ", "LightStatusBar");
                 logicEditor.a(" ", "showKeyboard");
@@ -962,11 +962,11 @@ public class ExtraPaletteBlock {
                     logicEditor.a(" ", "startActivityWithChooser");
                 }
                 if (!frc.getBroadcastFile().isEmpty()) {
-                    logicEditor.a("Broadcast", getTitleBgColor());
+                    logicEditor.a("برادکست", getTitleBgColor());
                     logicEditor.a(" ", "sendBroadcast");
                 }
                 if (!frc.getServiceFile().isEmpty()) {
-                    logicEditor.a("Service", getTitleBgColor());
+                    logicEditor.a("سرویس", getTitleBgColor());
                     logicEditor.a(" ", "startService");
                     logicEditor.a(" ", "stopService");
                 }
@@ -978,15 +978,15 @@ public class ExtraPaletteBlock {
                     logicEditor.a(" ", "fileRemoveData");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_DATE_PICKER_DIALOG)) {
-                    logicEditor.a("DatePickerDialog", getTitleBgColor());
+                    logicEditor.a("گفت‌وگوی انتخاب تاریخ", getTitleBgColor());
                     logicEditor.a(" ", "datePickerDialogShow");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_TIME_PICKER_DIALOG)) {
-                    logicEditor.a("TimePickerDialog", getTitleBgColor());
+                    logicEditor.a("گفت‌وگوی انتخاب ساعت", getTitleBgColor());
                     logicEditor.a(" ", "timePickerDialogShow");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_CALENDAR)) {
-                    logicEditor.a("Calendar", getTitleBgColor());
+                    logicEditor.a("تقویم", getTitleBgColor());
                     logicEditor.a(" ", "calendarGetNow");
                     logicEditor.a(" ", "calendarAdd");
                     logicEditor.a(" ", "calendarSet");
@@ -996,12 +996,12 @@ public class ExtraPaletteBlock {
                     logicEditor.a(" ", "calendarSetTime");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_VIBRATOR)) {
-                    logicEditor.a("Vibrator", getTitleBgColor());
+                    logicEditor.a("لرزاننده", getTitleBgColor());
                     logicEditor.a(" ", "vibratorAction");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_TIMERTASK)
                         || extraBlocks.isCustomVarUsed("Timer")) {
-                    logicEditor.a("Timer", getTitleBgColor());
+                    logicEditor.a("تایمر", getTitleBgColor());
                     logicEditor.a("c", "timerAfter");
                     logicEditor.a("c", "timerEvery");
                     logicEditor.a(" ", "timerCancel");
@@ -1013,7 +1013,7 @@ public class ExtraPaletteBlock {
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_DIALOG)
                         || extraBlocks.isCustomVarUsed("Dialog")) {
-                    logicEditor.a("Dialog", getTitleBgColor());
+                    logicEditor.a("گفت‌وگو", getTitleBgColor());
                     logicEditor.a(" ", "dialogSetTitle");
                     logicEditor.a(" ", "Dialog SetIcon");
                     logicEditor.a(" ", "dialogSetMessage");
@@ -1023,7 +1023,7 @@ public class ExtraPaletteBlock {
                     logicEditor.a(" ", "dialogShow");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_MEDIAPLAYER)) {
-                    logicEditor.a("MediaPlayer", getTitleBgColor());
+                    logicEditor.a("پخش‌کننده رسانه", getTitleBgColor());
                     logicEditor.a(" ", "mediaplayerCreate");
                     logicEditor.a(" ", "mediaplayerStart");
                     logicEditor.a(" ", "mediaplayerPause");
@@ -1037,14 +1037,14 @@ public class ExtraPaletteBlock {
                     logicEditor.a(" ", "mediaplayerRelease");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_SOUNDPOOL)) {
-                    logicEditor.a("SoundPool", getTitleBgColor());
+                    logicEditor.a("پخش‌کننده صدا", getTitleBgColor());
                     logicEditor.a(" ", "soundpoolCreate");
                     logicEditor.a("d", "soundpoolLoad");
                     logicEditor.a("d", "soundpoolStreamPlay");
                     logicEditor.a(" ", "soundpoolStreamStop");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_OBJECTANIMATOR)) {
-                    logicEditor.a("ObjectAnimator", getTitleBgColor());
+                    logicEditor.a("انیمیت‌کننده", getTitleBgColor());
                     logicEditor.a(" ", "objectanimatorSetTarget");
                     logicEditor.a(" ", "objectanimatorSetProperty");
                     logicEditor.a(" ", "objectanimatorSetValue");
@@ -1068,7 +1068,7 @@ public class ExtraPaletteBlock {
                     logicEditor.a(" ", "firebaseStopListen");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_FIREBASE_AUTH)) {
-                    logicEditor.a("FirebaseAuth", getTitleBgColor());
+                    logicEditor.a("احراز هویت Firebase", getTitleBgColor());
                     logicEditor.a("b", "firebaseauthIsLoggedIn");
                     logicEditor.a("s", "firebaseauthGetCurrentUser");
                     logicEditor.a("s", "firebaseauthGetUid");
@@ -1079,45 +1079,45 @@ public class ExtraPaletteBlock {
                     logicEditor.a(" ", "firebaseauthSignOutUser");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_GYROSCOPE)) {
-                    logicEditor.a("Gyroscope", getTitleBgColor());
+                    logicEditor.a("ژیروسکوپ", getTitleBgColor());
                     logicEditor.a(" ", "gyroscopeStartListen");
                     logicEditor.a(" ", "gyroscopeStopListen");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_INTERSTITIAL_AD)) {
-                    logicEditor.a("AdMob Interstitial", getTitleBgColor());
+                    logicEditor.a("تبلیغ تمام‌صفحه AdMob", getTitleBgColor());
                     logicEditor.a(" ", "interstitialAdLoad");
                     logicEditor.a(" ", "interstitialAdShow");
                     logicEditor.a("b", "interstitialAdIsLoaded");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_REWARDED_VIDEO_AD)) {
-                    logicEditor.a("RewardedVideoAd", getTitleBgColor());
+                    logicEditor.a("تبلیغ ویدیویی پاداش‌دار", getTitleBgColor());
                     logicEditor.a(" ", "rewardedVideoAdLoad");
                     logicEditor.a(" ", "rewardedVideoAdShow");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_FIREBASE_STORAGE)) {
-                    logicEditor.a("Firebase Storage", getTitleBgColor());
+                    logicEditor.a("فضای ذخیره Firebase", getTitleBgColor());
                     logicEditor.a(" ", "firebasestorageUploadFile");
                     logicEditor.a(" ", "firebasestorageDownloadFile");
                     logicEditor.a(" ", "firebasestorageDelete");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_CAMERA)) {
-                    logicEditor.a("Camera", getTitleBgColor());
+                    logicEditor.a("دوربین", getTitleBgColor());
                     logicEditor.a(" ", "camerastarttakepicture");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_FILE_PICKER)) {
-                    logicEditor.a("FilePicker", getTitleBgColor());
+                    logicEditor.a("انتخابگر فایل", getTitleBgColor());
                     logicEditor.a(" ", "filepickerstartpickfiles");
                     logicEditor.a(" ", "imageCrop");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_REQUEST_NETWORK)) {
-                    logicEditor.a("RequestNetwork", getTitleBgColor());
+                    logicEditor.a("درخواست شبکه", getTitleBgColor());
                     logicEditor.a("b", "isConnected");
                     logicEditor.a(" ", "requestnetworkSetParams");
                     logicEditor.a(" ", "requestnetworkSetHeaders");
                     logicEditor.a(" ", "requestnetworkStartRequestNetwork");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_TEXT_TO_SPEECH)) {
-                    logicEditor.a("TextToSpeech", getTitleBgColor());
+                    logicEditor.a("متن به گفتار", getTitleBgColor());
                     logicEditor.a("b", "textToSpeechIsSpeaking");
                     logicEditor.a(" ", "textToSpeechSetPitch");
                     logicEditor.a(" ", "textToSpeechSetSpeechRate");
@@ -1126,13 +1126,13 @@ public class ExtraPaletteBlock {
                     logicEditor.a(" ", "textToSpeechShutdown");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_SPEECH_TO_TEXT)) {
-                    logicEditor.a("SpeechToText", getTitleBgColor());
+                    logicEditor.a("گفتار به متن", getTitleBgColor());
                     logicEditor.a(" ", "speechToTextStartListening");
                     logicEditor.a(" ", "speechToTextStopListening");
                     logicEditor.a(" ", "speechToTextShutdown");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_BLUETOOTH_CONNECT)) {
-                    logicEditor.a("Bluetooth", getTitleBgColor());
+                    logicEditor.a("بلوتوث", getTitleBgColor());
                     logicEditor.a("b", "bluetoothConnectIsBluetoothEnabled");
                     logicEditor.a("b", "bluetoothConnectIsBluetoothActivated");
                     logicEditor.a("s", "bluetoothConnectGetRandomUuid");
@@ -1146,7 +1146,7 @@ public class ExtraPaletteBlock {
                     logicEditor.a(" ", "bluetoothConnectGetPairedDevices");
                 }
                 if (extraBlocks.isComponentUsed(ComponentBean.COMPONENT_TYPE_LOCATION_MANAGER)) {
-                    logicEditor.a("LocationManager", getTitleBgColor());
+                    logicEditor.a("مدیریت موقعیت", getTitleBgColor());
                     logicEditor.a(" ", "locationManagerRequestLocationUpdates");
                     logicEditor.a(" ", "locationManagerRemoveUpdates");
                 }
@@ -1154,7 +1154,7 @@ public class ExtraPaletteBlock {
                         || extraBlocks.isCustomVarUsed("ProgressDialog")
                         || eventName.equals("onPreExecute") || eventName.equals("onProgressUpdate")
                         || eventName.equals("onPostExecute")) {
-                    logicEditor.a("ProgressDialog", getTitleBgColor());
+                    logicEditor.a("گفت‌وگوی پیشرفت", getTitleBgColor());
                     logicEditor.a(" ", "progressdialogCreate");
                     logicEditor.a(" ", "progressdialogSetTitle");
                     logicEditor.a(" ", "progressdialogSetMessage");
@@ -1170,21 +1170,21 @@ public class ExtraPaletteBlock {
                 return;
 
             case 8:
-                logicEditor.b("Create", "blockAdd");
-                logicEditor.b("Import From Collection", "blockImport");
+                logicEditor.b("ساخت", "blockAdd");
+                logicEditor.b("وارد کردن از مجموعه", "blockImport");
                 if (ConfigActivity.isSettingEnabled(ConfigActivity.SETTING_SHOW_BUILT_IN_BLOCKS)) {
                     logicEditor.a(" ", "customToast");
                     logicEditor.a(" ", "customToastWithIcon");
                 }
                 moreBlocks();
                 if (ConfigActivity.isSettingEnabled(ConfigActivity.SETTING_SHOW_BUILT_IN_BLOCKS)) {
-                    logicEditor.a("Command Blocks", getTitleBgColor());
+                    logicEditor.a("بلوک‌های دستوری", getTitleBgColor());
                     logicEditor.a("c", "CommandBlockJava");
                     logicEditor.addDeprecatedBlock("Deprecated: Use XML Command Manager", "c", "CommandBlockXML");
-                    logicEditor.a("Permission Command Blocks", getTitleBgColor());
+                    logicEditor.a("بلوک‌های دستوری مجوز", getTitleBgColor());
                     logicEditor.a(" ", "addPermission");
                     logicEditor.a(" ", "removePermission");
-                    logicEditor.a("Other Command Blocks", getTitleBgColor());
+                    logicEditor.a("سایر بلوک‌های دستوری", getTitleBgColor());
                     logicEditor.a(" ", "addCustomVariable");
                     logicEditor.a(" ", "addInitializer");
                     return;

@@ -76,7 +76,7 @@ public class BlocksHandler {
                         + "});");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "When %m.view clicked");
+        "وقتی %m.view کلیک شد";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -102,7 +102,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.invalidateViews();");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "%m.listview invalidate views");
+        "%m.listview نوسازی ویوها";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -112,7 +112,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.addHeaderView(%s,%s,%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "%m.listview add Header view %m.view data %s selectable? %b");
+        "افزودن ویو سربرگ به %m.listview با ویو %m.view و داده %s و قابل انتخاب؟ %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -122,7 +122,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.addFooterView(%s,%s,%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "%m.listview add Footer view %m.view data %s selectable? %b");
+        "افزودن ویو پاصفحه به %m.listview با ویو %m.view و داده %s و قابل انتخاب؟ %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -132,7 +132,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.removeHeaderView(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "%m.listview remove Header %m.view");
+        "حذف سربرگ %m.view از %m.listview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -142,7 +142,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.removeFooterView(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "%m.listview remove Footer %m.view");
+        "حذف پاصفحه %m.view از %m.listview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -152,7 +152,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s = new ProgressDialog(%s.this);");
         hashMap.put("color", "#29A7E4");
         hashMap.put("palette", "7");
-        hashMap.put("spec", "%m.progressdialog Create in %m.activity");
+        "ساخت %m.progressdialog در %m.activity";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -162,7 +162,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setSelection((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "7");
-        hashMap.put("spec", "%m.listview set selection %d");
+        "تنظیم موقعیت انتخاب %m.listview به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -172,7 +172,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "%m.edittext disable suggestions");
+        "غیرفعال‌کردن پیشنهادهای %m.edittext";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -182,7 +182,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setLines(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "%m.edittext set lines %d");
+        "تنظیم تعداد خطوط %m.edittext به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -192,7 +192,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setSingleLine(%2$s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "%m.edittext singleLine? %b");
+        "%m.edittext تک‌خطی؟ %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -202,7 +202,7 @@ public class BlocksHandler {
         hashMap.put("code", "((EditText)%s).setError(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "%m.edittext show error %s");
+        "نمایش خطای %s در %m.edittext";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -212,7 +212,7 @@ public class BlocksHandler {
         hashMap.put("code", "((EditText)%s).selectAll();");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "%m.edittext select all text");
+        "انتخاب کل متن %m.edittext";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -222,7 +222,7 @@ public class BlocksHandler {
         hashMap.put("code", "((EditText)%s).setSelection((int)%s, (int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "%m.edittext set selection start %d end %d");
+        "تنظیم شروع انتخاب %m.edittext به %d و پایان به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -232,7 +232,7 @@ public class BlocksHandler {
         hashMap.put("code", "((EditText)%s).setMaxLines((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "%m.edittext set max lines %d");
+        "تنظیم بیشینه خطوط %m.edittext به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -242,7 +242,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.getSelectionStart()");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "%m.edittext get selection start");
+        "گرفتن شروع انتخاب %m.edittext";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -252,7 +252,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.getSelectionEnd()");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "%m.edittext get selection end");
+        "گرفتن پایان انتخاب %m.edittext";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -261,7 +261,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.performClick();");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "0");
-        hashMap.put("spec", "%m.view performClick");
+        "انجام کلیک روی %m.view";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -271,7 +271,7 @@ public class BlocksHandler {
         hashMap.put("code", "new %s().execute(%s);");
         hashMap.put("color", "#29A7E4");
         hashMap.put("palette", "7");
-        hashMap.put("spec", "%m.asynctask execute message %s");
+        "اجرای %m.asynctask با پیام %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -281,7 +281,7 @@ public class BlocksHandler {
         hashMap.put("code", "publishProgress((int)%s);");
         hashMap.put("color", "#29A7E4");
         hashMap.put("palette", "7");
-        hashMap.put("spec", "publish progress %d");
+        "انتشار پیشرفت %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -291,7 +291,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setCanceledOnTouchOutside(%s);");
         hashMap.put("color", "#29A7E4");
         hashMap.put("palette", "7");
-        hashMap.put("spec", "%m.progressdialog setCancelableWhenTouchOutside %b");
+        "%m.progressdialog لغو با لمس بیرون؟ %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -303,7 +303,7 @@ public class BlocksHandler {
                         + "datePicker.show(getSupportFragmentManager(), \"datePicker\");");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "DatePickerDialog show");
+        "نمایش گفت‌وگوی انتخاب تاریخ";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -312,7 +312,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.show();");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.timepickerdialog show");
+        "نمایش %m.timepickerdialog";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -321,7 +321,7 @@ public class BlocksHandler {
         hashMap.put("code", "SketchwareUtil.CropImage(this, %s, (int) %s);");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "CropImageView fromFilePath %s RequestCode %d");
+        "برش تصویر از مسیر %s با کد درخواست %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -330,7 +330,7 @@ public class BlocksHandler {
         hashMap.put("code", "SketchwareUtil.isConnected(getApplicationContext())");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "isConnected");
+        "متصل است";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -339,7 +339,7 @@ public class BlocksHandler {
         hashMap.put("code", "import %s;");
         hashMap.put("color", "#EE7D15");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "import %s.import");
+        "واردکردن %s.import";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -348,7 +348,7 @@ public class BlocksHandler {
         hashMap.put("code", "import %s;");
         hashMap.put("color", "#EE7D15");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "import %m.import");
+        "واردکردن %m.import";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -390,7 +390,7 @@ public class BlocksHandler {
                         + "getWindow().setStatusBarColor(0xFFFFFFFF);");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "LightStatusBar");
+        "نوار وضعیت روشن";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -399,7 +399,7 @@ public class BlocksHandler {
         hashMap.put("code", "SketchwareUtil.hideKeyboard(getApplicationContext());");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "Hide keyboard");
+        "پنهان‌کردن کیبورد";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -408,7 +408,7 @@ public class BlocksHandler {
         hashMap.put("code", "SketchwareUtil.showKeyboard(getApplicationContext());");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "Show keyboard");
+        "نمایش کیبورد";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -417,7 +417,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setTitle(%s);");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.progressdialog setTitle %s");
+        "تنظیم عنوان %m.progressdialog به %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -426,7 +426,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setMessage(%s);");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.progressdialog setMessage %s");
+        "تنظیم پیام %m.progressdialog به %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -435,7 +435,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setMax((int)%s);");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.progressdialog setMax %d");
+        "تنظیم بیشینه %m.progressdialog به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -444,7 +444,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setProgress((int)%s);");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.progressdialog setProgress %d");
+        "تنظیم پیشرفت %m.progressdialog به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -453,7 +453,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setCancelable(%s);");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.progressdialog setCancelable %b");
+        "%m.progressdialog قابل لغو؟ %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -462,7 +462,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setCanceledOnTouchOutside(%s);");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.progressdialog setCanceledOnTouchOutside %b");
+        "%m.progressdialog لغو با لمس بیرون؟ %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -471,7 +471,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setProgressStyle(ProgressDialog.%s);");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.progressdialog setProgressStyle %m.styleprogress");
+        "تنظیم سبک پیشرفت %m.progressdialog به %m.styleprogress";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -480,7 +480,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.dismiss();");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.progressdialog dismiss");
+        "بستن %m.progressdialog";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -489,7 +489,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.show();");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.progressdialog show");
+        "نمایش %m.progressdialog";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -498,7 +498,7 @@ public class BlocksHandler {
         hashMap.put("code", "startService(new Intent(getApplicationContext(), %s.class));");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "startService %m.activity");
+        "شروع سرویس در %m.activity";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -507,7 +507,7 @@ public class BlocksHandler {
         hashMap.put("code", "stopService(new Intent(getApplicationContext(), %s.class));");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "stopService %m.activity");
+        "توقف سرویس در %m.activity";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -516,7 +516,7 @@ public class BlocksHandler {
         hashMap.put("code", "sendBroadcast(%s);");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "sendBroadcast %s");
+        "ارسال برادکست %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -525,7 +525,7 @@ public class BlocksHandler {
         hashMap.put("code", "startActivity(Intent.createChooser(%s, %s));");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "StartActivity %m.intent with Chooser %s");
+        "شروع %m.intent با انتخابگر %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -534,7 +534,7 @@ public class BlocksHandler {
         hashMap.put("code", "finishAffinity();");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "Finish Affinity");
+        "بستن همه اکتیویتی‌ها";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -543,7 +543,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s ? %s : %s");
         hashMap.put("color", "#E1A928");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%b ? %s : %s");
+        "اگر %b آنگاه %s وگرنه %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -552,7 +552,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s ? (int)%s : (int)%s");
         hashMap.put("color", "#E1A928");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%b ? %d : %d");
+        "اگر %b آنگاه %d وگرنه %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -561,7 +561,7 @@ public class BlocksHandler {
         hashMap.put("code", "for (%s = %s; %s; %s++) {\r\n%s\r\n}");
         hashMap.put("color", "#E1A928");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "for %m.varInt = %d; %b; %m.varInt++");
+        "برای %m.varInt = %d؛ تا زمانی که %b؛ %m.var++";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -570,7 +570,7 @@ public class BlocksHandler {
         hashMap.put("code", "notifyDataSetChanged();");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "RefreshData");
+        "بازخوانی داده";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -579,7 +579,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.getLastVisiblePosition()");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.listview getLastVisiblePosition");
+        "گرفتن موقعیت آخرین مورد پیدای %m.listview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -588,7 +588,7 @@ public class BlocksHandler {
         hashMap.put("code", "ListView.%s");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.listscrollparam");
+        "پارامتر پیمایش %m.listview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -597,7 +597,7 @@ public class BlocksHandler {
         hashMap.put("code", "getMenuInflater().inflate(R.menu.%s, menu);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "Menu get menu from file %m.menu");
+        "گرفتن منو از فایل %m.menu";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -606,7 +606,7 @@ public class BlocksHandler {
         hashMap.put("code", "menu.add(0, %s, 0, %s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "Menu add id %d title %s");
+        "افزودن منو با شناسه %d و عنوان %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -630,7 +630,7 @@ public class BlocksHandler {
         hashMap.put("code", "SubMenu %s = menu.addSubMenu(%s);\r\n%s");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "Menu add %m.submenu title %s;");
+        "افزودن %m.submenu با عنوان %s؛";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -639,7 +639,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.add(0, %s, 0, %s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.submenu add id %d title %s");
+        "افزودن زیرمنو با شناسه %d و عنوان %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -648,7 +648,7 @@ public class BlocksHandler {
         hashMap.put("code", "java.io.InputStream %s = getAssets().open(%s);");
         hashMap.put("color", "#A1887F");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.inputstream getFileFromAsset path %s");
+        "گرفتن فایل از assets با مسیر %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -663,7 +663,7 @@ public class BlocksHandler {
                         + "}");
         hashMap.put("color", "#A1887F");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "rename file path %s to %s");
+        "تغییر نام فایل %s به %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -672,7 +672,7 @@ public class BlocksHandler {
         hashMap.put("code", "SketchwareUtil.copyFromInputStream(%s)");
         hashMap.put("color", "#A1887F");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.inputstream to String");
+        "تبدیل %m.inputstream به رشته";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -681,7 +681,7 @@ public class BlocksHandler {
         hashMap.put("code", "SketchwareUtil.sortListMap(%s, %s, %s, %s);");
         hashMap.put("color", "#CC5B21");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "sort %m.listMap key %s isNumber %b isAscending %b");
+        "مرتب‌سازی %m.listMap با کلید %s و عددی؟ %b و صعودی؟ %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -690,7 +690,7 @@ public class BlocksHandler {
         hashMap.put("code", "%2$s.remove(%1$s);");
         hashMap.put("color", "#CC5B21");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "delete %m.varMap of %m.listMap");
+        "حذف %m.varMap از %m.listMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -700,7 +700,7 @@ public class BlocksHandler {
         hashMap.put("code", "Html.fromHtml(%s)");
         hashMap.put("color", "#5CB721");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "html %s");
+        "کد HTML: %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -709,7 +709,7 @@ public class BlocksHandler {
         hashMap.put("code", "new StringBuilder(%s).reverse().toString()");
         hashMap.put("color", "#5CB721");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "reverse %s");
+        "معکوس‌کردن %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -718,7 +718,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.hashCode()");
         hashMap.put("color", "#5CB721");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "toHashCode %s");
+        "تبدیل %s به هش‌کد";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -727,7 +727,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.matches(%s)");
         hashMap.put("color", "#5CB721");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%s matches RegExp %s");
+        "%s با الگوی %s مطابقت دارد";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -736,7 +736,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.replaceFirst(%s, %s)");
         hashMap.put("color", "#5CB721");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%s replace first RegExp %s with %s");
+        "جایگزینی اولین تطابق %s در الگوی %s با %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -745,7 +745,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.replaceAll(%s, %s)");
         hashMap.put("color", "#5CB721");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%s replace all RegExp %s with %s");
+        "جایگزینی همه تطابق‌های %s در الگوی %s با %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -754,7 +754,7 @@ public class BlocksHandler {
         hashMap.put("code", "%3$s = new ArrayList<String>(Arrays.asList(%1$s.split(%2$s)));");
         hashMap.put("color", "#5CB721");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "split %s RegExp %s into %m.listStr");
+        "شکستن %s با الگوی %s به لیست %m.listStr";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -763,7 +763,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.containsValue(%s)");
         hashMap.put("color", "#EE7D15");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.varMap contain value %s");
+        "%m.varMap شامل مقدار %s است";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -773,7 +773,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.getHeight()");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.view getHeight");
+        "گرفتن ارتفاع %m.view";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -783,7 +783,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.getWidth()");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.view getWidth");
+        "گرفتن عرض %m.view";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -793,7 +793,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.removeView(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.view removeView %m.view");
+        "حذف ویو %m.view از %m.view";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -803,7 +803,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.removeAllViews();");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.view removeAllViews");
+        "حذف همه ویوهای %m.view";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -813,7 +813,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.addView(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.view addView %m.view");
+        "افزودن ویو %m.view به %m.view";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -823,7 +823,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.addView(%s, %s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.view addView %m.view index %d");
+        "افزودن ویو %m.view به %m.view در جایگاه %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -832,7 +832,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setGravity(Gravity.%s | Gravity.%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.view setGravity %m.gravity_v %m.gravity_h");
+        "تنظیم گراویته %m.view به %m.gravity_v و %m.gravity_h";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -844,7 +844,7 @@ public class BlocksHandler {
                         + " getPackageName()));");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.imageview set image by name %s");
+        "تنظیم تصویر %m.imageview با نام %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -853,7 +853,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setImageResource(R.drawable.%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.imageview setImage %m.image");
+        "تنظیم تصویر %m.imageview به %m.image";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -862,7 +862,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.getRating()");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.ratingbar getRating");
+        "گرفتن امتیاز %m.ratingbar";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -871,7 +871,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setRating((float)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.ratingbar setRating%d");
+        "تنظیم امتیاز %m.ratingbar به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -880,7 +880,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setNumStars((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.ratingbar setNumStars %d");
+        "تنظیم تعداد ستاره‌های %m.ratingbar به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -889,7 +889,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setStepSize((float)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.ratingbar setStepSize %d");
+        "تنظیم گام امتیاز %m.ratingbar به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -898,7 +898,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setIs24HourView(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.timepicker setIs24Hour %b");
+        "%m.timepicker قالب ۲۴ ساعته؟ %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -907,7 +907,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setCurrentHour((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.timepicker setCurrentHour %d");
+        "تنظیم ساعت %m.timepicker به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -916,7 +916,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setCurrentMinute((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.timepicker setCurrentMinute%d");
+        "تنظیم دقیقه %m.timepicker به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -925,7 +925,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setHour((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.timepicker setHour %d");
+        "تنظیم ساعت %m.timepicker به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -934,7 +934,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setMinute((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.timepicker setMinute%d");
+        "تنظیم دقیقه %m.timepicker به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -946,7 +946,7 @@ public class BlocksHandler {
                         + " android.R.layout.simple_list_item_1, %s));");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.actv setListData %m.listStr");
+        "تنظیم داده لیست %m.actv به %m.listStr";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -955,7 +955,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setThreshold(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.mactv setThreshold %d");
+        "تنظیم آستانه %m.mactv به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -964,7 +964,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.mactv CommaTokenizer");
+        "%m.mactv با جداکننده ویرگول";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -976,7 +976,7 @@ public class BlocksHandler {
                         + " android.R.layout.simple_list_item_1, %s));");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.mactv setListData %m.listStr");
+        "تنظیم داده لیست %m.mactv به %m.listStr";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -985,7 +985,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setSelector(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.listview setSelector %m.color");
+        "تنظیم انتخابگر %m.listview به %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -994,7 +994,7 @@ public class BlocksHandler {
         hashMap.put("code", "");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.gridview setGridCustomViewData %m.listMap");
+        "تنظیم داده ویو سفارشی %m.gridview به %m.listMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1003,7 +1003,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setNumColumns((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.gridview setNumColumns %d");
+        "تنظیم تعداد ستون‌های %m.gridview به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1012,7 +1012,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setColumnWidth((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.gridview setColumnWidth %d");
+        "تنظیم عرض ستون %m.gridview به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1021,7 +1021,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setVerticalSpacing((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.gridview setVerticalSpacing %d");
+        "تنظیم فاصله عمودی %m.gridview به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1030,7 +1030,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setHorizontalSpacing((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.gridview setHorizontalSpacing %d");
+        "تنظیم فاصله افقی %m.gridview به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1039,7 +1039,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setStretchMode(GridView.%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.gridview setStretchMode %m.gridstretchmode");
+        "تنظیم حالت کشیدگی %m.gridview به %m.gridstretchmode";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1048,7 +1048,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setVideoURI(Uri.parse(%s));");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.videoview setVideoUri %s");
+        "تنظیم آدرس ویدیوی %m.videoview به %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1057,7 +1057,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.start();");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.videoview start");
+        "پخش %m.videoview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1066,7 +1066,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.pause();");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.videoview pause");
+        "توقف موقت %m.videoview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1075,7 +1075,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.stopPlayback();");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.videoview stopPlayback");
+        "متوقف‌کردن %m.videoview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1084,7 +1084,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.isPlaying()");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.videoview isPlaying");
+        "در حال پخش است؟ %m.videoview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1093,7 +1093,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.canPause()");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.videoview canPause");
+        "قابل توقف موقت؟ %m.videoview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1102,7 +1102,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.canSeekForward()");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.videoview canSeekForward");
+        "قابل جلوبردن؟ %m.videoview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1111,7 +1111,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.canSeekBackward()");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.videoview canSeekBackward");
+        "قابل عقب‌بردن؟ %m.videoview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1120,7 +1120,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.getDuration()");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.videoview getDuration");
+        "گرفتن مدت‌زمان %m.videoview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1129,7 +1129,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.getCurrentPosition()");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.videoview getCurrentPosition");
+        "گرفتن موقعیت فعلی %m.videoview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1139,7 +1139,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setTranscriptMode(ListView.%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.listview setTranscriptMode %m.transcriptmode");
+        "تنظیم حالت گفتگوی %m.listview به %m.transcriptmode";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1149,7 +1149,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setStackFromBottom(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.listview setStackFromBottom %b");
+        "چیدن %m.listview از پایین؟ %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1158,7 +1158,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setElevation((float)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.view setElevation %d");
+        "تنظیم ارتفاع سایه %m.view به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1167,7 +1167,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setTextSize((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.textview setTextSize %d");
+        "تنظیم اندازه متن %m.textview به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1176,7 +1176,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.getBackground().setColorFilter(%s, PorterDuff.Mode.%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.view setColorFilter %m.color with %m.porterduff");
+        "تنظیم فیلتر رنگ %m.view به %m.color با حالت %m.porterduff";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1189,7 +1189,7 @@ public class BlocksHandler {
                         + " }.getIns((int)%s, %s));");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.view setCornerRadius %d color %m.color");
+        "تنظیم گردی گوشه %m.view به %d و رنگ %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1201,7 +1201,7 @@ public class BlocksHandler {
                         + " int[] {%s,%s}));");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.view setGradientBackground %m.color and %m.color");
+        "تنظیم پس‌زمینه گرادیانی %m.view از %m.color تا %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1214,7 +1214,7 @@ public class BlocksHandler {
                         + " }.getIns((int)%s, %s, %s));");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.view setStroke %d strokeColor %m.color bgColor %m.color");
+        "تنظیم ضخامت خط دور %m.view به %d و رنگ خط %m.color و پس‌زمینه %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1247,7 +1247,7 @@ public class BlocksHandler {
                         + "}).show();");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.view showSnackbar text %s actionText %s onClick");
+        "نمایش اسنک‌بار در %m.view با متن %s و دکمه %s و رویداد کلیک";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1256,7 +1256,7 @@ public class BlocksHandler {
         hashMap.put("code", "%1$s.addTab(%1$s.newTab().setText(%2$s));");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.tablayout addTabTitle %s");
+        "افزودن زبانه با عنوان %s به %m.tablayout";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1265,7 +1265,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setupWithViewPager(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.tablayout setupWithViewPager %m.viewpager");
+        "هماهنگ‌سازی %m.tablayout با %m.viewpager";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1274,7 +1274,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setInlineLabel(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.tablayout setInlineLabel %b");
+        "%m.tablayout برچسب هم‌خط؟ %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1283,7 +1283,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setTabTextColors(%s, %s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.tablayout setTabTextColors Normal %m.color Selected %m.color");
+        "تنظیم رنگ متن زبانه‌های %m.tablayout عادی %m.color و انتخاب‌شده %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1296,7 +1296,7 @@ public class BlocksHandler {
                         + "new int[] {%s}));");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.tablayout setTabRippleColor %m.color");
+        "تنظیم رنگ موج کلیک زبانه‌های %m.tablayout به %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1305,7 +1305,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setSelectedTabIndicatorColor(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.tablayout setSelectedTabIndicatorColor %m.color");
+        "تنظیم رنگ نشانگر زبانه فعال %m.tablayout به %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1314,7 +1314,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setSelectedTabIndicatorHeight(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.tablayout setSelectedTabIndicatorHeight %d");
+        "تنظیم ضخامت نشانگر زبانه فعال %m.tablayout به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1323,7 +1323,7 @@ public class BlocksHandler {
         hashMap.put("code", "return %s;");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "return Title %s");
+        "برگرداندن عنوان %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1332,7 +1332,7 @@ public class BlocksHandler {
         hashMap.put("code", "return new %s();");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "return Fragment %m.activity");
+        "برگرداندن Fragment از %m.activity";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1341,7 +1341,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.getMenu().add(0, %s, 0, %s).setIcon(R.drawable.%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.bottomnavigation add item id %d title %s icon %m.resource");
+        "افزودن مورد به %m.bottomnavigation با شناسه %d و عنوان %s و آیکون %m.resource";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1350,7 +1350,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setCode(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.codeview setCode %s");
+        "تنظیم کد %m.codeview به %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1359,7 +1359,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setTheme(Theme.%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.codeview setTheme %m.cv_theme");
+        "تنظیم پوسته %m.codeview به %m.cv_theme";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1368,7 +1368,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setLanguage(Language.%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.codeview setLanguage %m.cv_language");
+        "تنظیم زبان %m.codeview به %m.cv_language";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1377,7 +1377,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.apply();");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.codeview apply");
+        "اعمال %m.codeview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1386,7 +1386,7 @@ public class BlocksHandler {
         hashMap.put("code", "_fab.setImageResource(R.drawable.%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "FAB set icon %m.resource");
+        "تنظیم آیکون دکمه شناور به %m.resource";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1395,7 +1395,7 @@ public class BlocksHandler {
         hashMap.put("code", "_fab.setSize(FloatingActionButton.SIZE_%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "FAB setSize %m.fabsize");
+        "تنظیم اندازه دکمه شناور به %m.fabsize";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1404,7 +1404,7 @@ public class BlocksHandler {
         hashMap.put("code", "_fab.%s();");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "FAB setVisibility %m.fabvisible");
+        "تنظیم نمایش دکمه شناور به %m.fabvisible";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1413,7 +1413,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setBackgroundDrawable(getResources().getDrawable(R.drawable.%s));");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.view setBackgroundDrawable %m.drawable");
+        "تنظیم پس‌زمینه %m.view به %m.drawable";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1422,7 +1422,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setCardBackgroundColor(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.cardview setCardBackgroundColor %m.color");
+        "تنظیم رنگ پس‌زمینه کارت %m.cardview به %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1431,7 +1431,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setRadius((float)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.cardview setCornerRadius %d");
+        "تنظیم گردی گوشه کارت %m.cardview به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1440,7 +1440,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setCardElevation((float)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.cardview setCardElevation %d");
+        "تنظیم سایه کارت %m.cardview به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1449,7 +1449,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setPreventCornerOverlap(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.cardview setPreventCornerOverlap %b");
+        "%m.cardview جلوگیری از همپوشانی گوشه‌ها؟ %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1458,7 +1458,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setUseCompatPadding(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.cardview setUseCompatPadding %b");
+        "%m.cardview فاصله سازگار؟ %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1467,7 +1467,7 @@ public class BlocksHandler {
         hashMap.put("code", "");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.spinner setSpinnerCustomViewData %m.listMap");
+        "تنظیم داده ویو سفارشی %m.spinner به %m.listMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1476,7 +1476,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setAnimation(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.lottie setAnimationFromAsset %s");
+        "تنظیم انیمیشن %m.lottie از assets با %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1485,7 +1485,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setAnimationFromJson(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.lottie setAnimationFromJson %s");
+        "تنظیم انیمیشن %m.lottie از JSON با %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1494,7 +1494,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setAnimationFromUrl(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.lottie setAnimationFromUrl %s");
+        "تنظیم انیمیشن %m.lottie از آدرس %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1503,7 +1503,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setRepeatCount((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.lottie setRepeatCount %d");
+        "تنظیم تعداد تکرار %m.lottie به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1512,7 +1512,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setSpeed((float)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.lottie setSpeed %d");
+        "تنظیم سرعت %m.lottie به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1521,7 +1521,7 @@ public class BlocksHandler {
         hashMap.put("code", "");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.recyclerview setRecyclerCustomViewData %m.listMap");
+        "تنظیم داده ویو سفارشی %m.recyclerview به %m.listMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1530,7 +1530,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setLayoutManager(new LinearLayoutManager(this));");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.recyclerview setLayoutManager");
+        "تنظیم چیدمان‌دهنده %m.recyclerview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1542,7 +1542,7 @@ public class BlocksHandler {
                         + " false));");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.recyclerview set Horizontal LayoutManager");
+        "تنظیم چیدمان‌دهنده افقی %m.recyclerview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1551,7 +1551,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setHasFixedSize(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.recyclerview setHasFixedSize %b");
+        "%m.recyclerview اندازه ثابت؟ %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1560,7 +1560,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.smoothScrollToPosition((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.recyclerview smoothScrollToPosition %d");
+        "پیمایش نرم %m.recyclerview به موقعیت %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1572,7 +1572,7 @@ public class BlocksHandler {
                         + " (int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.recyclerview scrollToPosition %d offset %d ");
+        "پیمایش %m.recyclerview به موقعیت %d با فاصله %d ";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1581,7 +1581,7 @@ public class BlocksHandler {
         hashMap.put("code", "RecyclerView.%s");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.recyclerscrollparam");
+        "پارامتر پیمایش %m.recyclerview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1590,7 +1590,7 @@ public class BlocksHandler {
         hashMap.put("code", "ViewPager.%s");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.pagerscrollparam");
+        "پارامتر پیمایش %m.viewpager";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1599,7 +1599,7 @@ public class BlocksHandler {
         hashMap.put("code", "");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.viewpager setPagerCustomViewData %m.listMap");
+        "تنظیم داده ویو سفارشی %m.viewpager به %m.listMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1608,7 +1608,7 @@ public class BlocksHandler {
         hashMap.put("code", "%2$s.setTabCount(%3$s);\r\n%1$s.setAdapter(%2$s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.viewpager setFragmentAdapter %m.fragmentAdapter TabCount %d");
+        "تنظیم آداپتور Fragment های %m.viewpager به %m.fragmentAdapter با تعداد زبانه %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1617,7 +1617,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.getOffscreenPageLimit()");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.viewpager getOffscreenPageLimit");
+        "گرفتن سقف صفحات خارج از دید %m.viewpager";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1626,7 +1626,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setOffscreenPageLimit((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.viewpager setOffscreenPageLimit %d");
+        "تنظیم سقف صفحات خارج از دید %m.viewpager به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1635,7 +1635,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.getCurrentItem()");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.viewpager getCurrentItem");
+        "گرفتن صفحه فعلی %m.viewpager";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1644,7 +1644,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setCurrentItem((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.viewpager setCurrentItem %d");
+        "تنظیم صفحه فعلی %m.viewpager به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1660,7 +1660,7 @@ public class BlocksHandler {
                         + "});");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "When %m.swiperefreshlayout refreshed");
+        "وقتی %m.swiperefreshlayout بازخوانی شد";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1669,7 +1669,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setRefreshing(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.swiperefreshlayout setRefreshing %b");
+        "حالت بازخوانی %m.swiperefreshlayout؟ %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1686,7 +1686,7 @@ public class BlocksHandler {
                         + "});");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "When %m.view long clicked");
+        "وقتی %m.view طولانی کلیک شد";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1703,7 +1703,7 @@ public class BlocksHandler {
                         + "});");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "When %m.view touched");
+        "وقتی %m.view لمس شد";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1718,7 +1718,7 @@ public class BlocksHandler {
                         + "}});");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "When %m.checkbox checked");
+        "وقتی %m.checkbox تیک خورد";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1727,7 +1727,7 @@ public class BlocksHandler {
         hashMap.put("code", "isChecked");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "isChecked");
+        "تیک خورده است؟";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1736,7 +1736,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.getBadgeCount();");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.badgeview getBadgeCount");
+        "گرفتن تعداد نشان %m.badgeview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1745,7 +1745,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setBadgeCount(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.badgeview setBadgeNumber %d");
+        "تنظیم تعداد نشان %m.badgeview به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1754,7 +1754,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setBadgeCount(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.badgeview setBadgeString %s");
+        "تنظیم متن نشان %m.badgeview به %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1763,7 +1763,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setBadgeBackground(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.badgeview setBadgeBackground %m.color");
+        "تنظیم پس‌زمینه نشان %m.badgeview به %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1772,7 +1772,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setTextColor(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.badgeview setBadgeTextColor %m.color");
+        "تنظیم رنگ متن نشان %m.badgeview به %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1781,7 +1781,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setTextSize((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.badgeview setBadgeTextSize %d");
+        "تنظیم اندازه متن نشان %m.badgeview به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1790,7 +1790,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setCustomLetter(new String[]%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.sidebar setCustomLetter String[] %s.inputOnly");
+        "تنظیم حروف سفارشی %m.sidebar با آرایه %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1799,7 +1799,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setBubbleColor(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "BubbleLayout %m.view setBubbleColor %m.color");
+        "تنظیم رنگ حباب %m.view به %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1808,7 +1808,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setStrokeColor(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "BubbleLayout %m.view setStrokeColor %m.color");
+        "تنظیم رنگ خط دور حباب %m.view به %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1817,7 +1817,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setStrokeWidth((float)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "BubbleLayout %m.view setStrokeWidth %d");
+        "تنظیم ضخامت خط دور حباب %m.view به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1826,7 +1826,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setCornersRadius((float)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "BubbleLayout %m.view setCornerRadius %d");
+        "تنظیم گردی گوشه حباب %m.view به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1835,7 +1835,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setArrowHeight((float)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "BubbleLayout %m.view setArrowHeight %d");
+        "تنظیم ارتفاع پیکان حباب %m.view به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1844,7 +1844,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setArrowWidth((float)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "BubbleLayout %m.view setArrowWidth %d");
+        "تنظیم عرض پیکان حباب %m.view به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1853,7 +1853,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setArrowPosition((float)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "BubbleLayout %m.view setArrowPosition %d");
+        "تنظیم موقعیت پیکان حباب %m.view به %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1862,7 +1862,7 @@ public class BlocksHandler {
         hashMap.put("code", "PatternLockUtils.patternToString(%s, %s)");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.patternview getPattern from %m.listStr to String ");
+        "گرفتن الگوی %m.patternview از %m.listStr به‌صورت رشته ";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1871,7 +1871,7 @@ public class BlocksHandler {
         hashMap.put("code", "PatternLockUtils.patternToMD5(%s, %s)");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.patternview getPattern from %m.listStr to MD5");
+        "گرفتن الگوی %m.patternview از %m.listStr به MD5";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1880,7 +1880,7 @@ public class BlocksHandler {
         hashMap.put("code", "PatternLockUtils.patternToSha1(%s, %s)");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.patternview getPattern from %m.listStr to SHA1");
+        "گرفتن الگوی %m.patternview از %m.listStr به SHA1";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1889,7 +1889,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setDotCount((int)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.patternview setDotCount %d ");
+        "تنظیم تعداد نقطه‌های %m.patternview به %d ";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1898,7 +1898,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setNormalStateColor(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.patternview setNormalStateColor %m.color");
+        "تنظیم رنگ حالت عادی %m.patternview به %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1907,7 +1907,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setCorrectStateColor(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.patternview setCorrectStateColor %m.color");
+        "تنظیم رنگ حالت درست %m.patternview به %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1916,7 +1916,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setWrongStateColor(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.patternview setWrongStateColor %m.color");
+        "تنظیم رنگ حالت غلط %m.patternview به %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1925,7 +1925,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setViewMode(PatternLockView.PatternViewMode.%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.patternview setViewMode %m.patternviewmode");
+        "تنظیم حالت نمایش %m.patternview به %m.patternviewmode";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1934,7 +1934,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.clearPattern();");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.patternview clearPattern");
+        "پاک‌کردن الگوی %m.patternview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1943,7 +1943,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setBoxBackgroundColor(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.textinputlayout setBoxBackgroundColor %m.color");
+        "تنظیم رنگ پس‌زمینه کادر %m.textinputlayout به %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1952,7 +1952,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setBoxStrokeColor(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.textinputlayout setBoxStrokeColor %m.color");
+        "تنظیم رنگ خط دور کادر %m.textinputlayout به %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1961,7 +1961,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setBoxBackgroundMode(TextInputLayout.BOX_BACKGROUND_%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.textinputlayout setBoxBackgroundMode %m.til_box_mode");
+        "تنظیم حالت پس‌زمینه کادر %m.textinputlayout به %m.til_box_mode";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1970,7 +1970,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setBoxCornerRadii((float)%s, (float)%s, (float)%s, (float)%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.textinputlayout setBoxCornerRadius TL %d TR %d BL %d BR %d ");
+        "تنظیم گردی گوشه‌های کادر %m.textinputlayout بالا-راست %d بالا-چپ %d پایین-راست %d پایین-چپ %d ";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1979,7 +1979,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setError(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.textinputlayout setError %s ");
+        "تنظیم خطای %m.textinputlayout به %s ";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1988,7 +1988,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setErrorEnabled(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.textinputlayout setErrorEnabled %b ");
+        "فعال‌بودن خطای %m.textinputlayout؟ %b ";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -1997,7 +1997,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setCounterEnabled(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.textinputlayout setCounterEnabled %b ");
+        "فعال‌بودن شمارنده %m.textinputlayout؟ %b ";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2006,7 +2006,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setCounterMaxLength(%s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.textinputlayout setCounterMaxLength %d ");
+        "تنظیم بیشینه شمارنده %m.textinputlayout به %d ";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2015,7 +2015,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.getCounterMaxLength()");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.textinputlayout getCounterMaxLength");
+        "گرفتن بیشینه شمارنده %m.textinputlayout";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2024,7 +2024,7 @@ public class BlocksHandler {
         hashMap.put("code", "getLifecycle().addObserver(%1$s);");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.youtubeview getLifecycle");
+        "گرفتن چرخه حیات %m.youtubeview";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2042,7 +2042,7 @@ public class BlocksHandler {
                         + "});");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.youtubeview addYouTubePlayerListener VideoID %s");
+        "افزودن شنونده پخش‌کننده به %m.youtubeview با شناسه ویدیو %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2051,7 +2051,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s = getPackageManager().getLaunchIntentForPackage(%s);");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.intent set app package %s");
+        "تنظیم پکیج برنامه %m.intent به %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2067,7 +2067,7 @@ public class BlocksHandler {
                         + "}");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.activity set statebar color %m.color");
+        "تنظیم رنگ نوار وضعیت %m.activity به %m.color";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2076,7 +2076,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.setIcon(R.drawable.%s);");
         hashMap.put("color", "#2CA5E2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.dialog setIcon %m.resource_bg");
+        "تنظیم آیکون %m.dialog به %m.resource_bg";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2085,7 +2085,7 @@ public class BlocksHandler {
         hashMap.put("code", "((PagerAdapter)%s.getAdapter()).notifyDataSetChanged();");
         hashMap.put("color", "#4A6CD4");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.viewpager notifyDataSetChanged");
+        "اطلاع‌رسانی تغییر داده به %m.viewpager";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2095,7 +2095,7 @@ public class BlocksHandler {
         hashMap.put("code", "return %s;");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "return %m.varMap");
+        "برگرداندن %m.varMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2105,7 +2105,7 @@ public class BlocksHandler {
         hashMap.put("code", "return %s;");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "return %m.listStr");
+        "برگرداندن %m.listStr";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2115,7 +2115,7 @@ public class BlocksHandler {
         hashMap.put("code", "return %s;");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "return %m.listMap");
+        "برگرداندن %m.listMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2125,7 +2125,7 @@ public class BlocksHandler {
         hashMap.put("code", "return %s;");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "return %m.view");
+        "برگرداندن %m.view";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2135,7 +2135,7 @@ public class BlocksHandler {
         hashMap.put("code", "for (int %2$s = 0; %2$s < (int)(%1$s); %2$s++) {\r\n%3$s\r\n}");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "repeat %d: %s.inputOnly ++");
+        "تکرار %d بار: %s با ++";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2145,7 +2145,7 @@ public class BlocksHandler {
         hashMap.put("code", "while(%s) {\r\n%s\r\n}");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "while %b");
+        "تا زمانی که %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2155,7 +2155,7 @@ public class BlocksHandler {
         hashMap.put("code", "try {\r\n%s\r\n} catch (Exception e) {\r\n%s\r\n}");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "try");
+        "امتحان";
         hashMap.put("spec2", "catch");
         arrayList.add(hashMap);
 
@@ -2166,7 +2166,7 @@ public class BlocksHandler {
         hashMap.put("code", "switch(%s) {\r\n%s\r\n}");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "switch %s");
+        "سوییچ روی %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2176,7 +2176,7 @@ public class BlocksHandler {
         hashMap.put("code", "switch((int)%s) {\r\n%s\r\n}");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "switch %d");
+        "سوییچ روی %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2186,7 +2186,7 @@ public class BlocksHandler {
         hashMap.put("code", "case %s: {\r\n%s\r\nbreak;\r\n}");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "case %s");
+        "حالت %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2196,7 +2196,7 @@ public class BlocksHandler {
         hashMap.put("code", "case ((int)%s): {\r\n%s\r\nbreak;\r\n}");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "case %d");
+        "حالت %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2206,7 +2206,7 @@ public class BlocksHandler {
         hashMap.put("code", "default: {\r\n%s\r\nbreak;\r\n}");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "default");
+        "پیش‌فرض";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2216,7 +2216,7 @@ public class BlocksHandler {
         hashMap.put("code", "return (%s);");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "return %s");
+        "برگرداندن %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2226,7 +2226,7 @@ public class BlocksHandler {
         hashMap.put("code", "return (%s);");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "return %d");
+        "برگرداندن %d";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2236,7 +2236,7 @@ public class BlocksHandler {
         hashMap.put("code", "return (%s);");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "return %b");
+        "برگرداندن %b";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2246,7 +2246,7 @@ public class BlocksHandler {
         hashMap.put("code", "Collections.reverse(%s);");
         hashMap.put("color", "#cc5b22");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "reverse %m.list");
+        "معکوس‌کردن %m.list";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2256,7 +2256,7 @@ public class BlocksHandler {
         hashMap.put("code", "Collections.shuffle(%s);");
         hashMap.put("color", "#cc5b22");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "shuffle %m.list");
+        "بُر زدن %m.list";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2266,7 +2266,7 @@ public class BlocksHandler {
         hashMap.put("code", "Collections.sort(%s);");
         hashMap.put("color", "#cc5b22");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "sort %m.listStr");
+        "مرتب‌سازی %m.listStr";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2276,7 +2276,7 @@ public class BlocksHandler {
         hashMap.put("code", "Collections.sort(%s);");
         hashMap.put("color", "#cc5b22");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "sort %m.listInt");
+        "مرتب‌سازی %m.listInt";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2286,7 +2286,7 @@ public class BlocksHandler {
         hashMap.put("code", "Collections.swap(%s, (int)(%s), (int)(%s));");
         hashMap.put("color", "#cc5b22");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "swap %m.list position %d with %d");
+        "جابه‌جایی مورد %d با %d در %m.list";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2296,7 +2296,7 @@ public class BlocksHandler {
         hashMap.put("code", "%2$s.get((int)(%1$s))");
         hashMap.put("color", "#cc5b22");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "get Map at %d of %m.listMap");
+        "گرفتن Map از موقعیت %d از %m.listMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2306,7 +2306,7 @@ public class BlocksHandler {
         hashMap.put("code", "%3$s.set((int)(%2$s), %1$s);");
         hashMap.put("color", "#cc5b22");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "set %m.varMap at %d of %m.listMap");
+        "تنظیم %m.varMap در موقعیت %d از %m.listMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2316,7 +2316,7 @@ public class BlocksHandler {
         hashMap.put("code", "%3$s.set((int)%2$s, %1$s);");
         hashMap.put("color", "#cc5b22");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "set %s at %d of %m.listStr");
+        "تنظیم %s در موقعیت %d از %m.listStr";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2326,7 +2326,7 @@ public class BlocksHandler {
         hashMap.put("code", "%3$s.set((int)%2$s, %1$s);");
         hashMap.put("color", "#cc5b22");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "set %d at %d of %m.listInt");
+        "تنظیم %d در موقعیت %d از %m.listInt";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2336,7 +2336,7 @@ public class BlocksHandler {
         hashMap.put("code", "new Gson().toJson(%s)");
         hashMap.put("color", "#5cb722");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.list to JSON String");
+        "تبدیل %m.list به رشته JSON";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2349,7 +2349,7 @@ public class BlocksHandler {
                         + " TypeToken<ArrayList<String>>(){}.getType());");
         hashMap.put("color", "#5cb722");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "JSON %s to %m.listStr");
+        "تبدیل JSON %s به %m.listStr";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2362,7 +2362,7 @@ public class BlocksHandler {
                         + " TypeToken<ArrayList<Double>>(){}.getType());");
         hashMap.put("color", "#5cb722");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "JSON %s to %m.listInt");
+        "تبدیل JSON %s به %m.listInt";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2371,7 +2371,7 @@ public class BlocksHandler {
         hashMap.put("code", "(double)%s.get(%s)");
         hashMap.put("palette", "-1");
         hashMap.put("color", "#ee7d15");
-        hashMap.put("spec", "%m.varMap get number key %s");
+        "گرفتن عدد با کلید %s از %m.varMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2380,7 +2380,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.put(%s, (int)(%s));");
         hashMap.put("palette", "-1");
         hashMap.put("color", "#ee7d15");
-        hashMap.put("spec", "%m.varMap put key %s value int %d");
+        "قرار دادن کلید %s با مقدار عددی %d در %m.varMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2389,7 +2389,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.put(%s, (double)(%s));");
         hashMap.put("palette", "-1");
         hashMap.put("color", "#ee7d15");
-        hashMap.put("spec", "%m.varMap put key %s value double %d");
+        "قرار دادن کلید %s با مقدار اعشاری %d در %m.varMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2398,7 +2398,7 @@ public class BlocksHandler {
         hashMap.put("code", "(boolean)%s.get(%s)");
         hashMap.put("palette", "-1");
         hashMap.put("color", "#ee7d15");
-        hashMap.put("spec", "%m.varMap get boolean key %s");
+        "گرفتن بولی با کلید %s از %m.varMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2407,7 +2407,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.put(%s, %s);");
         hashMap.put("palette", "-1");
         hashMap.put("color", "#ee7d15");
-        hashMap.put("spec", "%m.varMap put key %s value %b");
+        "قرار دادن کلید %s با مقدار %b در %m.varMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2416,7 +2416,7 @@ public class BlocksHandler {
         hashMap.put("code", "(HashMap<String,Object>)%s.get(%s)");
         hashMap.put("palette", "-1");
         hashMap.put("color", "#ee7d15");
-        hashMap.put("spec", "%m.varMap get Map key %s");
+        "گرفتن Map با کلید %s از %m.varMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2425,7 +2425,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.put(%s, %s);");
         hashMap.put("palette", "-1");
         hashMap.put("color", "#ee7d15");
-        hashMap.put("spec", "%m.varMap put key %s value %m.varMap");
+        "قرار دادن کلید %s با مقدار %m.varMap در %m.varMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2435,7 +2435,7 @@ public class BlocksHandler {
         hashMap.put("code", "(ArrayList<String>)%s.get(%s)");
         hashMap.put("palette", "-1");
         hashMap.put("color", "#ee7d15");
-        hashMap.put("spec", "%m.varMap get List String key %s");
+        "گرفتن لیست رشته با کلید %s از %m.varMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2444,7 +2444,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s.put(%s, %s);");
         hashMap.put("palette", "-1");
         hashMap.put("color", "#ee7d15");
-        hashMap.put("spec", "%m.varMap put key %s value %m.listStr");
+        "قرار دادن کلید %s با مقدار %m.listStr در %m.varMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2454,7 +2454,7 @@ public class BlocksHandler {
         hashMap.put("code", "(ArrayList<HashMap<String,Object>>)%s.get(%s)");
         hashMap.put("palette", "-1");
         hashMap.put("color", "#ee7d15");
-        hashMap.put("spec", "%m.varMap get List Map key %s");
+        "گرفتن لیست Map با کلید %s از %m.varMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2463,7 +2463,7 @@ public class BlocksHandler {
         hashMap.put("color", "#ee7d15");
         hashMap.put("code", "%s.put(%s, %s);");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.varMap put key %s value %m.listMap");
+        "قرار دادن کلید %s با مقدار %m.listMap در %m.varMap";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2473,7 +2473,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s");
         hashMap.put("color", "#5cb722");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "add source directly %s.inputOnly");
+        "افزودن مستقیم کد: %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2483,7 +2483,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s");
         hashMap.put("color", "#5cb722");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "boolean %s.inputOnly");
+        "بولی: %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2493,7 +2493,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s");
         hashMap.put("color", "#5cb722");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "number %s.inputOnly");
+        "عدد: %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2503,7 +2503,7 @@ public class BlocksHandler {
         hashMap.put("code", "%s");
         hashMap.put("color", "#5cb722");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "string %s.inputOnly");
+        "رشته: %s";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2513,7 +2513,7 @@ public class BlocksHandler {
         hashMap.put("code", "for (int %2$s = ((int) %1$s - 1); %2$s > -1; %2$s--) {\r\n%3$s\r\n}");
         hashMap.put("color", "#e1a92a");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "repeat %d: %s.inputOnly --");
+        "تکرار %d بار: %s با --";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2529,7 +2529,7 @@ public class BlocksHandler {
                         + "}");
         hashMap.put("color", "#2aa4e2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.interstitialad load in %m.activity");
+        "بارگذاری %m.interstitialad در %m.activity";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2546,7 +2546,7 @@ public class BlocksHandler {
                         + "}");
         hashMap.put("color", "#2aa4e2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.interstitialad show ad in %m.activity");
+        "نمایش تبلیغ %m.interstitialad در %m.activity";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2556,7 +2556,7 @@ public class BlocksHandler {
         hashMap.put("code", "%1$s != null");
         hashMap.put("color", "#2aa4e2");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "%m.interstitialad is loaded");
+        "بارگذاری‌شده است؟ %m.interstitialad";
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -2591,7 +2591,7 @@ public class BlocksHandler {
         hashMap.put("code", "getString(%s)");
         hashMap.put("color", "#7c83db");
         hashMap.put("palette", "-1");
-        hashMap.put("spec", "get String from %m.ResString");
+        "گرفتن رشته از %m.ResString";
         arrayList.add(hashMap);
     }
 
