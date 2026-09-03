@@ -28,43 +28,43 @@ public class ExtraBlocks {
     }
 
     public static void extraBlocks(ArrayList<HashMap<String, Object>> arrayList) {
-        arrayList.add(addBlock("caseStrAnd", " ", "", "case %s:", "#e1a92a", "حالت %s و"));
-        arrayList.add(addBlock("caseNumAnd", " ", "", "case ((int)%s):", "#e1a92a", "حالت %d و"));
-        arrayList.add(addBlock("continue", "f", "", "continue;", "#e1a92a", "ادامه"));
-        arrayList.add(addBlock("isEmpty", "b", "", "%s.isEmpty()", "#e1a92a", "%s خالی است"));
-        arrayList.add(addBlock("fileutilcopydir", " ", "", "FileUtil.copyDir(%1$s, %2$s);", "#a1887f", "کپی پوشه از %s به %s"));
-        arrayList.add(addBlock("instanceOfOperator", "b", "", "%1$s instanceof %2$s", "#e1a92a", "%s از نوع %s است"));
-        arrayList.add(addBlock("checkViewVisibility", "b", "", "%s.getVisibility() == View.%s", "#4a6cd4", "نمایانی %m.view برابر %m.visible است"));
-        arrayList.add(addBlock("intentHasExtra", "b", "", "getIntent().hasExtra(%s)", "#2ca5e2", "اکتیویتی کلید %s را دارد"));
+        arrayList.add(addBlock("caseStrAnd", " ", "", "case %s:", "#e1a92a", "مسیر %s و"));
+        arrayList.add(addBlock("caseNumAnd", " ", "", "case ((int)%s):", "#e1a92a", "مسیر %d و"));
+        arrayList.add(addBlock("continue", "f", "", "continue;", "#e1a92a", "ادامه حلقه"));
+        arrayList.add(addBlock("isEmpty", "b", "", "%s.isEmpty()", "#e1a92a", "آیا %s خالی است؟"));
+        arrayList.add(addBlock("fileutilcopydir", " ", "", "FileUtil.copyDir(%1$s, %2$s);", "#a1887f", "کپی پوشه %s به %s"));
+        arrayList.add(addBlock("instanceOfOperator", "b", "", "%1$s instanceof %2$s", "#e1a92a", "آیا %s از نوع %s است؟"));
+        arrayList.add(addBlock("checkViewVisibility", "b", "", "%s.getVisibility() == View.%s", "#4a6cd4", "نمایانی %m.view برابر %m.visible"));
+        arrayList.add(addBlock("intentHasExtra", "b", "", "getIntent().hasExtra(%s)", "#2ca5e2", "آیا اکتیویتی کلید %s دارد؟"));
         arrayList.add(addBlock("intentSetType", " ", "", "%s.setType(%s);", "#2ca5e2", "تنظیم نوع %m.intent به %s"));
-        arrayList.add(addBlock("intentRemoveExtra", " ", "", "%s.removeExtra(%s);", "#2ca5e2", "حذف کلید %s از %m.intent"));
-        arrayList.add(addBlock("fileContainsData", "b", "", "%1$s.contains(%2$s)", "#2ca5e2", "%m.file شامل %s است"));
-        arrayList.add(addBlock("viewGetChildAt", "v", "View", "%1$s.getChildAt(%2$s)", "#4a6cd4", "گرفتن فرزند موقعیت %d از %m.view"));
-        arrayList.add(addBlock("strParseInteger", "d", "", "Integer.parseInt(%s)", "#5cb722", "تبدیل %s به عدد صحیح"));
-        arrayList.add(addBlock("stringSubSingle", "s", "", "%1$s.substring(%2$s)", "#5cb722", "زیررشته %s از %d"));
-        arrayList.add(addBlock("webviewGetProgress", "d", "", "%1$s.getProgress()", "#4a6cd4", "گرفتن پیشرفت بارگذاری %m.webview"));
+        arrayList.add(addBlock("intentRemoveExtra", " ", "", "%s.removeExtra(%s);", "#2ca5e2", "حذف داده %s از %m.intent"));
+        arrayList.add(addBlock("fileContainsData", "b", "", "%1$s.contains(%2$s)", "#2ca5e2", "آیا %m.file شامل %s است؟"));
+        arrayList.add(addBlock("viewGetChildAt", "v", "View", "%1$s.getChildAt(%2$s)", "#4a6cd4", "فرزند شماره %d از %m.view"));
+        arrayList.add(addBlock("strParseInteger", "d", "", "Integer.parseInt(%s)", "#5cb722", "تبدیل متن %s به عدد"));
+        arrayList.add(addBlock("stringSubSingle", "s", "", "%1$s.substring(%2$s)", "#5cb722", "بخشی از %s از نویسه %d"));
+        arrayList.add(addBlock("webviewGetProgress", "d", "", "%1$s.getProgress()", "#4a6cd4", "درصد بارگذاری %m.webview"));
         arrayList.add(addBlock("menuItemSetVisible", " ", "", "%1$s.setVisible(%2$s);", "#4a6cd4", "نمایانی %m.MenuItem؟ %b"));
         arrayList.add(addBlock("menuItemSetEnabled", " ", "", "%1$s.setEnabled(%2$s);", "#4a6cd4", "فعال‌بودن %m.MenuItem؟ %b"));
-        arrayList.add(addBlock("menuFindItem", "v", "MenuItem", "menu.findItem(%s)", "#4a6cd4", "یافتن مورد منو: %s"));
+        arrayList.add(addBlock("menuFindItem", "v", "MenuItem", "menu.findItem(%s)", "#4a6cd4", "جستجوی منو: %s"));
         arrayList.add(addBlock("listAddAll", " ", "", "%1$s.addAll(%2$s);", "#cc5b22", "افزودن همه موارد %m.list به %m.listStr"));
         // File Blocks
-        arrayList.add(addBlock("fileCanExecute", "b", "", "%s.canExecute()", "#a1887f", "قابل اجرا؟ %m.File"));
-        arrayList.add(addBlock("fileCanRead", "b", "", "%s.canRead()", "#a1887f", "قابل خواندن؟ %m.File"));
-        arrayList.add(addBlock("fileCanWrite", "b", "", "%s.canWrite()", "#a1887f", "قابل نوشتن؟ %m.File"));
+        arrayList.add(addBlock("fileCanExecute", "b", "", "%s.canExecute()", "#a1887f", "قابل اجرا است %m.File؟"));
+        arrayList.add(addBlock("fileCanRead", "b", "", "%s.canRead()", "#a1887f", "قابل خواندن است %m.File؟"));
+        arrayList.add(addBlock("fileCanWrite", "b", "", "%s.canWrite()", "#a1887f", "قابل نوشتن است %m.File؟"));
         arrayList.add(addBlock("fileGetName", "s", "", "%s.getName()", "#a1887f", "گرفتن نام %m.File"));
         arrayList.add(addBlock("fileGetParent", "s", "", "%s.getParent()", "#a1887f", "گرفتن والد %m.File"));
         arrayList.add(addBlock("fileGetPath", "s", "", "%s.getPath()", "#a1887f", "گرفتن مسیر %m.File"));
-        arrayList.add(addBlock("fileIsHidden", "b", "", "%s.isHidden()", "#a1887f", "مخفی است؟ %m.File"));
+        arrayList.add(addBlock("fileIsHidden", "b", "", "%s.isHidden()", "#a1887f", "مخفی است %m.File؟"));
         // Basically Command Block
-        arrayList.add(addBlock("addPermission", " ", "", "", "#493F5A", "بلوک دستوری مجوز: افزودن %m.Permission"));
-        arrayList.add(addBlock("removePermission", " ", "", "", "#493F5A", "بلوک دستوری مجوز: حذف %m.Permission"));
-        arrayList.add(addBlock("addCustomVariable", " ", "", "", "#493F5A", "بلوک متغیر سفارشی: افزودن متغیر %s"));
-        arrayList.add(addBlock("addInitializer", " ", "", "", "#493F5A", "بلوک مقدارده اولیه: افزودن %s"));
+        arrayList.add(addBlock("addPermission", " ", "", "", "#493F5A", "درخواست مجوز %m.Permission"));
+        arrayList.add(addBlock("removePermission", " ", "", "", "#493F5A", "لغو مجوز %m.Permission"));
+        arrayList.add(addBlock("addCustomVariable", " ", "", "", "#493F5A", "تعریف متغیر سفارشی %s"));
+        arrayList.add(addBlock("addInitializer", " ", "", "", "#493F5A", "اجرای %s هنگام شروع"));
         //OtpView Blocks
         arrayList.add(addBlock("otpViewSetFieldCount", " ", "", "%1$s.setFieldCount(%2$s);", "#4a6cd4", "تنظیم تعداد خانه‌های %m.otpview به %d"));
         arrayList.add(addBlock("otpViewSetOTPText", " ", "", "%1$s.setOTPText(%2$s);", "#4a6cd4", "تنظیم متن %m.otpview به %s"));
         arrayList.add(addBlock("otpViewGetOTPText", "s", "", "%1$s.getOTPText()", "#4a6cd4", "گرفتن متن %m.otpview"));
-        arrayList.add(addBlock("otpViewSetOTPListener", "c", "", "%1$s.setOTPListener(new OTPListener() {\r\npublic void onOTPEntered(String _otp) {\r\n%2$s\r\n}\r\n});", "#4a6cd4", "وقتی کد %m.otpview کامل شد → _otp"));
+        arrayList.add(addBlock("otpViewSetOTPListener", "c", "", "%1$s.setOTPListener(new OTPListener() {\r\npublic void onOTPEntered(String _otp) {\r\n%2$s\r\n}\r\n});", "#4a6cd4", "وقتی کد %m.otpview وارد شد → _otp"));
         //SignInButton Blocks
         arrayList.add(addBlock("signInButtonSetColorScheme", " ", "", "%1$s.setColorScheme(SignInButton.%2$s);", "#4a6cd4", "تنظیم طرح رنگ %m.signinbutton به %m.SignButtonColor"));
         arrayList.add(addBlock("signInButtonSetSize", " ", "", "%1$s.setSize(SignInButton.%2$s);", "#4a6cd4", "تنظیم اندازه %m.signinbutton به %m.SignButtonSize"));
