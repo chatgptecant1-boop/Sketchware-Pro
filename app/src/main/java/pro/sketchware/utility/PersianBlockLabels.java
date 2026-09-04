@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import a.a.a.Ts;
-import pro.sketchware.SketchwareApplication;
+import pro.sketchware.SketchApplication;
 
 /**
  * Round 14 — Persian display layer for built-in blocks.
@@ -33,7 +33,7 @@ public class PersianBlockLabels {
         if (loaded) return;
         synchronized (PersianBlockLabels.class) {
             if (loaded) return;
-            try (var in = SketchwareApplication.getContext().getAssets().open("fa_block_labels.json")) {
+            try (var in = SketchApplication.getContext().getAssets().open("fa_block_labels.json")) {
                 StringBuilder sb = new StringBuilder();
                 try (var reader = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8))) {
                     String line;
