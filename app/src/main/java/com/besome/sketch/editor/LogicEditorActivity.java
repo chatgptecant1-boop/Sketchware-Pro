@@ -129,6 +129,7 @@ import pro.sketchware.databinding.ImagePickerItemBinding;
 import pro.sketchware.databinding.SearchWithRecyclerViewBinding;
 import pro.sketchware.menu.ExtraMenuBean;
 import pro.sketchware.utility.FilePathUtil;
+import pro.sketchware.utility.PersianBlockLabels;
 import pro.sketchware.utility.SvgUtils;
 
 @SuppressLint({"ClickableViewAccessibility", "RtlHardcoded", "SetTextI18n", "DefaultLocale"})
@@ -1230,7 +1231,9 @@ public class LogicEditorActivity extends BaseAppCompatActivity implements View.O
     }
 
     public Rs b(BlockBean blockBean) {
-        return new Rs(this, Integer.parseInt(blockBean.id), blockBean.spec, blockBean.type, blockBean.typeName, blockBean.opCode);
+        Rs block = new Rs(this, Integer.parseInt(blockBean.id), blockBean.spec, blockBean.type, blockBean.typeName, blockBean.opCode);
+        PersianBlockLabels.rewrite(block);
+        return block;
     }
 
     private RadioButton getFontRadioButton(String fontName) {

@@ -10,11 +10,13 @@ import a.a.a.Rs;
 import a.a.a.Ts;
 import a.a.a.kq;
 import mod.hey.studios.moreblock.ReturnMoreblockManager;
+import pro.sketchware.utility.PersianBlockLabels;
 
 public class BlockUtil {
     public static void loadMoreblockPreview(ViewGroup blockArea, String spec) {
         var moreblock = new Rs(blockArea.getContext(), 0, ReturnMoreblockManager.getMbName(spec), ReturnMoreblockManager.getMoreblockType(spec), "definedFunc");
         blockArea.addView(moreblock);
+        PersianBlockLabels.rewrite(moreblock);
 
         loadPreviewBlockVariables(blockArea, moreblock, spec);
         moreblock.k();

@@ -20,6 +20,7 @@ import a.a.a.Ts;
 import a.a.a.wB;
 import pro.sketchware.R;
 import pro.sketchware.databinding.PaletteBlockBinding;
+import pro.sketchware.utility.PersianBlockLabels;
 
 public class PaletteBlock extends LinearLayout {
 
@@ -62,6 +63,7 @@ public class PaletteBlock extends LinearLayout {
         binding.blockBuilder.addView(view);
         Rs blockView = new Rs(context, -1, var1, var2, var3);
         applyBidiSafeTextDirection(blockView);
+        PersianBlockLabels.rewrite(blockView);
         blockView.setContentDescription(generateContentDescription(var3));
         blockView.setBlockType(1);
         binding.blockBuilder.addView(blockView);
@@ -74,6 +76,7 @@ public class PaletteBlock extends LinearLayout {
         binding.blockBuilder.addView(view);
         Rs blockView = new Rs(context, -1, var1, var2, var3, var4);
         applyBidiSafeTextDirection(blockView);
+        PersianBlockLabels.rewrite(blockView);
         blockView.setContentDescription(generateContentDescription(var4));
         blockView.setBlockType(1);
         binding.blockBuilder.addView(blockView);
